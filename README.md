@@ -1,2 +1,2 @@
-# honours_project
-Jason's honour's project - code portion
+# Honours Project
+Code part of Jason's honours project
