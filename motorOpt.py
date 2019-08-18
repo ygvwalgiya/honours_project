@@ -7,6 +7,7 @@ from PIL import Image, ImageDraw
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 import sys
+from numba import jit
 
 verbose = False
 if "-V" in sys.argv:
@@ -17,76 +18,52 @@ if "-r" in sys.argv:
 draw = False
 if "-g" in sys.argv:
     draw = True
+noCheck = False
+if "-nc" in sys.argv:
+    noCheck = True
 
 # Relative constants
 # Things that aren't easily changed
-BR_CORE = 1.2
+BR_Mag = 1 #1.2
 SIGMA_WIRE = 3.46e6
 CP_WIRE = 296
-RHO_WIRE = 6440
+RHO_WIRE = 6440 # kg/m3
 REL_PERM_STEEL = 2000
 REL_PERM_NEO = 1.05
 REL_PERM_AIR = 1
-thickWireWall = 0.75 # mm
 VISCO_WIRE = 0.0024 #Pa.s
+RHO_TUBE = 1250 # kg/m3
+RHO_IRON = 7874 # kg/m3
+RHO_MAG = 7010 # kg/m3
+
+BIG_NUM = 1e12
 
 moe = 1e-8
 
-dDrive = 9 # 9mm
-fMotor = 9 # 9N
-freq = 1 # 1Hz
+thickWireWall = 0.5 # mm
+rWireIn = 1 # mm
+
+dDrive = 15 # 9mm
+fMotor = 10 # 9N
+freq = 5 # 1Hz
+
+deltaT = 50
+
+maxLayers = 8
 
 # %%
-def constraintsCheck(x, layers, rho, cp, thickWireWall,dDrive):
-    if verbose:
-        print("constraintsCheck, layers {}, x = {}".format(layers,x))
-    
-    rWireIn = x[0]
-    lCore = x[1]
-    rCore = x[2]
-    lConnector = x[3]
-    lWireVessal = x[4]
-    thickWireWall = thickWireWall
-    dDrive = dDrive
-    
-    rWireOut = rWireIn + thickWireWall # Wire outer radius
-    
-    rShellIn = rCore+rWireOut*layers # Shell inner radius
-    
-    lWireTotal = 2*np.pi*(rCore+2*layers*rWireOut-rWireOut)*((lCore+lConnector)/(2*rWireOut)) # Total length of wire
-
-    # 5. Minimum drive distance
-    if dDrive > (lWireVessal-lConnector):
-        if verbose:
-            print("Not enough drive distance, {} mm v {} mm, x: {}, layer {}".format(dDrive,lConnector-lWireVessal,x,layers))
-        return False
-
-    # 6. Wire Vessal needs to be shorter than connector+core
-    if lWireVessal > lConnector+lCore:
-        if verbose:
-            print("Wire Vessal too long, {} mm, x: {}, layer {}".format(lWireVessal,x,layers))
-        return False
-
-    # 4. Maximum shell dimensions ($ r_{shellIn} $)
-    maxShell = 100 #mm
-    if rShellIn*2 > maxShell:
-        if verbose:
-            print("Shell Radius too large, {} mm, x: {}, layer {}".format(rShellIn,x,layers))
-        return False
-
-    # 3. Maximum volume of liquid metal in circuit ($ A_{wire} l_{wireTotal} $)
-    maxVolume = 15 #ml
-    aWire = rWireIn**2*np.pi
-    volume = aWire*lWireTotal
-    if volume/1e3 > maxVolume:
-        if verbose:
-            print("Volume too large, {} ml, x: {}, layer {}".format(volume/1e3,x,layers))
-        return False
-
-    return True
+# rWireIn lMag rMag lCore
+# r_rWireIn = (0.05,2.5) # mm - reasonable sizes for silicone tube radius
+r_lMag = (5,95) # mm - try not to exceed 10 cm size
+r_rMag = (1,20) # mm - try not to exceed 40 mm diameter - health and safety hazard
+r_lCore = (1,25) # mm - try to be decently sized
+r_lWireVessel = (5,95)
+grid = (r_lMag,r_rMag,r_lCore,r_lWireVessel)
+outSelect = 1 # optimising for min power * mass
 
 # %%
-def motorMain(x, *args):
+@jit(nopython=True)
+def motorOpt(x, *args):
 
     rho = args[0]
     sigma = args[1]
@@ -100,52 +77,205 @@ def motorMain(x, *args):
     deltaT = args[9]
     visco = args[10]
     outSelect = args[11]
+    rWireIn = args[12]/1000
 
     # print("rho:{}, sigma:{}, cp:{}, br:{}, dDrive:{}, fMotor:{}, freq:{}, thickWireWall:{}, layers:{}, deltaT:{}, outSelect:{}".format(rho,sigma,cp,br,dDrive,fMotor,freq,thickWireWall,layers,deltaT,outSelect))
-    
-    if not constraintsCheck(x, layers, rho, cp, thickWireWall,dDrive): # Check constraints
-        return np.Inf # return some really large number
+
     # print("Valid! layers {}, x = {}".format(layers,x))
 
-    # print("motorMain: {}".format(x))
+    # print("motorOpt: {}".format(x))
     
-    rWireIn = x[0] / 1000
-    lCore = x[1] / 1000
-    rCore = x[2] / 1000
-    lConnector = x[3] / 1000
-    lWireVessal = x[4] / 1000
+    lMag = x[0] / 1000
+    rMag = x[1] / 1000
+    lCore = x[2] / 1000
+    lWireVessel = x[3] / 1000
     dDrive = dDrive / 1000
     thickWireWall = thickWireWall / 1000
     
     rWireOut = rWireIn + thickWireWall # Wire outer radius
     
-    rShellIn = rCore+rWireOut*layers*2 # Shell inner radius
+    rShellIn = rMag+rWireOut*layers*2 # Shell inner radius
+    # if verbose:
+    #     print("rShellIn: {} mm".format(rShellIn*1e3))
 
     aWire = rWireIn**2*np.pi
-    lWireTotal = lWireVessal*np.pi*(layers+1)*layers + lWireVessal*rCore*np.pi/rWireOut # Total length of wire
-    
-    resTotal = lWireTotal/aWire/sigma # Total wire resistance
-    
-    rg = np.log(rShellIn/rCore)/(2*np.pi*lConnector) * REL_PERM_AIR# gap reluctance
+    lWireTotal = lWireVessel*np.pi*(layers+1)*layers + lWireVessel*rMag*np.pi/rWireOut # Total length of wire
+    # if verbose:
+    #     print("lWireTotal: {} m".format(lWireTotal))
 
-    rm = lCore / (np.pi*rCore**2) * REL_PERM_NEO
+    # 5. Minimum drive distance
+    if dDrive > (lWireVessel-lCore):
+        # if verbose:
+        #     print("Not enough drive distance, {} mm v {} mm, x: {}, layer {}".format(dDrive,lCore-lWireVessel,x,layers))
+        return BIG_NUM
+
+    # 6. Wire Vessel needs to be shorter than Core+Mag
+    if lWireVessel > lCore+lMag:
+        # if verbose:
+        #     print("Wire Vessel too long, {} mm, x: {}, layer {}".format(lWireVessel,x,layers))
+        return BIG_NUM
+
+    # 4. Maximum shell dimensions ($ r_{shellIn} $)
+    maxShell = 80 #mm
+    if rShellIn*2 > maxShell:
+        # if verbose:
+        #     print("Shell Radius too large, {} mm, x: {}, layer {}".format(rShellIn,x,layers))
+        return BIG_NUM
+
+    # 3. Maximum volume of liquid metal in circuit ($ A_{wire} l_{wireTotal} $)
+    maxVolume = 15 #ml
+    aWire = rWireIn**2*np.pi
+    volume = aWire*lWireTotal
+    if volume/1e3 > maxVolume:
+        # if verbose:
+        #     print("Volume too large, {} ml, x: {}, layer {}".format(volume/1e3,x,layers))
+        return BIG_NUM
+
+    resTotal = lWireTotal/aWire/sigma # Total wire resistance
+    # if verbose:
+    #     print("resTotal: {} Ohm".format(resTotal))
+    
+    rg = np.log(rShellIn/rMag)/(2*np.pi*lCore) * REL_PERM_AIR# gap reluctance
+    # if verbose:
+    #     print("RG:{}".format(rg))
+    rm = lMag / (np.pi*rMag**2) * REL_PERM_NEO
+    # if verbose:
+    #     print("RM:{}".format(rm))
 
     rmTtl = rg + rm # Total reluctance - approx. gap reluctance + magnet reluctance
     
-    emmf = br*lCore*REL_PERM_NEO # electromagneticmotive force
+    emmf = br*lMag*REL_PERM_NEO # electromagneticmotive force
     
     flux = emmf / rmTtl # Magnetic flux through circuit
 
-    AA = lConnector*2*np.pi*(rCore+layers*rWireOut*2-rWireOut) # approx the largest area layer
+    AA = lCore*2*np.pi*(rMag+layers*rWireOut*2-rWireOut) # approx the largest area layer
 
-    if lWireVessal > lConnector:
-        lWireInField = lConnector*np.pi*(layers+1)*layers + lConnector*rCore*np.pi/rWireOut
+    if lWireVessel > lCore:
+        lWireInField = lCore*np.pi*(layers+1)*layers + lCore*rMag*np.pi/rWireOut
     else:
-        lWireInField = lWireVessal*np.pi*(layers+1)*layers + lWireVessal*rCore*np.pi/rWireOut
+        lWireInField = lWireVessel*np.pi*(layers+1)*layers + lWireVessel*rMag*np.pi/rWireOut
     
     # LAA = 0 # Length of wire in field/AreaAction
     # for layer in range(1,layers+1):
-    #     LAA += (2*layer-1)/(2*rCore+4*layer*rWireOut-2*rWireOut)
+    #     LAA += (2*layer-1)/(2*rMag+4*layer*rWireOut-2*rWireOut)
+    
+    B = flux / AA
+
+    if B > 2:
+        # if verbose:
+        #     print("B too large: {} H".format(B))
+        B = 2
+
+    maxI = 18
+    I = fMotor / B / lWireInField
+    # if verbose:
+    #     print("I: {} A".format(I))
+    if I > maxI:
+        return BIG_NUM
+
+    # V = I * resTotal
+    # if verbose:
+    #     print("V: {} V".format(V))
+
+    pIn = I**2 * resTotal
+    # if verbose:
+    #     print("Pin: {} W".format(pIn))
+
+    pMech = 2*dDrive*fMotor*freq # Mechanical power output
+
+    pHeat = pIn - pMech
+
+    Q = pHeat / (RHO_WIRE*deltaT*CP_WIRE)
+    # if verbose:
+    #     print("Q: {} ml/s".format(Q*1e6))
+
+    # pressure = 8*visco*lWireTotal*Q/(np.pi*rWireIn**4)
+    # if verbose:
+    #     print("Pressure: {} Pa".format(pressure))
+
+    if Q <= 0 or pIn <= 0:
+        # if verbose:
+        #     print("Invalid Output! layers {}, x = {}, Q = {}, pIn = {}".format(layers,x,Q,pIn))
+        return BIG_NUM # return some really large number
+    
+    volWire = lWireTotal * np.pi * rWireIn**2
+    volTube = lWireTotal * np.pi * (rWireOut**2 - rWireIn**2)
+    volMag = lMag * np.pi * rMag**2
+    volCore = lCore * np.pi * rMag**2
+    thickShell = 5e-3
+    volShell = (lCore+lMag) * np.pi * ((rShellIn+thickShell)**2 - rShellIn**2) + thickShell * np.pi * (rShellIn+thickShell)**2
+
+    massTotal = volWire*RHO_WIRE+volTube*RHO_TUBE+(volCore+volShell)*RHO_IRON+volMag*RHO_MAG
+
+    # Choose which output variable to optimise for
+    # Can optimise power * mass or power * volume to maximise size efficiency
+    if outSelect == 0:
+        return Q
+    elif outSelect == 1:
+        return pIn * massTotal
+    # elif outSelect== -1:
+    #     return Q,pIn,I,V,pressure
+
+
+def motorMain(x, *args):
+    rho = args[0]
+    sigma = args[1]
+    cp = args[2]
+    br = args[3]
+    dDrive = args[4]
+    fMotor = args[5]
+    freq = args[6]
+    thickWireWall = args[7]
+    layers = args[8]
+    deltaT = args[9]
+    visco = args[10]
+    rWireIn = args[11]/1000
+    
+    lMag = x[0] / 1000
+    rMag = x[1] / 1000
+    lCore = x[2] / 1000
+    lWireVessel = x[3] / 1000
+    dDrive = dDrive / 1000
+    thickWireWall = thickWireWall / 1000
+    
+    rWireOut = rWireIn + thickWireWall # Wire outer radius
+    
+    rShellIn = rMag+rWireOut*layers*2 # Shell inner radius
+    if verbose:
+        print("rShellIn: {} mm".format(rShellIn*1e3))
+
+    aWire = rWireIn**2*np.pi
+    lWireTotal = lWireVessel*np.pi*(layers+1)*layers + lWireVessel*rMag*np.pi/rWireOut # Total length of wire
+    if verbose:
+        print("lWireTotal: {} m".format(lWireTotal))
+
+    resTotal = lWireTotal/aWire/sigma # Total wire resistance
+    if verbose:
+        print("resTotal: {} Ohm".format(resTotal))
+    
+    rg = np.log(rShellIn/rMag)/(2*np.pi*lCore) * REL_PERM_AIR# gap reluctance
+    if verbose:
+        print("RG:{}".format(rg))
+    rm = lMag / (np.pi*rMag**2) * REL_PERM_NEO
+    if verbose:
+        print("RM:{}".format(rm))
+
+    rmTtl = rg + rm # Total reluctance - approx. gap reluctance + magnet reluctance
+    
+    emmf = br*lMag*REL_PERM_NEO # electromagneticmotive force
+    
+    flux = emmf / rmTtl # Magnetic flux through circuit
+
+    AA = lCore*2*np.pi*(rMag+layers*rWireOut*2-rWireOut) # approx the largest area layer
+
+    if lWireVessel > lCore:
+        lWireInField = lWireTotal / lWireVessel * lCore
+    else:
+        lWireInField = lWireTotal
+    
+    # LAA = 0 # Length of wire in field/AreaAction
+    # for layer in range(1,layers+1):
+    #     LAA += (2*layer-1)/(2*rMag+4*layer*rWireOut-2*rWireOut)
     
     B = flux / AA
 
@@ -153,6 +283,8 @@ def motorMain(x, *args):
         if verbose:
             print("B too large: {} H".format(B))
         B = 2
+    if verbose:
+        print("B: {} H".format(B))
 
     I = fMotor / B / lWireInField
     if verbose:
@@ -174,48 +306,34 @@ def motorMain(x, *args):
     if verbose:
         print("Q: {} ml/s".format(Q*1e6))
 
-    pressure = 8*visco*lWireTotal*Q/(np.pi*rCore**4)
+    pressure = 8*visco*lWireTotal*Q/(np.pi*rWireIn**4)
     if verbose:
         print("Pressure: {} Pa".format(pressure))
 
     if Q <= 0 or pIn <= 0:
         if verbose:
             print("Invalid Output! layers {}, x = {}, Q = {}, pIn = {}".format(layers,x,Q,pIn))
-        return np.Inf # return some really large number
-
-    # Choose which output variable to optimise for
-    if outSelect == 0:
-        return Q
-    else:
-        return pIn
-
+        return BIG_NUM # return some really large number
     
+    volWire = lWireTotal * np.pi * rWireIn**2
+    volTube = lWireTotal * np.pi * (rWireOut**2 - rWireIn**2)
+    volMag = lMag * np.pi * rMag**2
+    volCore = lCore * np.pi * rMag**2
+    thickShell = 5e-3
+    volShell = (lCore+lMag) * np.pi * ((rShellIn+thickShell)**2 - rShellIn**2) + thickShell * np.pi * (rShellIn+thickShell)**2
 
-# %%
-# rWireIn lCore rCore lConnector
-r_rWireIn = (0.5,3.5) # mm - reasonable sizes for silicone tube radius
-r_lCore = (5,100) # mm - try not to exceed 10 cm size
-r_rCore = (5,40) # mm - try not to exceed 10 cm size
-r_lConnector = (1,25) # mm - try to be decently sized
-r_lWireVessal = (10,100)
-grid = (r_rWireIn,r_lCore,r_rCore,r_lConnector,r_lWireVessal)
+    massTotal = volWire*RHO_WIRE+volTube*RHO_TUBE+(volCore+volShell)*RHO_IRON+volMag*RHO_MAG
 
-thickWireWall = 0.75
-layers = 1
-deltaT = 60
-outSelect = 0 # optimising for min Flow
+    return Q,pIn,pIn * massTotal,I,V,pressure
 
-# %%
-# def motorMain(x,rho,sigma,cp,br,dDrive,fMotor,freq,thickWireWall,layers,deltaT,outSelect)
+# %% DON'T RUN ON JUPYTER
+# def motorOpt(x,rho,sigma,cp,br,dDrive,fMotor,freq,thickWireWall,layers,deltaT,outSelect)
 optOut = []
-maxLayers = 5
-
-#%% DON'T RUN ON JUPYTER
 if refresh:
     for layers in range(1,maxLayers+1):
         print("Layer {}".format(layers))
-        arglist = (RHO_WIRE,SIGMA_WIRE,CP_WIRE,BR_CORE,dDrive,fMotor,freq,thickWireWall,layers,deltaT,VISCO_WIRE,outSelect)
-        optOut.append(brute(motorMain,ranges=grid,args=arglist,Ns=20,full_output=True,disp=True,finish=None))
+        arglist = (RHO_WIRE,SIGMA_WIRE,CP_WIRE,BR_Mag,dDrive,fMotor,freq,thickWireWall,layers,deltaT,VISCO_WIRE,outSelect,rWireIn)
+        optOut.append(brute(motorOpt,ranges=grid,args=arglist,Ns=25,full_output=True,disp=True,finish=None))
 
     with open('optOut.pkl','wb') as f:
         pickle.dump(optOut, f)
@@ -226,19 +344,18 @@ with open('optOut.pkl','rb') as f:
     optOut = pickle.load(f)
 
 # DIAGRAMMING
-def diagramDraw(x,layers,thickWireWall):
-    rWireIn = x[0]
-    lCore = x[1]
-    rCore = x[2]
-    lConnector = x[3]
-    lWireVessal = x[4]
+def diagramDraw(x,layers,thickWireWall,rWireIn):
+    lMag = x[0]
+    rMag = x[1]
+    lCore = x[2]
+    lWireVessel = x[3]
     thickShell = 5
 
     rWireOut = rWireIn + thickWireWall # Wire outer radius
-    rShellIn = rCore+rWireOut*layers*2 # Shell inner radius
+    rShellIn = rMag+rWireOut*layers*2 # Shell inner radius
     rShellOut = rShellIn + thickShell
     isize = (200,200)
-    lTtl = lConnector+lCore+thickShell
+    lTtl = lCore+lMag+thickShell
 
     xblank = (isize[0] - lTtl)/2
     yblank = (isize[1] - 2*rShellOut)/2
@@ -248,6 +365,15 @@ def diagramDraw(x,layers,thickWireWall):
     ax = fig.add_subplot(111)
     plt.xlim([0, isize[0]])
     plt.ylim([0, isize[1]])
+    plt.title("{} Layer Optimised Motor Schematic".format(layers+1))
+    plt.xlabel("mm")
+    plt.ylabel("mm")
+
+    shellPatch = patches.Patch(color='grey', label='Shell')
+    magPatch = patches.Patch(color='green', label='Magnet')
+    corePatch = patches.Patch(color='red', label='Core')
+    wirePatch = patches.Patch(color='blue', label='Wires')
+    plt.legend(handles=[shellPatch,magPatch,corePatch,wirePatch])
 
     # Shell - grey
     shellTop0 = (xblank,yblank+thickShell+2*rShellIn)
@@ -268,35 +394,35 @@ def diagramDraw(x,layers,thickWireWall):
     shellLeft = patches.Rectangle(shellLeft0,shellLeftWidth,shellLeftHeight,linewidth=0,color='grey')
     ax.add_patch(shellLeft)
 
-    # core - green
-    core0 = (xblank+thickShell,yblank+rShellOut-rCore)
-    coreWidth = lCore
-    coreHeight = 2*rCore
+    # Mag - green
+    Mag0 = (xblank+thickShell,yblank+rShellOut-rMag)
+    MagWidth = lMag
+    MagHeight = 2*rMag
     # Create a Rectangle patch
-    core = patches.Rectangle(core0,coreWidth,coreHeight,linewidth=0,color='g')
+    Mag = patches.Rectangle(Mag0,MagWidth,MagHeight,linewidth=0,color='g')
     # Add the patch to the Axes
-    ax.add_patch(core)
+    ax.add_patch(Mag)
 
-    # connector - red
-    connector0 = (xblank+thickShell+lCore,yblank+rShellOut-rCore)
-    connectorWidth = lConnector
-    connectorHeight = 2*rCore
+    # Core - red
+    Core0 = (xblank+thickShell+lMag,yblank+rShellOut-rMag)
+    CoreWidth = lCore
+    CoreHeight = 2*rMag
     # Create a Rectangle patch
-    connector = patches.Rectangle(connector0,connectorWidth,connectorHeight,color='r')
+    Core = patches.Rectangle(Core0,CoreWidth,CoreHeight,color='r')
     # Add the patch to the Axes
-    ax.add_patch(connector)
+    ax.add_patch(Core)
 
     # Wires - blue
-    wire0 = (xblank+thickShell,yblank+rShellOut-rCore-layers*rWireOut*2)
-    wireWidth = lWireVessal
+    wire0 = (xblank+thickShell+lMag+lCore,yblank+rShellOut-rMag-layers*rWireOut*2)
+    wireWidth = -lWireVessel
     wireHeight = layers*rWireOut*2
     # Create a Rectangle patch
     wire = patches.Rectangle(wire0,wireWidth,wireHeight,color='b')
     # Add the patch to the Axes
     ax.add_patch(wire)
 
-    wire2_0 = (xblank+thickShell,yblank+rShellOut+rCore)
-    wire2Width = lWireVessal
+    wire2_0 = (xblank+thickShell+lMag+lCore,yblank+rShellOut+rMag)
+    wire2Width = -lWireVessel
     wire2Height = layers*rWireOut*2
     # Create a Rectangle patch
     wire = patches.Rectangle(wire2_0,wire2Width,wire2Height,color='b')
@@ -308,8 +434,8 @@ def diagramDraw(x,layers,thickWireWall):
         print("shell:{}".format((shellTop0,shellTopWidth,shellTopHeight)))
         print("shell:{}".format((shellBottom0,shellBottomWidth,shellBottomHeight)))
         print("shell:{}".format((shellLeft0,shellLeftWidth,shellLeftHeight)))
-        print("core:{}".format((core0,coreWidth,coreHeight)))
-        print("connector:{}".format((connector0,connectorWidth,connectorHeight)))
+        print("Mag:{}".format((Mag0,MagWidth,MagHeight)))
+        print("Core:{}".format((Core0,CoreWidth,CoreHeight)))
         print("wires1:{}".format((wire0,wireWidth,wireHeight)))
         print("wires2:{}".format((wire2_0,wire2Width,wire2Height)))
 
@@ -320,12 +446,46 @@ def diagramDraw(x,layers,thickWireWall):
 #%%
 for layers in range(maxLayers): 
     print("\n********LAYER: {}********".format(layers+1))
-    print("rWireIn:{} mm".format(optOut[layers][0][0]))
-    print("lCore:{} mm".format(optOut[layers][0][1]))
-    print("rCore:{} mm".format(optOut[layers][0][2]))
-    print("lConnector:{} mm".format(optOut[layers][0][3]))
-    print("lWireVessal:{} mm".format(optOut[layers][0][4]))
-    print(motorMain(optOut[layers][0],RHO_WIRE,SIGMA_WIRE,CP_WIRE,BR_CORE,dDrive,fMotor,freq,thickWireWall,layers+1,deltaT,VISCO_WIRE,outSelect))
+    # Don't optimise for wire size
+    print("lMag:{} mm".format(optOut[layers][0][0]))
+    print("rMag:{} mm".format(optOut[layers][0][1]))
+    print("lCore:{} mm".format(optOut[layers][0][2]))
+    print("lWireVessel:{} mm".format(optOut[layers][0][3]))
+    Q,pIn,pInMassTotal,I,V,pressure = motorMain(optOut[layers][0],RHO_WIRE,SIGMA_WIRE,CP_WIRE,BR_Mag,dDrive,fMotor,freq,thickWireWall,layers,deltaT,VISCO_WIRE,rWireIn)
+    print("Q:{} ml/s".format(Q*1e6))
+    print("Pin:{} W".format(pIn))
+    print("Pin*massTotal:{} W*kg".format(pInMassTotal))
+    print("I:{} A".format(I))
+    print("V:{} V".format(V))
+    print("Pressure:{} kPa".format(pressure*1e-3))
+    
+    with open('graphingLayer{}.pkl'.format(layers),'wb') as f:
+        pickle.dump((optOut[layers][0],Q,pIn,I,V,pressure), f)
+    
     if draw:
-        ax,fig = diagramDraw(optOut[layers][0], layers, thickWireWall)
+        ax,fig = diagramDraw(optOut[layers][0], layers, thickWireWall,rWireIn)
         plt.show()
+
+#%%
+layers = 8
+print("\nManual")
+print("\n********LAYER: {}********".format(layers))
+x = (40,20,12,27.5)
+Q,pIn,pInMassTotal,I,V,pressure = motorMain(x,RHO_WIRE,SIGMA_WIRE,CP_WIRE,BR_Mag,dDrive,fMotor,freq,thickWireWall,layers,deltaT,VISCO_WIRE,rWireIn)
+
+lMag = x[0]
+rMag = x[1]
+lCore = x[2]
+lWireVessel = x[3]
+
+print("lMag:{} mm".format(lMag))
+print("rMag:{} mm".format(rMag))
+print("lCore:{} mm".format(lCore))
+print("lWireVessel:{} mm".format(lWireVessel))
+print("Q:{} ml/s".format(Q*1e6))
+print("Pin:{} W".format(pIn))
+print("I:{} A".format(I))
+print("V:{} V".format(V))
+print("Pressure:{} kPa".format(pressure*1e-3))
+print("Pin*massTotal:{} W*kg".format(pInMassTotal))
+print("total length: {} mm".format(lCore+lMag))
