@@ -41,7 +41,7 @@ BIG_NUM = 1e12
 moe = 1e-8
 
 thickWireWall = 0.5 # mm
-rWireIn = 1 # mm
+rWireIn = 1.015 # mm
 
 dDrive = 15 # 9mm
 fMotor = 10 # 9N
@@ -377,7 +377,7 @@ def diagramDraw(x,layers,thickWireWall,rWireIn):
     ax = fig.add_subplot(111)
     plt.xlim([0, isize[0]])
     plt.ylim([0, isize[1]])
-    plt.title("{} Layer Optimised Motor Schematic".format(layers+1))
+    plt.title("{} Layer Optimised Motor Schematic".format((layers+1)*2))
     plt.xlabel("mm")
     plt.ylabel("mm")
 
@@ -451,7 +451,7 @@ def diagramDraw(x,layers,thickWireWall,rWireIn):
         print("wires1:{}".format((wire0,wireWidth,wireHeight)))
         print("wires2:{}".format((wire2_0,wire2Width,wire2Height)))
 
-    fig.savefig("generatedImages/{}_layers.png".format(layers+1), dpi=300)
+    fig.savefig("generatedImages/{}_layers.png".format((layers+1)*2), dpi=300)
 
     return ax,fig
 
