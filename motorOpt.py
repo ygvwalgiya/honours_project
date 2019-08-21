@@ -47,9 +47,9 @@ dDrive = 15 # 9mm
 fMotor = 10 # 9N
 freq = 5 # 1Hz
 
-deltaT = 50
+deltaT = 30
 
-maxLayers = 8
+maxLayers = 10
 
 # %%
 # rWireIn lMag rMag lCore
@@ -99,7 +99,12 @@ def motorOpt(x, *args):
     #     print("rShellIn: {} mm".format(rShellIn*1e3))
 
     aWire = rWireIn**2*np.pi
-    lWireTotal = lWireVessel*np.pi*(layers+1)*layers + lWireVessel*rMag*np.pi/rWireOut # Total length of wire
+    #lWireTotal = lWireVessel*np.pi*(layers+1)*layers + lWireVessel*rMag*np.pi/rWireOut # Total length of wire
+    lWireTotal = 0
+    wireCycle = lWireVessel/(rWireOut*2)
+    for i in range(1,layers+1):
+        rLayer = (i*rWireOut*2)+rMag
+        lWireTotal += 2*rLayer*np.pi * wireCycle
     # if verbose:
     #     print("lWireTotal: {} m".format(lWireTotal))
 
@@ -245,7 +250,14 @@ def motorMain(x, *args):
         print("rShellIn: {} mm".format(rShellIn*1e3))
 
     aWire = rWireIn**2*np.pi
-    lWireTotal = lWireVessel*np.pi*(layers+1)*layers + lWireVessel*rMag*np.pi/rWireOut # Total length of wire
+    #lWireTotal = lWireVessel*np.pi*(layers+1)*layers + lWireVessel*rMag*np.pi/rWireOut # Total length of wire
+    lWireTotal = 0
+    wireCycle = lWireVessel/(rWireOut*2)
+    for i in range(1,layers+1):
+        rLayer = (i*rWireOut*2)+rMag+rWireOut
+        lWireTotal += 2*rLayer*np.pi * wireCycle
+#        print(lWireTotal)
+
     if verbose:
         print("lWireTotal: {} m".format(lWireTotal))
 
@@ -330,7 +342,7 @@ def motorMain(x, *args):
 # def motorOpt(x,rho,sigma,cp,br,dDrive,fMotor,freq,thickWireWall,layers,deltaT,outSelect)
 optOut = []
 if refresh:
-    for layers in range(1,maxLayers+1):
+    for layers in range(2,maxLayers+1,2):
         print("Layer {}".format(layers))
         arglist = (RHO_WIRE,SIGMA_WIRE,CP_WIRE,BR_Mag,dDrive,fMotor,freq,thickWireWall,layers,deltaT,VISCO_WIRE,outSelect,rWireIn)
         optOut.append(brute(motorOpt,ranges=grid,args=arglist,Ns=25,full_output=True,disp=True,finish=None))
@@ -444,20 +456,22 @@ def diagramDraw(x,layers,thickWireWall,rWireIn):
     return ax,fig
 
 #%%
-for layers in range(maxLayers): 
-    print("\n********LAYER: {}********".format(layers+1))
+for layers in range(int(maxLayers/2)): 
+    print("\n********LAYER: {}********".format((layers+1)*2))
     # Don't optimise for wire size
     print("lMag:{} mm".format(optOut[layers][0][0]))
     print("rMag:{} mm".format(optOut[layers][0][1]))
     print("lCore:{} mm".format(optOut[layers][0][2]))
     print("lWireVessel:{} mm".format(optOut[layers][0][3]))
-    Q,pIn,pInMassTotal,I,V,pressure = motorMain(optOut[layers][0],RHO_WIRE,SIGMA_WIRE,CP_WIRE,BR_Mag,dDrive,fMotor,freq,thickWireWall,layers,deltaT,VISCO_WIRE,rWireIn)
+    Q,pIn,pInMassTotal,I,V,pressure = motorMain(optOut[layers][0],RHO_WIRE,SIGMA_WIRE,CP_WIRE,BR_Mag,dDrive,fMotor,freq,thickWireWall,(layers+1)*2,deltaT,VISCO_WIRE,rWireIn)
     print("Q:{} ml/s".format(Q*1e6))
     print("Pin:{} W".format(pIn))
     print("Pin*massTotal:{} W*kg".format(pInMassTotal))
     print("I:{} A".format(I))
     print("V:{} V".format(V))
     print("Pressure:{} kPa".format(pressure*1e-3))
+    print("rWireIn:{} mm".format(rWireIn))
+    print("thickWireWall:{} mm".format(thickWireWall))
     
     with open('graphingLayer{}.pkl'.format(layers),'wb') as f:
         pickle.dump((optOut[layers][0],Q,pIn,I,V,pressure), f)
@@ -489,3 +503,5 @@ print("V:{} V".format(V))
 print("Pressure:{} kPa".format(pressure*1e-3))
 print("Pin*massTotal:{} W*kg".format(pInMassTotal))
 print("total length: {} mm".format(lCore+lMag))
+print("rWireIn:{} mm".format(rWireIn))
+print("thickWireWall:{} mm".format(thickWireWall))
