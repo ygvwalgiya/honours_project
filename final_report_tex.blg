@@ -1,0 +1,15 @@
+[0] Config.pm:304> INFO - This is Biber 2.12
+[0] Config.pm:307> INFO - Logfile is 'final_report_tex.blg'
+[31] biber:315> INFO - === Sat Sep 21, 2019, 23:47:09
+[71] Biber.pm:371> INFO - Reading 'final_report_tex.bcf'
+[122] Biber.pm:889> INFO - Found 1 citekeys in bib section 0
+[132] Biber.pm:4093> INFO - Processing section 0
+[174] Biber.pm:4254> INFO - Looking for bibtex format file 'FinalReport.bib' for section 0
+[175] bibtex.pm:1523> INFO - LaTeX decoding ...
+[178] bibtex.pm:1340> INFO - Found BibTeX data source 'FinalReport.bib'
+[190] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[190] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[190] Biber.pm:3921> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[190] Biber.pm:3927> INFO - No sort tailoring available for locale 'en-US'
+[212] bbl.pm:636> INFO - Writing 'final_report_tex.bbl' with encoding 'UTF-8'
+[213] bbl.pm:739> INFO - Output to final_report_tex.bbl

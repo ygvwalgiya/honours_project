@@ -1,0 +1,50 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {english}{}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Introduction}{5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Design, Manufacturing and Assembly}{6}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1}Mathematical Modelling}{6}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.1.1}Motor Force}{6}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.1.2}Heat and Temperature}{6}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2}Optimisation Algorithm}{6}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3}Physical Design and Manufacturing}{6}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.3.1}Shell}{7}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.3.2}Core}{7}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.3.3}Wire Bobbin}{7}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4}Assembly}{7}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.4.1}Shell and Magnet Assembly}{7}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.4.2}Wire Assembly}{7}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.4.3}Health, Safety and Containment}{7}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}Experiment Designs and Results}{8}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1}Experiment 1: Force Characterisation}{8}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.1.1}Method}{8}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.1.2}Results}{8}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2}Experiment 2: Circulation Thermoregulation}{8}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.2.1}Method}{8}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.2.2}Results}{8}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Discussion}{9}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}Conclusion}{10}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6}Appendicies}{11}% 

@@ -1,0 +1,73 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.0 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{liuLiquidMetalMachine2016}{article}{}
+      \name{author}{1}{}{%
+        {{hash=83f95dca7c81df3fe67380769eb0321c}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Jing},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{83f95dca7c81df3fe67380769eb0321c}
+      \strng{fullhash}{83f95dca7c81df3fe67380769eb0321c}
+      \strng{bibnamehash}{83f95dca7c81df3fe67380769eb0321c}
+      \strng{authorbibnamehash}{83f95dca7c81df3fe67380769eb0321c}
+      \strng{authornamehash}{83f95dca7c81df3fe67380769eb0321c}
+      \strng{authorfullhash}{83f95dca7c81df3fe67380769eb0321c}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{1}
+      \field{issn}{1869-1900}
+      \field{journaltitle}{Science China Technological Sciences}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{number}{11}
+      \field{shortjournal}{Sci. China Technol. Sci.}
+      \field{title}{Liquid Metal Machine Is Evolving to Soft Robotics}
+      \field{urlday}{2}
+      \field{urlmonth}{5}
+      \field{urlyear}{2019}
+      \field{volume}{59}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1793\bibrangedash 1794}
+      \range{pages}{2}
+      \verb{doi}
+      \verb 10.1007/s11431-016-0696-7
+      \endverb
+      \verb{file}
+      \verb /home/guan/Zotero/storage/FTUSJRNC/Liu - 2016 - Liquid metal machine is evolving to soft robotics.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s11431-016-0696-7
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s11431-016-0696-7
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
