@@ -1,4 +1,4 @@
-\documentclass[a4paper]{article}
+\documentclass[a4paper,12pt]{article}
 
 \usepackage{anysize}
 \marginsize{30mm}{20mm}{20mm}{20mm}
@@ -7,6 +7,10 @@
 \usepackage[style=ieee,backend=biber]{biblatex}
 \addbibresource{FinalReport.bib}
 \usepackage{amsmath}
+\usepackage{graphicx}
+\graphicspath{ {./generatedImages/} }
+\usepackage{svg}
+
 
 %opening
 \title{Linear Direct Current Electromagnetic Motor with Liquid Eutectic Gallium-Indium Alloy Coil}
@@ -130,30 +134,57 @@ F=BIL_{active}
 \end{equation}
 
 \begin{equation}\label{eq:activel}
-l_{active} = \frac{l_{}}
+l_{active} = \frac{l_{in}=l_{2}}{}
 \end{equation}
 
 \subsubsection{Heat and Temperature}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.4]{motorheat.png}
+\caption{Diagram of where motor heat comes from}
+\end{figure}
+something
+
 \subsection{Optimisation Algorithm}
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.4]{optiAlgro.png}
+	\caption{Diagrammatic representation of optimisaiton algorithm inputs and outputs}
+\end{figure}
+something else
+
 \subsection{Physical Design and Manufacturing}
 wires\\
 magnet
+
 \subsubsection{Shell}
+
 \subsubsection{Core}
+
 \subsubsection{Wire Bobbin}
+
 \subsection{Assembly}
+
 \subsubsection{Shell and Magnet Assembly}
+
 \subsubsection{Wire Assembly}
+
 \subsubsection{Health, Safety and Containment}
 
 \newpage
 
 \section{Experiment Designs and Results}
+
 \subsection{Experiment 1: Force Characterisation}
+
 \subsubsection{Method}
+
 \subsubsection{Results}
+
 \subsection{Experiment 2: Circulation Thermoregulation}
+
 \subsubsection{Method}
+
 \subsubsection{Results}
 
 \newpage
