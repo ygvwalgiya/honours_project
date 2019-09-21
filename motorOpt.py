@@ -32,8 +32,8 @@ REL_PERM_STEEL = 2000
 REL_PERM_NEO = 1.05
 REL_PERM_AIR = 1
 VISCO_WIRE = 0.0024 #Pa.s
-RHO_TUBE = 1250 # kg/m3
-RHO_IRON = 7874 # kg/m3
+RHO_TUBE = 1100 # kg/m3
+RHO_IRON = 7850 # kg/m3
 RHO_MAG = 7010 # kg/m3
 
 BIG_NUM = 1e12
@@ -49,7 +49,7 @@ freq = 5 # 1Hz
 
 deltaT = 30
 
-maxLayers = 10
+maxLayers = 14
 
 # %%
 # rWireIn lMag rMag lCore
@@ -136,7 +136,7 @@ def motorOpt(x, *args):
         #     print("Volume too large, {} ml, x: {}, layer {}".format(volume/1e3,x,layers))
         return BIG_NUM
 
-    resTotal = lWireTotal/aWire/sigma # Total wire resistance
+    resTotal = lWireTotal/aWire/sigma/4 # Total wire resistance
     # if verbose:
     #     print("resTotal: {} Ohm".format(resTotal))
     
@@ -208,7 +208,8 @@ def motorOpt(x, *args):
     volMag = lMag * np.pi * rMag**2
     volCore = lCore * np.pi * rMag**2
     thickShell = 5e-3
-    volShell = (lCore+lMag) * np.pi * ((rShellIn+thickShell)**2 - rShellIn**2) + thickShell * np.pi * (rShellIn+thickShell)**2
+    thickBase = 5e-3
+    volShell = (lCore+lMag) * np.pi * ((rShellIn+thickShell)**2 - rShellIn**2) + thickBase * np.pi * (rShellIn+thickShell)**2
 
     massTotal = volWire*RHO_WIRE+volTube*RHO_TUBE+(volCore+volShell)*RHO_IRON+volMag*RHO_MAG
 
@@ -247,7 +248,7 @@ def motorMain(x, *args):
     
     rShellIn = rMag+rWireOut*layers*2+1.5e-3 # Shell inner radius
     if verbose:
-        print("rShellIn: {} mm".format(rShellIn*1e3))
+        print("rShellIn, {} mm".format(rShellIn*1e3))
 
     aWire = rWireIn**2*np.pi
     #lWireTotal = lWireVessel*np.pi*(layers+1)*layers + lWireVessel*rMag*np.pi/rWireOut # Total length of wire
@@ -259,18 +260,18 @@ def motorMain(x, *args):
 #        print(lWireTotal)
 
     if verbose:
-        print("lWireTotal: {} m".format(lWireTotal))
+        print("lWireTotal, {} m".format(lWireTotal))
 
-    resTotal = lWireTotal/aWire/sigma # Total wire resistance
+    resTotal = lWireTotal/aWire/sigma/4 # Total wire resistance
     if verbose:
-        print("resTotal: {} Ohm".format(resTotal))
+        print("resTotal, {} Ohm".format(resTotal))
     
     rg = np.log(rShellIn/rMag)/(2*np.pi*lCore) * REL_PERM_AIR# gap reluctance
     if verbose:
-        print("RG:{}".format(rg))
+        print("RG,{}".format(rg))
     rm = lMag / (np.pi*rMag**2) * REL_PERM_NEO
     if verbose:
-        print("RM:{}".format(rm))
+        print("RM,{}".format(rm))
 
     rmTtl = rg + rm # Total reluctance - approx. gap reluctance + magnet reluctance
     
@@ -296,19 +297,19 @@ def motorMain(x, *args):
             print("B too large: {} H".format(B))
         B = 2
     if verbose:
-        print("B: {} H".format(B))
+        print("B, {} H".format(B))
 
     I = fMotor / B / lWireInField
     if verbose:
-        print("I: {} A".format(I))
+        print("I, {} A".format(I))
 
     V = I * resTotal
     if verbose:
-        print("V: {} V".format(V))
+        print("V, {} V".format(V))
 
     pIn = I**2 * resTotal
     if verbose:
-        print("Pin: {} W".format(pIn))
+        print("Pin, {} W".format(pIn))
 
     pMech = 2*dDrive*fMotor*freq # Mechanical power output
 
@@ -316,11 +317,11 @@ def motorMain(x, *args):
 
     Q = pHeat / (RHO_WIRE*deltaT*CP_WIRE)
     if verbose:
-        print("Q: {} ml/s".format(Q*1e6))
+        print("Q, {} ml/s".format(Q*1e6))
 
     pressure = 8*visco*lWireTotal*Q/(np.pi*rWireIn**4)
     if verbose:
-        print("Pressure: {} Pa".format(pressure))
+        print("Pressure, {} Pa".format(pressure))
 
     if Q <= 0 or pIn <= 0:
         if verbose:
@@ -331,12 +332,13 @@ def motorMain(x, *args):
     volTube = lWireTotal * np.pi * (rWireOut**2 - rWireIn**2)
     volMag = lMag * np.pi * rMag**2
     volCore = lCore * np.pi * rMag**2
-    thickShell = 5e-3
-    volShell = (lCore+lMag) * np.pi * ((rShellIn+thickShell)**2 - rShellIn**2) + thickShell * np.pi * (rShellIn+thickShell)**2
+    thickShell = 3.5e-3
+    thickBase = 10e-3
+    volShell = (lCore+lMag) * np.pi * ((rShellIn+thickShell)**2 - rShellIn**2) + thickBase * np.pi * (rShellIn+thickShell)**2
 
     massTotal = volWire*RHO_WIRE+volTube*RHO_TUBE+(volCore+volShell)*RHO_IRON+volMag*RHO_MAG
 
-    return Q,pIn,pIn * massTotal,I,V,pressure
+    return Q,pIn,massTotal,pIn * massTotal,I,V,pressure
 
 # %% DON'T RUN ON JUPYTER
 # def motorOpt(x,rho,sigma,cp,br,dDrive,fMotor,freq,thickWireWall,layers,deltaT,outSelect)
@@ -356,18 +358,22 @@ with open('optOut.pkl','rb') as f:
     optOut = pickle.load(f)
 
 # DIAGRAMMING
-def diagramDraw(x,layers,thickWireWall,rWireIn):
+def diagramDraw(x,layers,thickWireWall,rWireIn,name):
     lMag = x[0]
     rMag = x[1]
     lCore = x[2]
     lWireVessel = x[3]
-    thickShell = 5
+    thickShell = 3.5
+    thickBase = 10
+    thickbobbin = 1.5
 
+    realLayers = (layers+1)*2
     rWireOut = rWireIn + thickWireWall # Wire outer radius
-    rShellIn = rMag+rWireOut*layers*2+1.5 # Shell inner radius
+    rShellIn = rMag+rWireOut*realLayers*2+thickbobbin # Shell inner radius
+    print(rMag)
     rShellOut = rShellIn + thickShell
-    isize = (200,200)
-    lTtl = lCore+lMag+thickShell
+    isize = (150,150)
+    lTtl = lCore+lMag+thickBase
 
     xblank = (isize[0] - lTtl)/2
     yblank = (isize[1] - 2*rShellOut)/2
@@ -377,17 +383,19 @@ def diagramDraw(x,layers,thickWireWall,rWireIn):
     ax = fig.add_subplot(111)
     plt.xlim([0, isize[0]])
     plt.ylim([0, isize[1]])
-    plt.title("{} Layer Optimised Motor Schematic".format((layers+1)*2))
+    plt.title("{} Layer Optimised Motor Schematic".format(realLayers))
     plt.xlabel("mm")
     plt.ylabel("mm")
+    plt.grid()
 
     shellPatch = patches.Patch(color='grey', label='Shell')
     magPatch = patches.Patch(color='green', label='Magnet')
     corePatch = patches.Patch(color='red', label='Core')
     wirePatch = patches.Patch(color='blue', label='Wires')
-    plt.legend(handles=[shellPatch,magPatch,corePatch,wirePatch])
+    bobbinPatch = patches.Patch(color='yellow', label='Wire Bobbin')
+    plt.legend(handles=[shellPatch,magPatch,corePatch,wirePatch,bobbinPatch])
 
-    # Shell - grey
+    # Shell -grey
     shellTop0 = (xblank,yblank+thickShell+2*rShellIn)
     shellTopWidth = lTtl
     shellTopHeight = thickShell
@@ -401,13 +409,13 @@ def diagramDraw(x,layers,thickWireWall,rWireIn):
     ax.add_patch(shellBottom)
 
     shellLeft0 = (xblank,yblank)
-    shellLeftWidth = thickShell
+    shellLeftWidth = thickBase
     shellLeftHeight = 2*rShellOut
     shellLeft = patches.Rectangle(shellLeft0,shellLeftWidth,shellLeftHeight,linewidth=0,color='grey')
     ax.add_patch(shellLeft)
 
     # Mag - green
-    Mag0 = (xblank+thickShell,yblank+rShellOut-rMag)
+    Mag0 = (xblank+thickBase,yblank+rShellOut-rMag)
     MagWidth = lMag
     MagHeight = 2*rMag
     # Create a Rectangle patch
@@ -416,30 +424,70 @@ def diagramDraw(x,layers,thickWireWall,rWireIn):
     ax.add_patch(Mag)
 
     # Core - red
-    Core0 = (xblank+thickShell+lMag,yblank+rShellOut-rMag)
+    Core0 = (xblank+thickBase+lMag,yblank+rShellOut-rMag)
     CoreWidth = lCore
     CoreHeight = 2*rMag
     # Create a Rectangle patch
-    Core = patches.Rectangle(Core0,CoreWidth,CoreHeight,color='r')
+    Core = patches.Rectangle(Core0,CoreWidth,CoreHeight,linewidth=0,color='r')
     # Add the patch to the Axes
     ax.add_patch(Core)
 
     # Wires - blue
-    wire0 = (xblank+thickShell+lMag+lCore,yblank+rShellOut-rMag-layers*rWireOut*2)
+    wire0 = (xblank+lTtl,yblank+2*rShellOut-thickShell)
     wireWidth = -lWireVessel
-    wireHeight = layers*rWireOut*2
+    wireHeight = -realLayers*rWireOut*2
     # Create a Rectangle patch
-    wire = patches.Rectangle(wire0,wireWidth,wireHeight,color='b')
+    wire = patches.Rectangle(wire0,wireWidth,wireHeight,linewidth=0,color='b')
+    # Add the patch to the Axes
+    ax.add_patch(wire)
+    wire2_0 = (xblank+lTtl,yblank+thickShell)
+    wire2Width = -lWireVessel
+    wire2Height = realLayers*rWireOut*2
+    # Create a Rectangle patch
+    wire = patches.Rectangle(wire2_0,wire2Width,wire2Height,linewidth=0,color='b')
     # Add the patch to the Axes
     ax.add_patch(wire)
 
-    wire2_0 = (xblank+thickShell+lMag+lCore,yblank+rShellOut+rMag)
-    wire2Width = -lWireVessel
-    wire2Height = layers*rWireOut*2
+    # bobbin - yellow
+    bobbintop0 = (xblank+lTtl,yblank+rShellOut+rMag)
+    bobbintopWidth = -lWireVessel
+    bobbintopHeight = thickbobbin
     # Create a Rectangle patch
-    wire = patches.Rectangle(wire2_0,wire2Width,wire2Height,color='b')
+    bobbintop = patches.Rectangle(bobbintop0,bobbintopWidth,bobbintopHeight,linewidth=0,color='y')
     # Add the patch to the Axes
-    ax.add_patch(wire)
+    ax.add_patch(bobbintop)
+
+    bobbinbottom0 = (xblank+lTtl,yblank+rShellOut-rMag)
+    bobbinbottomWidth = -lWireVessel
+    bobbinbottomHeight = -thickbobbin
+    # Create a Rectangle patch
+    bobbinbottom = patches.Rectangle(bobbinbottom0,bobbinbottomWidth,bobbinbottomHeight,linewidth=0,color='y')
+    # Add the patch to the Axes
+    ax.add_patch(bobbinbottom)
+
+    bobbinright0 = (xblank+lTtl,yblank+thickShell)
+    bobbinrightWidth = thickbobbin
+    bobbinrightHeight = 2*rShellIn
+    # Create a Rectangle patch
+    bobbinright = patches.Rectangle(bobbinright0,bobbinrightWidth,bobbinrightHeight,linewidth=0,color='y')
+    # Add the patch to the Axes
+    ax.add_patch(bobbinright)
+
+    bobbinflantop0 = (xblank+lTtl-lWireVessel,yblank+2*rShellOut-thickShell)
+    bobbinflantopWidth = -thickbobbin
+    bobbinflantopHeight = -realLayers*rWireOut*2-thickbobbin
+    # Create a Rectangle patch
+    bobbinflantop = patches.Rectangle(bobbinflantop0,bobbinflantopWidth,bobbinflantopHeight,linewidth=0,color='y')
+    # Add the patch to the Axes
+    ax.add_patch(bobbinflantop)
+
+    bobbinflanbottom0 = (xblank+lTtl-lWireVessel,yblank+thickShell)
+    bobbinflanbottomWidth = -thickbobbin
+    bobbinflanbottomHeight = realLayers*rWireOut*2+thickbobbin
+    # Create a Rectangle patch
+    bobbinflanbottom = patches.Rectangle(bobbinflanbottom0,bobbinflanbottomWidth,bobbinflanbottomHeight,linewidth=0,color='y')
+    # Add the patch to the Axes
+    ax.add_patch(bobbinflanbottom)
 
     if verbose:
         print("blank:{}".format((xblank,yblank)))
@@ -451,7 +499,7 @@ def diagramDraw(x,layers,thickWireWall,rWireIn):
         print("wires1:{}".format((wire0,wireWidth,wireHeight)))
         print("wires2:{}".format((wire2_0,wire2Width,wire2Height)))
 
-    fig.savefig("generatedImages/{}_layers.png".format((layers+1)*2), dpi=300)
+    fig.savefig("generatedImages/{}_layers.svg".format(name), dpi=300)
 
     return ax,fig
 
@@ -459,25 +507,26 @@ def diagramDraw(x,layers,thickWireWall,rWireIn):
 for layers in range(int(maxLayers/2)): 
     print("\n********LAYER: {}********".format((layers+1)*2))
     # Don't optimise for wire size
-    print("lMag:{} mm".format(optOut[layers][0][0]))
-    print("rMag:{} mm".format(optOut[layers][0][1]))
-    print("lCore:{} mm".format(optOut[layers][0][2]))
-    print("lWireVessel:{} mm".format(optOut[layers][0][3]))
-    Q,pIn,pInMassTotal,I,V,pressure = motorMain(optOut[layers][0],RHO_WIRE,SIGMA_WIRE,CP_WIRE,BR_Mag,dDrive,fMotor,freq,thickWireWall,(layers+1)*2,deltaT,VISCO_WIRE,rWireIn)
-    print("Q:{} ml/s".format(Q*1e6))
-    print("Pin:{} W".format(pIn))
-    print("Pin*massTotal:{} W*kg".format(pInMassTotal))
-    print("I:{} A".format(I))
-    print("V:{} V".format(V))
-    print("Pressure:{} kPa".format(pressure*1e-3))
-    print("rWireIn:{} mm".format(rWireIn))
-    print("thickWireWall:{} mm".format(thickWireWall))
+    print("lMag, {} mm".format(optOut[layers][0][0]))
+    print("rMag, {} mm".format(optOut[layers][0][1]))
+    print("lCore, {} mm".format(optOut[layers][0][2]))
+    print("lWireVessel, {} mm".format(optOut[layers][0][3]))
+    Q,pIn,massTotal,pInMassTotal,I,V,pressure = motorMain(optOut[layers][0],RHO_WIRE,SIGMA_WIRE,CP_WIRE,BR_Mag,dDrive,fMotor,freq,thickWireWall,(layers+1)*2,deltaT,VISCO_WIRE,rWireIn)
+    print("Q, {} ml/s".format(Q*1e6))
+    print("Pin, {} W".format(pIn))
+    print("massTotal, {} kg".format(massTotal))
+    print("Pin*massTotal, {} W*kg".format(pInMassTotal))
+    print("I, {} A".format(I))
+    print("V, {} V".format(V))
+    print("Pressure, {} kPa".format(pressure*1e-3))
+    print("rWireIn, {} mm".format(rWireIn))
+    print("thickWireWall, {} mm".format(thickWireWall))
     
     with open('graphingLayer{}.pkl'.format(layers),'wb') as f:
         pickle.dump((optOut[layers][0],Q,pIn,I,V,pressure), f)
     
     if draw:
-        ax,fig = diagramDraw(optOut[layers][0], layers, thickWireWall,rWireIn)
+        ax,fig = diagramDraw(optOut[layers][0], layers, thickWireWall,rWireIn,str((layers+1)*2))
         plt.show()
 
 #%%
@@ -485,23 +534,27 @@ layers = 6
 print("\nManual")
 print("\n********LAYER: {}********".format(layers))
 x = (40,20,8,24)
-Q,pIn,pInMassTotal,I,V,pressure = motorMain(x,RHO_WIRE,SIGMA_WIRE,CP_WIRE,BR_Mag,dDrive,fMotor,freq,thickWireWall,layers,deltaT,VISCO_WIRE,rWireIn)
+Q,pIn,massTotal,pInMassTotal,I,V,pressure = motorMain(x,RHO_WIRE,SIGMA_WIRE,CP_WIRE,BR_Mag,dDrive,fMotor,freq,thickWireWall,layers,deltaT,VISCO_WIRE,rWireIn)
 
 lMag = x[0]
 rMag = x[1]
 lCore = x[2]
 lWireVessel = x[3]
 
-print("lMag:{} mm".format(lMag))
-print("rMag:{} mm".format(rMag))
-print("lCore:{} mm".format(lCore))
-print("lWireVessel:{} mm".format(lWireVessel))
-print("Q:{} ml/s".format(Q*1e6))
-print("Pin:{} W".format(pIn))
-print("I:{} A".format(I))
-print("V:{} V".format(V))
-print("Pressure:{} kPa".format(pressure*1e-3))
-print("Pin*massTotal:{} W*kg".format(pInMassTotal))
-print("total length: {} mm".format(lCore+lMag))
-print("rWireIn:{} mm".format(rWireIn))
-print("thickWireWall:{} mm".format(thickWireWall))
+print("lMag, {} mm".format(lMag))
+print("rMag, {} mm".format(rMag))
+print("lCore, {} mm".format(lCore))
+print("lWireVessel, {} mm".format(lWireVessel))
+print("Q, {} ml/s".format(Q*1e6))
+print("Pin, {} W".format(pIn))
+print("I, {} A".format(I))
+print("V, {} V".format(V))
+print("Pressure, {} kPa".format(pressure*1e-3))
+print("Pin*massTotal, {} W*kg".format(pInMassTotal))
+print("total length, {} mm".format(lCore+lMag))
+print("rWireIn, {} mm".format(rWireIn))
+print("thickWireWall, {} mm".format(thickWireWall))
+
+if draw:
+        ax,fig = diagramDraw(x, 2, thickWireWall,rWireIn,'finalDesign')
+        plt.show()
