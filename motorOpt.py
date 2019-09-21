@@ -41,7 +41,7 @@ BIG_NUM = 1e12
 moe = 1e-8
 
 thickWireWall = 0.5 # mm
-rWireIn = 1.015 # mm
+rWireIn = 1 # mm
 
 dDrive = 15 # 9mm
 fMotor = 10 # 9N
@@ -94,7 +94,7 @@ def motorOpt(x, *args):
     
     rWireOut = rWireIn + thickWireWall # Wire outer radius
     
-    rShellIn = rMag+rWireOut*layers*2 # Shell inner radius
+    rShellIn = rMag+rWireOut*layers*2+1.5e-3 # Shell inner radius
     # if verbose:
     #     print("rShellIn: {} mm".format(rShellIn*1e3))
 
@@ -245,7 +245,7 @@ def motorMain(x, *args):
     
     rWireOut = rWireIn + thickWireWall # Wire outer radius
     
-    rShellIn = rMag+rWireOut*layers*2 # Shell inner radius
+    rShellIn = rMag+rWireOut*layers*2+1.5e-3 # Shell inner radius
     if verbose:
         print("rShellIn: {} mm".format(rShellIn*1e3))
 
@@ -364,7 +364,7 @@ def diagramDraw(x,layers,thickWireWall,rWireIn):
     thickShell = 5
 
     rWireOut = rWireIn + thickWireWall # Wire outer radius
-    rShellIn = rMag+rWireOut*layers*2 # Shell inner radius
+    rShellIn = rMag+rWireOut*layers*2+1.5 # Shell inner radius
     rShellOut = rShellIn + thickShell
     isize = (200,200)
     lTtl = lCore+lMag+thickShell
@@ -481,10 +481,10 @@ for layers in range(int(maxLayers/2)):
         plt.show()
 
 #%%
-layers = 8
+layers = 6
 print("\nManual")
 print("\n********LAYER: {}********".format(layers))
-x = (40,20,12,27.5)
+x = (40,20,8,24)
 Q,pIn,pInMassTotal,I,V,pressure = motorMain(x,RHO_WIRE,SIGMA_WIRE,CP_WIRE,BR_Mag,dDrive,fMotor,freq,thickWireWall,layers,deltaT,VISCO_WIRE,rWireIn)
 
 lMag = x[0]
