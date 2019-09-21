@@ -110,5 +110,3 @@ venv.bak/
 .idea/
 
 *.pkl
-
-generatedImages/
