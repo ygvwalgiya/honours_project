@@ -43,7 +43,7 @@ moe = 1e-8
 thickWireWall = 0.5 # mm
 rWireIn = 1 # mm
 
-dDrive = 15 # 9mm
+dTravel = 15 # 9mm
 fMotor = 10 # 9N
 freq = 5 # 1Hz
 
@@ -69,7 +69,7 @@ def motorOpt(x, *args):
     sigma = args[1]
     cp = args[2]
     br = args[3]
-    dDrive = args[4]
+    dTravel = args[4]
     fMotor = args[5]
     freq = args[6]
     thickWireWall = args[7]
@@ -79,7 +79,7 @@ def motorOpt(x, *args):
     outSelect = args[11]
     rWireIn = args[12]/1000
 
-    # print("rho:{}, sigma:{}, cp:{}, br:{}, dDrive:{}, fMotor:{}, freq:{}, thickWireWall:{}, layers:{}, deltaT:{}, outSelect:{}".format(rho,sigma,cp,br,dDrive,fMotor,freq,thickWireWall,layers,deltaT,outSelect))
+    # print("rho:{}, sigma:{}, cp:{}, br:{}, dTravel:{}, fMotor:{}, freq:{}, thickWireWall:{}, layers:{}, deltaT:{}, outSelect:{}".format(rho,sigma,cp,br,dTravel,fMotor,freq,thickWireWall,layers,deltaT,outSelect))
 
     # print("Valid! layers {}, x = {}".format(layers,x))
 
@@ -89,7 +89,7 @@ def motorOpt(x, *args):
     rMag = x[1] / 1000
     lCore = x[2] / 1000
     lWireVessel = x[3] / 1000
-    dDrive = dDrive / 1000
+    dTravel = dTravel / 1000
     thickWireWall = thickWireWall / 1000
     
     rWireOut = rWireIn + thickWireWall # Wire outer radius
@@ -108,10 +108,10 @@ def motorOpt(x, *args):
     # if verbose:
     #     print("lWireTotal: {} m".format(lWireTotal))
 
-    # 5. Minimum drive distance
-    if dDrive > (lWireVessel-lCore):
+    # 5. Minimum travel distance
+    if dTravel > (lWireVessel-lCore):
         # if verbose:
-        #     print("Not enough drive distance, {} mm v {} mm, x: {}, layer {}".format(dDrive,lCore-lWireVessel,x,layers))
+        #     print("Not enough travel distance, {} mm v {} mm, x: {}, layer {}".format(dTravel,lCore-lWireVessel,x,layers))
         return BIG_NUM
 
     # 6. Wire Vessel needs to be shorter than Core+Mag
@@ -186,7 +186,7 @@ def motorOpt(x, *args):
     # if verbose:
     #     print("Pin: {} W".format(pIn))
 
-    pMech = 2*dDrive*fMotor*freq # Mechanical power output
+    pMech = 2*dTravel*fMotor*freq # Mechanical power output
 
     pHeat = pIn - pMech
 
@@ -228,7 +228,7 @@ def motorMain(x, *args):
     sigma = args[1]
     cp = args[2]
     br = args[3]
-    dDrive = args[4]
+    dTravel = args[4]
     fMotor = args[5]
     freq = args[6]
     thickWireWall = args[7]
@@ -241,7 +241,7 @@ def motorMain(x, *args):
     rMag = x[1] / 1000
     lCore = x[2] / 1000
     lWireVessel = x[3] / 1000
-    dDrive = dDrive / 1000
+    dTravel = dTravel / 1000
     thickWireWall = thickWireWall / 1000
     
     rWireOut = rWireIn + thickWireWall # Wire outer radius
@@ -311,7 +311,7 @@ def motorMain(x, *args):
     if verbose:
         print("Pin, {} W".format(pIn))
 
-    pMech = 2*dDrive*fMotor*freq # Mechanical power output
+    pMech = 2*dTravel*fMotor*freq # Mechanical power output
 
     pHeat = pIn - pMech
 
@@ -341,12 +341,12 @@ def motorMain(x, *args):
     return Q,pIn,massTotal,pIn * massTotal,I,V,pressure
 
 # %% DON'T RUN ON JUPYTER
-# def motorOpt(x,rho,sigma,cp,br,dDrive,fMotor,freq,thickWireWall,layers,deltaT,outSelect)
+# def motorOpt(x,rho,sigma,cp,br,dTravel,fMotor,freq,thickWireWall,layers,deltaT,outSelect)
 optOut = []
 if refresh:
     for layers in range(2,maxLayers+1,2):
         print("Layer {}".format(layers))
-        arglist = (RHO_WIRE,SIGMA_WIRE,CP_WIRE,BR_Mag,dDrive,fMotor,freq,thickWireWall,layers,deltaT,VISCO_WIRE,outSelect,rWireIn)
+        arglist = (RHO_WIRE,SIGMA_WIRE,CP_WIRE,BR_Mag,dTravel,fMotor,freq,thickWireWall,layers,deltaT,VISCO_WIRE,outSelect,rWireIn)
         optOut.append(brute(motorOpt,ranges=grid,args=arglist,Ns=25,full_output=True,disp=True,finish=None))
 
     with open('optOut.pkl','wb') as f:
@@ -372,7 +372,7 @@ def diagramDraw(x,layers,thickWireWall,rWireIn,name):
     rShellIn = rMag+rWireOut*realLayers*2+thickbobbin # Shell inner radius
     print(rMag)
     rShellOut = rShellIn + thickShell
-    isize = (150,150)
+    isize = (100,100)
     lTtl = lCore+lMag+thickBase
 
     xblank = (isize[0] - lTtl)/2
@@ -499,7 +499,7 @@ def diagramDraw(x,layers,thickWireWall,rWireIn,name):
         print("wires1:{}".format((wire0,wireWidth,wireHeight)))
         print("wires2:{}".format((wire2_0,wire2Width,wire2Height)))
 
-    fig.savefig("generatedImages/{}_layers.svg".format(name), dpi=300)
+    fig.savefig("generatedImages/{}_layers.png".format(name), dpi=300)
 
     return ax,fig
 
@@ -511,7 +511,7 @@ for layers in range(int(maxLayers/2)):
     print("rMag, {} mm".format(optOut[layers][0][1]))
     print("lCore, {} mm".format(optOut[layers][0][2]))
     print("lWireVessel, {} mm".format(optOut[layers][0][3]))
-    Q,pIn,massTotal,pInMassTotal,I,V,pressure = motorMain(optOut[layers][0],RHO_WIRE,SIGMA_WIRE,CP_WIRE,BR_Mag,dDrive,fMotor,freq,thickWireWall,(layers+1)*2,deltaT,VISCO_WIRE,rWireIn)
+    Q,pIn,massTotal,pInMassTotal,I,V,pressure = motorMain(optOut[layers][0],RHO_WIRE,SIGMA_WIRE,CP_WIRE,BR_Mag,dTravel,fMotor,freq,thickWireWall,(layers+1)*2,deltaT,VISCO_WIRE,rWireIn)
     print("Q, {} ml/s".format(Q*1e6))
     print("Pin, {} W".format(pIn))
     print("massTotal, {} kg".format(massTotal))
@@ -527,14 +527,15 @@ for layers in range(int(maxLayers/2)):
     
     if draw:
         ax,fig = diagramDraw(optOut[layers][0], layers, thickWireWall,rWireIn,str((layers+1)*2))
-        plt.show()
+        if verbose:
+            plt.show()
 
 #%%
 layers = 6
 print("\nManual")
 print("\n********LAYER: {}********".format(layers))
 x = (40,20,8,24)
-Q,pIn,massTotal,pInMassTotal,I,V,pressure = motorMain(x,RHO_WIRE,SIGMA_WIRE,CP_WIRE,BR_Mag,dDrive,fMotor,freq,thickWireWall,layers,deltaT,VISCO_WIRE,rWireIn)
+Q,pIn,massTotal,pInMassTotal,I,V,pressure = motorMain(x,RHO_WIRE,SIGMA_WIRE,CP_WIRE,BR_Mag,dTravel,fMotor,freq,thickWireWall,layers,deltaT,VISCO_WIRE,rWireIn)
 
 lMag = x[0]
 rMag = x[1]
@@ -557,4 +558,5 @@ print("thickWireWall, {} mm".format(thickWireWall))
 
 if draw:
         ax,fig = diagramDraw(x, 2, thickWireWall,rWireIn,'finalDesign')
-        plt.show()
+        if verbose:
+            plt.show()

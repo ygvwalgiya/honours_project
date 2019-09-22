@@ -1,50 +1,54 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {english}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}Introduction}{5}% 
+\contentsline {section}{\numberline {1}Table of Notation}{5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Design, Manufacturing and Assembly}{6}% 
+\contentsline {section}{\numberline {2}Introduction}{6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1}Mathematical Modelling}{6}% 
+\contentsline {section}{\numberline {3}Design, Manufacturing and Assembly}{7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.1.1}Motor Force}{6}% 
+\contentsline {subsection}{\numberline {3.1}Mathematical Modelling}{7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.1.2}Heat and Temperature}{7}% 
+\contentsline {subsubsection}{\numberline {3.1.1}Motor Force}{7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2}Optimisation Algorithm}{7}% 
+\contentsline {subsubsection}{\numberline {3.1.2}Heat and Temperature}{9}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3}Physical Design and Manufacturing}{7}% 
+\contentsline {subsection}{\numberline {3.2}Optimisation Algorithm}{10}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.3.1}Shell}{8}% 
+\contentsline {subsection}{\numberline {3.3}Design Validation}{12}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.3.2}Core}{8}% 
+\contentsline {subsection}{\numberline {3.4}Physical Design and Manufacturing}{12}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.3.3}Wire Bobbin}{8}% 
+\contentsline {subsubsection}{\numberline {3.4.1}Shell}{13}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4}Assembly}{8}% 
+\contentsline {subsubsection}{\numberline {3.4.2}Core}{13}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.4.1}Shell and Magnet Assembly}{8}% 
+\contentsline {subsubsection}{\numberline {3.4.3}Wire Bobbin}{13}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.4.2}Wire Assembly}{8}% 
+\contentsline {subsection}{\numberline {3.5}Assembly}{13}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.4.3}Health, Safety and Containment}{8}% 
+\contentsline {subsubsection}{\numberline {3.5.1}Shell and Magnet Assembly}{13}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Experiment Designs and Results}{9}% 
+\contentsline {subsubsection}{\numberline {3.5.2}Wire Assembly}{13}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1}Experiment 1: Force Characterisation}{9}% 
+\contentsline {subsubsection}{\numberline {3.5.3}Health, Safety and Containment}{13}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.1}Method}{9}% 
+\contentsline {section}{\numberline {4}Experiment Designs and Results}{14}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.2}Results}{9}% 
+\contentsline {subsection}{\numberline {4.1}Experiment 1: Force Characterisation}{14}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2}Experiment 2: Circulation Thermoregulation}{9}% 
+\contentsline {subsubsection}{\numberline {4.1.1}Method}{14}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.1}Method}{9}% 
+\contentsline {subsubsection}{\numberline {4.1.2}Results}{14}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.2}Results}{9}% 
+\contentsline {subsection}{\numberline {4.2}Experiment 2: Circulation Thermoregulation}{14}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Discussion}{10}% 
+\contentsline {subsubsection}{\numberline {4.2.1}Method}{14}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Conclusion}{11}% 
+\contentsline {subsubsection}{\numberline {4.2.2}Results}{14}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Appendicies}{12}% 
+\contentsline {section}{\numberline {5}Discussion}{15}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6}Conclusion}{16}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7}Appendices}{17}% 

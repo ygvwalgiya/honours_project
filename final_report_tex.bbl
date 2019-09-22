@@ -19,6 +19,140 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
+    \entry{engineeringtoolboxPermeability2016}{online}{}
+      \name{author}{1}{}{%
+        {{hash=e2dfe3a9a01f316632c7e29a4d50324c}{%
+           family={{Engineering ToolBox}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{e2dfe3a9a01f316632c7e29a4d50324c}
+      \strng{fullhash}{e2dfe3a9a01f316632c7e29a4d50324c}
+      \strng{bibnamehash}{e2dfe3a9a01f316632c7e29a4d50324c}
+      \strng{authorbibnamehash}{e2dfe3a9a01f316632c7e29a4d50324c}
+      \strng{authornamehash}{e2dfe3a9a01f316632c7e29a4d50324c}
+      \strng{authorfullhash}{e2dfe3a9a01f316632c7e29a4d50324c}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Permeability}
+      \field{urlday}{22}
+      \field{urlmonth}{9}
+      \field{urlyear}{2019}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/guan/Zotero/storage/PMDHZ5QJ/permeability-d_1923.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.engineeringtoolbox.com/permeability-d_1923.html
+      \endverb
+      \verb{url}
+      \verb https://www.engineeringtoolbox.com/permeability-d_1923.html
+      \endverb
+    \endentry
+    \entry{baartmanMaterialsLibraryFEMM2007}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=833cd5dc5aeb7de1155f186fc2b3c179}{%
+           family={Baartman},
+           familyi={B\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{833cd5dc5aeb7de1155f186fc2b3c179}
+      \strng{fullhash}{833cd5dc5aeb7de1155f186fc2b3c179}
+      \strng{bibnamehash}{833cd5dc5aeb7de1155f186fc2b3c179}
+      \strng{authorbibnamehash}{833cd5dc5aeb7de1155f186fc2b3c179}
+      \strng{authornamehash}{833cd5dc5aeb7de1155f186fc2b3c179}
+      \strng{authorfullhash}{833cd5dc5aeb7de1155f186fc2b3c179}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{19}
+      \field{month}{5}
+      \field{title}{Materials Library in {{FEMM}} 4.0}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb /home/guan/Zotero/storage/37PWVBJ9/Steel_magnetic_properties.pdf
+      \endverb
+    \endentry
+    \entry{coatesTransformerCoresReluctance2018}{online}{}
+      \name{author}{1}{}{%
+        {{hash=87004389f6f6f4710311259172de4a31}{%
+           family={Coates},
+           familyi={C\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{87004389f6f6f4710311259172de4a31}
+      \strng{fullhash}{87004389f6f6f4710311259172de4a31}
+      \strng{bibnamehash}{87004389f6f6f4710311259172de4a31}
+      \strng{authorbibnamehash}{87004389f6f6f4710311259172de4a31}
+      \strng{authornamehash}{87004389f6f6f4710311259172de4a31}
+      \strng{authorfullhash}{87004389f6f6f4710311259172de4a31}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{22}
+      \field{month}{12}
+      \field{title}{Transformer {{Cores}}, {{Reluctance}} and {{Permeability}}}
+      \field{urlday}{22}
+      \field{urlmonth}{9}
+      \field{urlyear}{2019}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/guan/Zotero/storage/G3IL7EJJ/transformers02.html
+      \endverb
+      \verb{urlraw}
+      \verb http://www.learnabout-electronics.org/ac_theory/transformers02.php
+      \endverb
+      \verb{url}
+      \verb http://www.learnabout-electronics.org/ac_theory/transformers02.php
+      \endverb
+    \endentry
+    \entry{changChapterElectrodynamics2006}{unpublished}{}
+      \name{author}{1}{}{%
+        {{hash=912077b841b37c952dabe8a42fa9cfee}{%
+           family={Chang},
+           familyi={C\bibinitperiod},
+           given={Tsun-Hsu},
+           giveni={T\bibinithyphendelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{912077b841b37c952dabe8a42fa9cfee}
+      \strng{fullhash}{912077b841b37c952dabe8a42fa9cfee}
+      \strng{bibnamehash}{912077b841b37c952dabe8a42fa9cfee}
+      \strng{authorbibnamehash}{912077b841b37c952dabe8a42fa9cfee}
+      \strng{authornamehash}{912077b841b37c952dabe8a42fa9cfee}
+      \strng{authorfullhash}{912077b841b37c952dabe8a42fa9cfee}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{21}
+      \field{month}{12}
+      \field{title}{Chapter 7: {{Electrodynamics}}}
+      \field{urlday}{22}
+      \field{urlmonth}{9}
+      \field{urlyear}{2019}
+      \field{year}{2006}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/guan/Zotero/storage/2ERGDIEP/EM07P1.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://www.phys.nthu.edu.tw/~thschanga/notes/EM07P1.pdf
+      \endverb
+      \verb{url}
+      \verb http://www.phys.nthu.edu.tw/~thschanga/notes/EM07P1.pdf
+      \endverb
+    \endentry
     \entry{liuLiquidMetalMachine2016}{article}{}
       \name{author}{1}{}{%
         {{hash=83f95dca7c81df3fe67380769eb0321c}{%
@@ -33,8 +167,8 @@
       \strng{authorbibnamehash}{83f95dca7c81df3fe67380769eb0321c}
       \strng{authornamehash}{83f95dca7c81df3fe67380769eb0321c}
       \strng{authorfullhash}{83f95dca7c81df3fe67380769eb0321c}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{1}
