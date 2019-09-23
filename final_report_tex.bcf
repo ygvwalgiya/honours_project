@@ -1999,11 +1999,16 @@
     <bcf:citekey order="1">engineeringtoolboxPermeability2016</bcf:citekey>
     <bcf:citekey order="2">baartmanMaterialsLibraryFEMM2007</bcf:citekey>
     <bcf:citekey order="3">engineeringtoolboxPermeability2016</bcf:citekey>
-    <bcf:citekey order="4">coatesTransformerCoresReluctance2018</bcf:citekey>
-    <bcf:citekey order="5">engineeringtoolboxPermeability2016</bcf:citekey>
-    <bcf:citekey order="6">changChapterElectrodynamics2006</bcf:citekey>
-    <bcf:citekey order="7">engineeringtoolboxPermeability2016</bcf:citekey>
-    <bcf:citekey order="8">liuLiquidMetalMachine2016</bcf:citekey>
+    <bcf:citekey order="4">jinStretchableLoudspeakerUsing2015</bcf:citekey>
+    <bcf:citekey order="5">dickeyEutecticGalliumIndiumEGaIn2008</bcf:citekey>
+    <bcf:citekey order="6">dickeyEutecticGalliumIndiumEGaIn2008</bcf:citekey>
+    <bcf:citekey order="7">houghtonHazards2007</bcf:citekey>
+    <bcf:citekey order="8">liuCharacterizationNontoxicLiquidMetal2012</bcf:citekey>
+    <bcf:citekey order="9">coatesTransformerCoresReluctance2018</bcf:citekey>
+    <bcf:citekey order="10">engineeringtoolboxPermeability2016</bcf:citekey>
+    <bcf:citekey order="11">changChapterElectrodynamics2006</bcf:citekey>
+    <bcf:citekey order="12">engineeringtoolboxPermeability2016</bcf:citekey>
+    <bcf:citekey order="13">cuiLiquidMetalCorrosion2018</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

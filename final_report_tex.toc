@@ -15,40 +15,42 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2}Optimisation Algorithm}{10}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3}Design Validation}{12}% 
+\contentsline {subsection}{\numberline {3.3}Design Validation}{11}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.4}Physical Design and Manufacturing}{12}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.4.1}Shell}{13}% 
+\contentsline {subsubsection}{\numberline {3.4.1}Shell}{12}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.4.2}Core}{13}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.4.3}Wire Bobbin}{13}% 
+\contentsline {subsubsection}{\numberline {3.4.3}Wire Bobbin}{14}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5}Assembly}{13}% 
+\contentsline {subsection}{\numberline {3.5}Assembly}{14}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.5.1}Shell and Magnet Assembly}{13}% 
+\contentsline {subsubsection}{\numberline {3.5.1}Shell and Magnet Assembly}{14}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.5.2}Wire Assembly}{13}% 
+\contentsline {subsubsection}{\numberline {3.5.2}Wire Assembly}{14}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.5.3}Health, Safety and Containment}{13}% 
+\contentsline {subsubsection}{\numberline {3.5.3}Health, Safety and Containment}{14}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Experiment Designs and Results}{14}% 
+\contentsline {section}{\numberline {4}Experiment Designs and Results}{15}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}Experiment 1: Force Characterisation}{14}% 
+\contentsline {subsection}{\numberline {4.1}Experiment 1: Force Characterisation}{15}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.1.1}Method}{14}% 
+\contentsline {subsubsection}{\numberline {4.1.1}Method}{15}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.1.2}Results}{14}% 
+\contentsline {subsubsection}{\numberline {4.1.2}Results}{16}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2}Experiment 2: Circulation Thermoregulation}{14}% 
+\contentsline {subsection}{\numberline {4.2}Experiment 2: Circulation Thermoregulation}{16}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.2.1}Method}{14}% 
+\contentsline {subsubsection}{\numberline {4.2.1}Method}{16}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.2.2}Results}{14}% 
+\contentsline {subsubsection}{\numberline {4.2.2}Results}{16}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Discussion}{15}% 
+\contentsline {section}{\numberline {5}Discussion}{17}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Conclusion}{16}% 
+\contentsline {section}{\numberline {6}Conclusion}{18}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Appendices}{17}% 
+\contentsline {section}{\numberline {7}Appendices}{19}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.1}Full Results of Motor Force Experiment}{19}% 

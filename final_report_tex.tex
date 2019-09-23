@@ -13,10 +13,12 @@
 \usepackage{svg}
 \usepackage{setspace}
 \singlespacing
+\usepackage{gensymb}
 \parskip 0ex 
 \usepackage{array}
 \newcolumntype{L}{>{\centering\arraybackslash}m{100mm}}
 \newcolumntype{M}{>{\centering\arraybackslash}m{50mm}}
+\newcolumntype{S}{>{\centering\arraybackslash}m{20mm}}
 
 
 %opening
@@ -44,7 +46,7 @@ Paul Roberts
 
 Steve Oldman 
 
-Greg  
+Greg 
 
 Nick, Suroosh, Mahsa and Yahya 
 
@@ -107,27 +109,20 @@ And of course, Dr. Bryan Ruddy
 \newpage
 
 \section{Introduction}
-Background\\
 
-Soft robots important \\
+Soft robotics has in recent years enjoyed a surge in research interest. Traditional robots that use rigid materials for actuation tend to have poor adaptability and low human friendliness. Robots and actuators made with mechanically compliant materials may emerge more adaptable in unpredictable conditions and more comfortable for wearable use. 
 
-Methods of locomotion all new, each with different advantages and drawbacks \\
+Current soft robot actuation methods include chemical, pressure-based (pneumatic or hydraulic) and electroactive elastomer. Electromagnetic actuation that most traditional robots rely on has been mostly overlooked. Only four years ago, Jin et al. published \cite{jinStretchableLoudspeakerUsing2015}, the first paper that explored the idea. Jin introduced a voice coil speaker effective under large deformations. 
 
-Lack of traditional locomotion options \\
+As a result, there is an opportunity add to the under-researched area of electromagnetic actuation for soft robots. Rigid electromagnetic actuation is a relatively mature field with a large existing corpus. 
 
-Liquid metal wired electromagnetic motors presents a possible solution \\
+Previously, electromagnetic actuation in soft robots was hindered by a lack of good conductors that maintain electrical properties under large deformations. Eutectic Gallium-Indium alloys (eGaIn) have emerged as a potential solution. eGaIn is a family of alloys that contain gallium, indium and sometimes tin and other metals. A typical eGaIn alloy can have 75\% Ga and 25\% In and melts at 15.5 \degree C \cite{dickeyEutecticGalliumIndiumEGaIn2008}, meaning it is liquid under room temperature. Liquid metal conductors can deform without large changes to material properties and do not undergo strain hardening or fatigue.
 
-Transferral of existing robotics locomotion corpus to soft robots \\
+eGaIn is also advantageous among other liquid metals in that it has low toxicity \cite{dickeyEutecticGalliumIndiumEGaIn2008}, compared to mercury which is highly toxic. eGaIn is also stable in atmospheric conditions, compared to sodium-potassium alloy which is pyrophoric \cite{houghtonHazards2007}, and has low vapour pressure. eGaIn does however form an oxide layer on contact with oxygen which hinders its fluid and electrical properties \cite{liuCharacterizationNontoxicLiquidMetal2012}.
 
-Also presents a possible advantage re: cooling by circulating the wires \\
+Using liquid metal in electromagnetic actuator coils also makes available a novel approach to cooling. The conductors themselves can be circulated and cooled externally, away from the rest of an actuator. This means that thermoregulation features such as cooling fins may become detached from the actuator, allowing for more compact designs where space is at a premium.
 
-Question Statement \\
-
-Is it feasible to build an electromagnetic motor using liquid metal for wiring that can also be cooled via circulating metal in the wiring? \\
-
-Aims \\
-
-Design, build and characterise an electromagnetic motor with liquid metal coils\\
+This project seeks to answer whether it is feasible to build an electromagnetic motor using liquid metal for wiring that can also be cooled via circulating metal in the wiring. To that end, an electromagnetic motor with eGaIn coils was designed, built and characterised. An analysis will also be conducted on whether eGaIn actuators hold promise for use in soft robots or for novel cooling approaches. 
 
 \newpage
 
@@ -151,10 +146,11 @@ Substituting equation \ref{eq:shortflux} into equation \ref{eq:emmfdef} gives a 
 \end{split}
 \end{equation}
 The magnetic circuit of a voice coil motor travels through four components in series: the magnet, the core, the "air" gap where the coils are and the shell, seen in figure \ref{fg:simplemotor}.
-\begin{figure}[h] \label{fg:simplemotor}
+\begin{figure}[h!] 
 	\centering
 	\includegraphics[scale=0.4]{simplifiedMotor.png}
 	\caption{Simplified axisymmetric diagram of typical moving-wire voice coil motor}
+	\label{fg:simplemotor}
 \end{figure}
 This means the total reluctance in the circuit can be represented by equation \ref{eq:rttl}, similar to how resistance is calculated in an electrical circuit.
 \begin{equation}\label{eq:rttl}
@@ -192,7 +188,8 @@ Substituting equation \ref{eq:fluxdef} into equation \ref{eq:emmfsubbed} gives e
 \begin{equation}\label{eq:fluxsubbed}
 B_{gap} = \frac{2\pi L_{mag} L_{core} B_r}{\ln{\frac{r_{out}}{r_{in}}}A_{active}}
 \end{equation}
-Using Lorentz's force law substituted with equation \ref{eq:fluxsubbed}, equation \ref{eq:fbil} gives a minimum current $I$ can be obtained given a known required force $F$ and a known length of wire in the magnetic field $L_{active}$.
+Using Lorentz's force law substituted with equation \ref{eq:fluxsubbed}, equation \ref{eq:fbil} gives a minimum current $I$ can be obtained given a known required force $F$ and a known length of wire i
+n the magnetic field $L_{active}$.
 \begin{equation}\label{eq:fbil}
 \begin{split}
 F & = B_{gap}IL_{active}\\
@@ -208,20 +205,23 @@ The length of wire in the magnetic field can be calculated in a similar fashion,
 \begin{equation}\label{eq:activel}
 L_{active} = L_{core}\pi(layers+1)layers + \frac{L_{core} r_{mag} \pi}{r_{wireOut}}
 \end{equation}
-Combining equations \ref{eq:fbil}, \ref{eq:activearea} and \ref{eq:activel} yields a final current calculation in equation \ref{eq:finalcurrent}.
+Combining equations \ref{eq:fbil}, \ref{eq:activearea} and \ref{eq:activel} yields a final current calculation seen in equation \ref{eq:finalcurrent}.
 \begin{equation}\label{eq:finalcurrent}
 I = \frac{F\cdot 2\pi L_c (r_{core}-r_{wireout} + 2r_{wireout} \frac{(n+1)n}{2}) \ln{\frac{r_{out}}{r_{in}}}}{2\pi L_{mag} L_{core} B_r L_{core}\pi(layers+1)layers + \frac{L_{core} r_{mag} \pi}{r_{wireOut}}}
 \end{equation}
 
 \subsubsection{Heat and Temperature}
-Using heat energy can calculate temperature in wires
-Safety
+A major challenge for designing electromagnetic motors is coil heat generation, and how to dissipate that heat. Energy is conserved in the motor system, as seen in figure \ref{fg:motorheat} and equation \ref{eq:pbreakdown}. As a result,  
 
-\begin{figure}[h] \label{fg:motorheat}
+\begin{figure}[h!]
 \centering
 \includegraphics[scale=0.4]{motorheat.png}
 \caption{Conservation of energy in the motor system}
+\label{fg:motorheat}
 \end{figure}
+\begin{equation}\label{eq:pbreakdown}
+P_{in}=P_{out}=P_{mech}+P_{heat}
+\end{equation}
 
 \begin{equation}\label{eq:pin}
 P_{in} = IV = I^2R
@@ -229,10 +229,6 @@ P_{in} = IV = I^2R
 
 \begin{equation}\label{eq:resistance}
 R=\frac{L_{Wtotal}}{A\sigma}
-\end{equation}
-
-\begin{equation}\label{eq:pbreakdown}
-P_{in}=P_{out}=P_{mech}+P_{heat}
 \end{equation}
 
 \begin{equation}\label{eq:pmechbreakdown}
@@ -254,25 +250,46 @@ P_{heat} & = P_{in}-P_{mech}\\
 
 
 \subsection{Optimisation Algorithm}
-\begin{figure}[h] \label{fg:optiAlgo}
+\begin{figure}[h!] 
 	\centering
 	\includegraphics[scale=0.4]{optiAlgro.png}
 	\caption{Diagrammatic representation of optimisation algorithm inputs and outputs}
+	\label{fg:optiAlgo}
 \end{figure}
 
 Grid-search optimisation for even numbered layers.
+
+\begin{table} [h!] 
+	\centering
+	\caption{Grid-search optimisation variables and units.}
+	\label{tb:gridsearch}
+	\begin{tabular}{c | c} 
+		\textbf{Variable} & \textbf{Units} \\ [0.5ex] 
+		\hline\hline
+		Magnet length & m \\
+		\hline
+		Magnet radius & m \\
+		\hline
+		Core length & m \\ 
+		\hline
+		Bobbin length & m \\
+	\end{tabular}
+\end{table}
 
 Optimised for an optimisation variable $\mathcal{P}$, which is the product of total motor mass and electrical input power.
 
 Runs requirement checking function on each result and discards invalid solutions.
 
-\begin{center}
+\begin{table} [h!] 
+	\centering
+	\caption{List of optimisation requirements and justifications.}
+	\label{tb:optrequirements}
 	\begin{tabular}{M | M | M} 
 		\textbf{Variable} & \textbf{Requirement} & \textbf{Justification} \\ [0.5ex] 
 		\hline\hline
 		Output force & Must be over 9 N & Minimum to drive liquid metal pump \\
 		\hline
-		Acceptable temperature change in wires & Must be under 30 K & Higher temperatures may be a health and safety hazard \\
+		Acceptable temperature change in wires after circulation & Must be under 30 K & Higher temperatures may be a health and safety hazard \\
 		\hline
 		Travel distance of motor & Must be over 9 mm & Minimum to drive liquid metal pump \\ 
 		\hline
@@ -280,7 +297,7 @@ Runs requirement checking function on each result and discards invalid solutions
 		\hline
 		Shell internal diameter & Must be under 80 mm & Not practical for manufacturing, assembly and handling if bigger \\ 
 		\hline
-		Circuit current & Must be under 10 A & No power supply available to drive more than 10 A \\ 
+		Total motor current & Must be under 10 A & No power supply available to drive more than 10 A \\ 
 		\hline
 		Total volume of wire & Must be under 15 ml & Limit to amount of eGaIn available and difficult to assemble with larger volume \\ 
 		\hline
@@ -289,13 +306,16 @@ Runs requirement checking function on each result and discards invalid solutions
 		Electrical power input & Must be positive & Validity check \\ 
 		\hline
 	\end{tabular}
-\end{center}
+\end{table}
 
 Optimisation was conducted assuming the use of 2 mm internal diameter, 3 mm external diameter silicone tubing for wiring. This was the tubing with largest internal volume to total volume ratio that was commercially available.
 
 The optimisation software produced physical dimensions, pump flow and pressure requirements, electrical input requirements and an axisymmetric cross-section diagram to show scale of the optimised motor for each number of layers that the optimisation was run for.
 
-\begin{center}
+\begin{table} [h!]
+	\centering
+	\caption{Comparison between most efficient 4-layer and 6-layer motor designs.}
+	\label{tb:optoutput}
 	\begin{tabular}{M | c | c | c} 
 		\textbf{Variable} & \textbf{4-layer solution} & \textbf{6-layer solution} & \textbf{Units} \\ [0.5ex] 
 		\hline\hline
@@ -328,37 +348,117 @@ The optimisation software produced physical dimensions, pump flow and pressure r
 		Optimisation Variable $\mathcal{P}$ & 11.19 & 12.98 & $kg\cdot W$ \\ 
 		\hline
 	\end{tabular}
-\end{center}
+\end{table}
 
 Choice between 4 layer design and 6 layer design
 
-\begin{figure}[h] \label{fg:finalmotor}
+\begin{figure}[h!] 
 	\centering
-	\includegraphics[scale=0.5]{finalDesign_layers.png}
-	\caption{Graphical representation of cross-section of final motor design}
+	\includegraphics[width=0.5\textwidth]{finalDesign_layers.png}
+	\caption{Cross-section diagram of final motor design}
+	\label{fg:finalmotor}
 \end{figure}
 
 \subsection{Design Validation}
-Abacus Maxwell 2D axisymmetric electromagnetic simulation
+ANSYS Maxwell 2D electromagnetic simulation, axisymmetric about z-axis.
+\begin{figure}[h!] 
+	\centering
+	\includegraphics[width=0.5\textwidth]{maxwell.png}
+	\caption{Maxwell 2D simulation of magnetic field density in motor}
+	\label{fg:maxwellB}
+\end{figure}
+
+\begin{figure}[h!] 
+	\centering
+	\includegraphics[width=\textwidth]{force.png}
+	\caption{Convergence of force on wires to 9.0882 N in Maxwell 2D simulation}
+	\label{fg:maxwellforce}
+\end{figure}
 
 \subsection{Physical Design and Manufacturing}
 4 axial, 40 mm diameter, 10 mm tall N45 grade neodymium disc magnets were used in series, to substitute for the required 40 mm diameter, 42.5 mm tall N42 grade neodymium magnet. The disc magnets also come with countersunk unthreaded M6 holes for fastening. 
 
 \subsubsection{Shell}
+Two-piece design, cylinder and base
+To enable safe assembly of magnets into motor
+M6 threads at centre of base to secure magnets and core
+Holes at end to secure spacer, and also enable ventilation while motor is in operation
+M3 threaded holes in side to secure shell cylinder during assembly step that attaches base, magnets and core to cylinder.
+Both turned on lathe from 1020 grade 100 mm diameter engineering bar steel stock
 
+\begin{figure}[h!] 
+	\centering
+	\includegraphics[scale=0.5]{shellcylinder.png}
+	\caption{Axisymmetric cross-section drawing of final shell cylinder}
+	\label{fg:shellcylinder}
+\end{figure}
 
+\begin{figure}[h!] 
+	\centering
+	\includegraphics[scale=0.5]{shellbase.png}
+	\caption{Axisymmetric cross-section drawing of final shell base. Units in mm.}
+	\label{fg:shellbase}
+\end{figure}
 
 \subsubsection{Core}
+8 mm thick, 40 mm diameter cylinder with countersunk unthreaded M6 hole in the centre. A bolt travels through the hole that secures the core to the magnets to the shell base. 
+
+\begin{figure}[h!] 
+	\centering
+	\includegraphics[scale=0.5]{core.png}
+	\caption{Axisymmetric cross-section drawing of final core. Units in mm.}
+	\label{fg:core}
+\end{figure}
 
 \subsubsection{Wire Bobbin}
+
+\begin{figure}[h!] 
+	\centering
+	\includegraphics[scale=0.5]{bobbin.png}
+	\caption{Three-view drawing of final wire bobbin. Units in mm.}
+	\label{fg:bobbin}
+\end{figure}
 
 \subsection{Assembly}
 
 \subsubsection{Shell and Magnet Assembly}
+\begin{figure}[h!] 
+	\centering
+	\includegraphics[width=0.5\textwidth]{placeholder.png}
+	\caption{Contraption used to safely assemble magnets and core onto shell base.}
+	\label{fg:assemblingmagnet}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.5\textwidth]{assemblingshell.png}
+	\caption{Shell base with magnets and core attached being lowered onto shell cylinder.}
+	\label{fg:assemblingshell}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.5\textwidth]{assembledshell.jpg}
+	\caption{Assembled shell with magnets and core attached.}
+	\label{fg:assembledshell}
+\end{figure}
 
 \subsubsection{Wire Assembly}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.5\textwidth]{assembledbobbin.jpg}
+	\caption{Bobbin with complete silicone tube windings. Tubes wound by hand.}
+	\label{fg:assembledbobbin}
+\end{figure}
 
 \subsubsection{Health, Safety and Containment}
+Gallium, indium and eGaIn are not toxic to touch, but can cause harm if ingested or inhaled.
+
+However, eGaIn is known to be corrosive towards most solid metals including iron, copper and aluminium alloys \cite{cuiLiquidMetalCorrosion2018}. In particular, without specific surface treatment, aluminium parts in the lab may corrode on contact with eGaIn.
+
+Everything done in fish bin, done in a corner of the lab away from metal components that can be damaged.
+
+To avoid accidental ingestion after handling eGaIn, disposable gloves were worn whenever there was possible exposure to eGaIn.
 
 \newpage
 
@@ -367,8 +467,42 @@ Abacus Maxwell 2D axisymmetric electromagnetic simulation
 \subsection{Experiment 1: Force Characterisation}
 
 \subsubsection{Method}
+Plate on bobbin, motor oriented vertically. 
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.3\textwidth]{placeholder.png}
+	\caption{Experiment setup to characterise force output of motor given different electrical input.}
+	\label{fg:forceexperiment}
+\end{figure}
 
 \subsubsection{Results}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth]{resultforcevcurrent.png}
+	\caption{Experimental result motor force  plotted against provided current.}
+	\label{fg:forceplot}
+\end{figure}
+
+
+\begin{table}[h!] 
+	\centering
+	\caption{Analysis of force experiment results.}
+	\label{tb:fullresults3}
+	\begin{tabular}{ lll }
+		Item & Value & Units \\
+		\hline\hline
+		Average efficiency ex. Bobbin & 1.00 & $NA^{-1}$ \\
+		\hline
+		Mass of bobbin \& fixed cup & 335.22 & g \\
+		\hline
+		Current required for 9 N & 8.75 & A \\
+		\hline
+		Theoretical current for 9 N & 8.50 & A \\
+		\hline 
+	\end{tabular}
+\end{table}
 
 \subsection{Experiment 2: Circulation Thermoregulation}
 
@@ -384,11 +518,28 @@ Application to the original physical situation\\
 
 Comparison with related problems and other solutions\\
 
+If the eGaIn in the final motor design was substituted for copper threaded through silicone tubing, the motor would require much less power to produce the same force output. A motor of the same size filled with copper coils of the same diameter instead of eGaIn will consume under half of the power for the same force output. If the volume of the wiring was substituted entirely for 0.22 mm diameter copper wire, a common type of wire used for electromagnetic motors of this force scale, the motor would draw ~18 times less power to produce the same force.
+\begin{table}[h!]
+	\centering
+	\caption{Comparison between final eGaIn motor and two hypothetical solutions using copper wiring.}
+	\label{tb:coppercompare}
+	\begin{tabular}{M | c | c | c | c} 
+		\textbf{Variable} & \textbf{eGaIn solution} & \textbf{Copper equal} & \textbf{Copper fill} & \textbf{Units} \\ [0.5ex] 
+		\hline\hline
+		Total wire length & 9.55 & 9.55 & 157.76 & $m$ \\ 
+		\hline
+		Total wire resistance & 0.22 & 0.026 & 34.86 & $\Omega$ \\ 
+		\hline
+		Required current & 6.27 & 6.27 & 0.12 & $A$ \\ 
+		\hline
+		Power input & 8.63 & 3.12 & 0.46 & $W$ \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
 Critical assessment of significance\\
 
 Difficulty of the problem and how well it has been tackled\\
-
-\cite{liuLiquidMetalMachine2016}
 
 \newpage
 
@@ -397,10 +548,68 @@ Difficulty of the problem and how well it has been tackled\\
 \newpage
 
 \section{Appendices}
+\subsection{Full Results of Motor Force Experiment}
+\begin{table}[h!]
+	\centering
+	\caption{Results from motor force experiment.}
+	\label{tb:fullresults1}
+	\begin{tabular}{SSSSSSS}
+		Number of Weights & Incremental Mass Balanced (g) & Total Mass Balanced (g) & Total Force (N) & Voltage (V) & Current (A) & Power (W)\\
+		\hline\hline
+		0 & 335.22$\dagger$ & 335.22 & 3.29 & 1.57 & 3.30 & 5.18\\
+		\hline
+		1 & 81.53 & 416.75 & 4.09 & 1.96 & 4.10 & 8.04 \\
+		\hline
+		2 & 81.11 & 497.86 & 4.88 & 2.36 & 5.00 & 11.80\\
+		\hline
+		3 & 81.32 & 579.18 & 5.68 & 2.72 & 5.70 & 15.50 \\
+		\hline
+		4 & 81.12 & 660.30 & 6.48 & 3.05 & 6.60 & 20.13 \\
+		\hline
+		5 & 81.65 & 741.95 & 7.28 & 3.45 & 7.60 & 26.22 \\
+		\hline
+		6 & 81.19 & 823.14 & 8.07 & 3.68 & 8.30 & 30.54 \\
+		\hline
+		7 & 81.43 & 904.57 & 8.87 & 4.07 & 9.30 & 37.85 \\
+		\hline
+		8 & 80.65 & 985.22 & 9.66 & 4.35 & 9.90 & 43.07 \\
+		\hline
+	\end{tabular}
+	$\dagger$Estimated using average efficiency, seen in table \ref{tb:fullresults3} calculated from incremental current required to produce incremental force, both seen in table \ref{tb:fullresults2}.
+\end{table}
+
+
+\begin{table}[h!]
+	\centering
+	\caption{Incremental values between adding each additional weight during motor force experiment`.}
+	\label{tb:fullresults2}
+	\begin{tabular}{SSSS}
+		Number of Weights & Force increment (N) & Current increment (A) & Incremental Efficiency (N/A) \\
+		\hline\hline
+		0 & 3.29 & 3.30 & 1.00 \\
+		\hline
+		1 & 0.80 & 0.80 & 1.00 \\
+		\hline
+		2 & 0.80 & 0.90 & 0.88 \\
+		\hline
+		3 & 0.80 & 0.70 & 1.14 \\
+		\hline
+		4 & 0.80 & 0.90 & 0.88 \\
+		\hline
+		5 & 0.80 & 1.00 & 0.80 \\
+		\hline
+		6 & 0.80 & 0.70 & 1.14 \\
+		\hline
+		7 & 0.80 & 1.00 & 0.80 \\
+		\hline
+		8 & 0.79 & 0.60 & 1.32 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+
 
 \newpage
-References to previous works should be made in a consistent way. Specific references should be itemised in the Reference list, with any other more general material listed in a Bibliography. Only those books and papers actually consulted should be included. There are several variations on layout of reference lists; obtain advice from your supervisor and the library staff.  
-
 \printbibliography
 	
 \end{document}

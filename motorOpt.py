@@ -24,7 +24,7 @@ if "-nc" in sys.argv:
 
 # Relative constants
 # Things that aren't easily changed
-BR_Mag = 1 #1.2
+BR_Mag = 1.35 #1.35-1.4
 SIGMA_WIRE = 3.46e6
 CP_WIRE = 296
 RHO_WIRE = 6440 # kg/m3
@@ -44,8 +44,8 @@ thickWireWall = 0.5 # mm
 rWireIn = 1 # mm
 
 dTravel = 15 # 9mm
-fMotor = 10 # 9N
-freq = 5 # 1Hz
+fMotor = 9 # 9N
+freq = 1 # 1Hz
 
 deltaT = 30
 
@@ -171,7 +171,7 @@ def motorOpt(x, *args):
         #     print("B too large: {} H".format(B))
         B = 2
 
-    maxI = 18
+    maxI = 20
     I = fMotor / B / lWireInField
     # if verbose:
     #     print("I: {} A".format(I))
@@ -299,7 +299,7 @@ def motorMain(x, *args):
     if verbose:
         print("B, {} H".format(B))
 
-    I = fMotor / B / lWireInField
+    I = fMotor / B / lWireInField * 2
     if verbose:
         print("I, {} A".format(I))
 
@@ -338,7 +338,7 @@ def motorMain(x, *args):
 
     massTotal = volWire*RHO_WIRE+volTube*RHO_TUBE+(volCore+volShell)*RHO_IRON+volMag*RHO_MAG
 
-    return Q,pIn,massTotal,pIn * massTotal,I,V,pressure
+    return Q,pIn,massTotal,pIn * massTotal,I,V,pressure, massTotal
 
 # %% DON'T RUN ON JUPYTER
 # def motorOpt(x,rho,sigma,cp,br,dTravel,fMotor,freq,thickWireWall,layers,deltaT,outSelect)
@@ -511,7 +511,7 @@ for layers in range(int(maxLayers/2)):
     print("rMag, {} mm".format(optOut[layers][0][1]))
     print("lCore, {} mm".format(optOut[layers][0][2]))
     print("lWireVessel, {} mm".format(optOut[layers][0][3]))
-    Q,pIn,massTotal,pInMassTotal,I,V,pressure = motorMain(optOut[layers][0],RHO_WIRE,SIGMA_WIRE,CP_WIRE,BR_Mag,dTravel,fMotor,freq,thickWireWall,(layers+1)*2,deltaT,VISCO_WIRE,rWireIn)
+    Q,pIn,massTotal,pInMassTotal,I,V,pressure,massTotal = motorMain(optOut[layers][0],RHO_WIRE,SIGMA_WIRE,CP_WIRE,BR_Mag,dTravel,fMotor,freq,thickWireWall,(layers+1)*2,deltaT,VISCO_WIRE,rWireIn)
     print("Q, {} ml/s".format(Q*1e6))
     print("Pin, {} W".format(pIn))
     print("massTotal, {} kg".format(massTotal))
@@ -521,6 +521,7 @@ for layers in range(int(maxLayers/2)):
     print("Pressure, {} kPa".format(pressure*1e-3))
     print("rWireIn, {} mm".format(rWireIn))
     print("thickWireWall, {} mm".format(thickWireWall))
+    print("massTotal, {} kg".format(massTotal))
     
     with open('graphingLayer{}.pkl'.format(layers),'wb') as f:
         pickle.dump((optOut[layers][0],Q,pIn,I,V,pressure), f)
@@ -535,7 +536,7 @@ layers = 6
 print("\nManual")
 print("\n********LAYER: {}********".format(layers))
 x = (40,20,8,24)
-Q,pIn,massTotal,pInMassTotal,I,V,pressure = motorMain(x,RHO_WIRE,SIGMA_WIRE,CP_WIRE,BR_Mag,dTravel,fMotor,freq,thickWireWall,layers,deltaT,VISCO_WIRE,rWireIn)
+Q,pIn,massTotal,pInMassTotal,I,V,pressure,massTotal = motorMain(x,RHO_WIRE,SIGMA_WIRE,CP_WIRE,BR_Mag,dTravel,fMotor,freq,thickWireWall,layers,deltaT,VISCO_WIRE,rWireIn)
 
 lMag = x[0]
 rMag = x[1]
@@ -555,6 +556,7 @@ print("Pin*massTotal, {} W*kg".format(pInMassTotal))
 print("total length, {} mm".format(lCore+lMag))
 print("rWireIn, {} mm".format(rWireIn))
 print("thickWireWall, {} mm".format(thickWireWall))
+print("massTotal, {} kg".format(massTotal))
 
 if draw:
         ax,fig = diagramDraw(x, 2, thickWireWall,rWireIn,'finalDesign')
