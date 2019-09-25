@@ -13,44 +13,40 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.1.2}Heat and Temperature}{9}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2}Optimisation Algorithm}{10}% 
+\contentsline {subsection}{\numberline {3.2}Optimisation Algorithm}{11}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3}Design Validation}{11}% 
+\contentsline {subsection}{\numberline {3.3}Physical Design and Manufacturing}{15}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4}Physical Design and Manufacturing}{12}% 
+\contentsline {subsubsection}{\numberline {3.3.1}Shell}{15}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.4.1}Shell}{12}% 
+\contentsline {subsubsection}{\numberline {3.3.2}Core}{17}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.4.2}Core}{13}% 
+\contentsline {subsubsection}{\numberline {3.3.3}Wire Bobbin}{17}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.4.3}Wire Bobbin}{14}% 
+\contentsline {subsection}{\numberline {3.4}Assembly}{18}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5}Assembly}{14}% 
+\contentsline {subsubsection}{\numberline {3.4.1}Shell and Magnet Assembly}{18}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.5.1}Shell and Magnet Assembly}{14}% 
+\contentsline {subsubsection}{\numberline {3.4.2}Wire Assembly}{19}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.5.2}Wire Assembly}{14}% 
+\contentsline {subsubsection}{\numberline {3.4.3}Health, Safety and Containment}{22}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.5.3}Health, Safety and Containment}{14}% 
+\contentsline {section}{\numberline {4}Experiment Designs and Results}{23}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Experiment Designs and Results}{15}% 
+\contentsline {subsection}{\numberline {4.1}Experiment 1: Force Characterisation}{23}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}Experiment 1: Force Characterisation}{15}% 
+\contentsline {subsubsection}{\numberline {4.1.1}Method}{23}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.1.1}Method}{15}% 
+\contentsline {subsubsection}{\numberline {4.1.2}Results}{23}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.1.2}Results}{16}% 
+\contentsline {subsection}{\numberline {4.2}Experiment 2: Circulation of eGaIn in Motor}{24}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2}Experiment 2: Circulation Thermoregulation}{16}% 
+\contentsline {subsubsection}{\numberline {4.2.1}Method}{24}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.2.1}Method}{16}% 
+\contentsline {subsubsection}{\numberline {4.2.2}Results}{24}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.2.2}Results}{16}% 
+\contentsline {section}{\numberline {5}Discussion}{25}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Discussion}{17}% 
+\contentsline {section}{\numberline {6}Conclusion}{28}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Conclusion}{18}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Appendices}{19}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1}Full Results of Motor Force Experiment}{19}% 
+\contentsline {section}{\numberline {7}Appendix}{29}% 

@@ -1999,16 +1999,26 @@
     <bcf:citekey order="1">engineeringtoolboxPermeability2016</bcf:citekey>
     <bcf:citekey order="2">baartmanMaterialsLibraryFEMM2007</bcf:citekey>
     <bcf:citekey order="3">engineeringtoolboxPermeability2016</bcf:citekey>
-    <bcf:citekey order="4">jinStretchableLoudspeakerUsing2015</bcf:citekey>
+    <bcf:citekey order="4">zrnicResistivitySurfaceTension1969</bcf:citekey>
     <bcf:citekey order="5">dickeyEutecticGalliumIndiumEGaIn2008</bcf:citekey>
-    <bcf:citekey order="6">dickeyEutecticGalliumIndiumEGaIn2008</bcf:citekey>
-    <bcf:citekey order="7">houghtonHazards2007</bcf:citekey>
-    <bcf:citekey order="8">liuCharacterizationNontoxicLiquidMetal2012</bcf:citekey>
-    <bcf:citekey order="9">coatesTransformerCoresReluctance2018</bcf:citekey>
-    <bcf:citekey order="10">engineeringtoolboxPermeability2016</bcf:citekey>
-    <bcf:citekey order="11">changChapterElectrodynamics2006</bcf:citekey>
-    <bcf:citekey order="12">engineeringtoolboxPermeability2016</bcf:citekey>
-    <bcf:citekey order="13">cuiLiquidMetalCorrosion2018</bcf:citekey>
+    <bcf:citekey order="6">xuEffectOxidationMechanical2012</bcf:citekey>
+    <bcf:citekey order="7">saysAISI1020Carbon2013</bcf:citekey>
+    <bcf:citekey order="8">jinStretchableLoudspeakerUsing2015</bcf:citekey>
+    <bcf:citekey order="9">dickeyEutecticGalliumIndiumEGaIn2008</bcf:citekey>
+    <bcf:citekey order="10">dickeyEutecticGalliumIndiumEGaIn2008</bcf:citekey>
+    <bcf:citekey order="11">houghtonHazards2007</bcf:citekey>
+    <bcf:citekey order="12">liuCharacterizationNontoxicLiquidMetal2012</bcf:citekey>
+    <bcf:citekey order="13">coatesTransformerCoresReluctance2018</bcf:citekey>
+    <bcf:citekey order="14">engineeringtoolboxPermeability2016</bcf:citekey>
+    <bcf:citekey order="15">changChapterElectrodynamics2006</bcf:citekey>
+    <bcf:citekey order="16">engineeringtoolboxPermeability2016</bcf:citekey>
+    <bcf:citekey order="17">mclymanMagneticMaterialsTheir2004</bcf:citekey>
+    <bcf:citekey order="18">indiumcorporationPRODUCTDATASHEET2019</bcf:citekey>
+    <bcf:citekey order="19">dickeyEutecticGalliumIndiumEGaIn2008</bcf:citekey>
+    <bcf:citekey order="20">cuiLiquidMetalCorrosion2018</bcf:citekey>
+    <bcf:citekey order="21">doMiniatureSoftElectromagnetic2018</bcf:citekey>
+    <bcf:citekey order="22">lazarusCreating3DPrinted2019</bcf:citekey>
+    <bcf:citekey order="23">ferrotecFerrotecFerrofluidInnovating</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

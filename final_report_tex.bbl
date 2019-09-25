@@ -79,86 +79,56 @@
       \verb /home/guan/Zotero/storage/37PWVBJ9/Steel_magnetic_properties.pdf
       \endverb
     \endentry
-    \entry{jinStretchableLoudspeakerUsing2015}{article}{}
-      \name{author}{8}{}{%
-        {{hash=005f4b187e98b274c49705e1c1249fee}{%
-           family={Jin},
-           familyi={J\bibinitperiod},
-           given={Sang\bibnamedelima Woo},
-           giveni={S\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
-        {{hash=0b62c0f357d2bc041d82edabfa5118b5}{%
-           family={Park},
-           familyi={P\bibinitperiod},
-           given={Jeongwon},
-           giveni={J\bibinitperiod}}}%
-        {{hash=fcaff03c9dba2a56faf8986fbab205fb}{%
-           family={Hong},
-           familyi={H\bibinitperiod},
-           given={Soo\bibnamedelima Yeong},
-           giveni={S\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
-        {{hash=13803aba3effc6c968f44e9527f0e15e}{%
-           family={Park},
-           familyi={P\bibinitperiod},
-           given={Heun},
-           giveni={H\bibinitperiod}}}%
-        {{hash=f0d1026d20dcc2aece1ee29c14d41aae}{%
-           family={Jeong},
-           familyi={J\bibinitperiod},
-           given={Yu\bibnamedelima Ra},
-           giveni={Y\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
-        {{hash=ff977c25b04343e14f5ebecc2b7c24d9}{%
-           family={Park},
-           familyi={P\bibinitperiod},
-           given={Junhong},
-           giveni={J\bibinitperiod}}}%
-        {{hash=51652a068245d448502457729e1b3333}{%
-           family={Lee},
-           familyi={L\bibinitperiod},
-           given={Sang-Soo},
-           giveni={S\bibinithyphendelim S\bibinitperiod}}}%
-        {{hash=debc9b15ea98657cb74ec84d5c4200f6}{%
-           family={Ha},
-           familyi={H\bibinitperiod},
-           given={Jeong\bibnamedelima Sook},
-           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+    \entry{zrnicResistivitySurfaceTension1969}{article}{}
+      \name{author}{2}{}{%
+        {{hash=41ae9cd6acf7b955953c5c76d8afd290}{%
+           family={Zrnic},
+           familyi={Z\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=383fa4ba9159a3cfa71771bfcafb00bd}{%
+           family={Swatik},
+           familyi={S\bibinitperiod},
+           given={D.\bibnamedelimi S.},
+           giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
       }
-      \strng{namehash}{8adb906235c4f1db127ed50eb8d20a88}
-      \strng{fullhash}{65ef3b331ea73ca37d5b313a8d6fd913}
-      \strng{bibnamehash}{65ef3b331ea73ca37d5b313a8d6fd913}
-      \strng{authorbibnamehash}{65ef3b331ea73ca37d5b313a8d6fd913}
-      \strng{authornamehash}{8adb906235c4f1db127ed50eb8d20a88}
-      \strng{authorfullhash}{65ef3b331ea73ca37d5b313a8d6fd913}
+      \strng{namehash}{7ed6605ed16606346a254096b146dbae}
+      \strng{fullhash}{7ed6605ed16606346a254096b146dbae}
+      \strng{bibnamehash}{7ed6605ed16606346a254096b146dbae}
+      \strng{authorbibnamehash}{7ed6605ed16606346a254096b146dbae}
+      \strng{authornamehash}{7ed6605ed16606346a254096b146dbae}
+      \strng{authorfullhash}{7ed6605ed16606346a254096b146dbae}
       \field{sortinit}{4}
       \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Considering the various applications of wearable and bio-implantable devices, it is desirable to realize stretchable acoustic devices for body-attached applications such as sensing biological signals, hearing aids, and notification of information via sound. In this study, we demonstrate the facile fabrication of a Stretchable Acoustic Device (SAD) using liquid metal coil of Galinstan where the SAD is operated by the electromagnetic interaction between the liquid metal coil and a Neodymium (Nd) magnet. To fabricate a liquid metal coil, Galinstan was injected into a micro-patterned elastomer channel. This fabricated SAD was operated simultaneously as a loudspeaker and a microphone. Measurements of the frequency response confirmed that the SAD was mechanically stable under both 50\% uniaxial and 30\% biaxial strains. Furthermore, 2000 repetitive applications of a 50\% uniaxial strain did not induce any noticeable degradation of the sound pressure. Both voice and the beeping sound of an alarm clock were successfully recorded and played back through our SAD while it was attached to the wrist under repeated deformation. These results demonstrate the high potential of the fabricated SAD using Galinstan voice coil in various research fields including stretchable, wearable, and bio-implantable acoustic devices.}
-      \field{day}{16}
-      \field{issn}{2045-2322}
-      \field{journaltitle}{Scientific Reports}
-      \field{langid}{english}
-      \field{month}{7}
-      \field{title}{Stretchable {{Loudspeaker}} Using {{Liquid Metal Microchannel}}}
-      \field{urlday}{28}
-      \field{urlmonth}{4}
+      \field{day}{1}
+      \field{issn}{0022-5088}
+      \field{journaltitle}{Journal of the Less Common Metals}
+      \field{month}{5}
+      \field{number}{1}
+      \field{shortjournal}{Journal of the Less Common Metals}
+      \field{title}{On the Resistivity and Surface Tension of the Eutectic Alloy of Gallium and Indium}
+      \field{urlday}{24}
+      \field{urlmonth}{9}
       \field{urlyear}{2019}
-      \field{volume}{5}
-      \field{year}{2015}
+      \field{volume}{18}
+      \field{year}{1969}
       \field{dateera}{ce}
       \field{urldateera}{ce}
-      \field{pages}{11695}
-      \range{pages}{1}
+      \field{pages}{67\bibrangedash 68}
+      \range{pages}{2}
       \verb{doi}
-      \verb 10.1038/srep11695
+      \verb 10.1016/0022-5088(69)90121-0
       \endverb
       \verb{file}
-      \verb /home/guan/Zotero/storage/B6YGAI2U/Jin et al. - 2015 - Stretchable Loudspeaker using Liquid Metal Microch.pdf;/home/guan/Zotero/storage/ZD5MW89H/srep11695.html
+      \verb /home/guan/Zotero/storage/HIQG54DM/Zrnic and Swatik - 1969 - On the resistivity and surface tension of the eute.pdf;/home/guan/Zotero/storage/FRZ9Y6WM/0022508869901210.html
       \endverb
       \verb{urlraw}
-      \verb https://www.nature.com/articles/srep11695
+      \verb http://www.sciencedirect.com/science/article/pii/0022508869901210
       \endverb
       \verb{url}
-      \verb https://www.nature.com/articles/srep11695
+      \verb http://www.sciencedirect.com/science/article/pii/0022508869901210
       \endverb
     \endentry
     \entry{dickeyEutecticGalliumIndiumEGaIn2008}{article}{}
@@ -234,6 +204,197 @@
       \endverb
       \keyw{alloys,flexible electronics,gallium,indium,microchannels,microfluidics,responsive alloys}
     \endentry
+    \entry{xuEffectOxidationMechanical2012}{article}{}
+      \name{author}{5}{}{%
+        {{hash=067895bf1c753fafbe4d786a43447fb7}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Qin},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=0d3a2a768f5589ac62b799a054337545}{%
+           family={Qudalov},
+           familyi={Q\bibinitperiod},
+           given={Nikolai},
+           giveni={N\bibinitperiod}}}%
+        {{hash=d8f32e81af6b394c28df508fbebb33f2}{%
+           family={Guo},
+           familyi={G\bibinitperiod},
+           given={Qiti},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=10ab24cc7c05765e2257ffe8418b7080}{%
+           family={Jaeger},
+           familyi={J\bibinitperiod},
+           given={Heinrich},
+           giveni={H\bibinitperiod}}}%
+        {{hash=596f4520439e93aa4318f78710b4caea}{%
+           family={Brown},
+           familyi={B\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{33292e9b04f57f8b07031f9ac5902379}
+      \strng{fullhash}{14802fe23fc53ba6382cb4d6a43b0feb}
+      \strng{bibnamehash}{14802fe23fc53ba6382cb4d6a43b0feb}
+      \strng{authorbibnamehash}{14802fe23fc53ba6382cb4d6a43b0feb}
+      \strng{authornamehash}{33292e9b04f57f8b07031f9ac5902379}
+      \strng{authorfullhash}{14802fe23fc53ba6382cb4d6a43b0feb}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Liquid metals exhibit remarkable mechanical properties, in particular large surface tension and low viscosity. However, these properties are greatly affected by oxidation when exposed to air. We measure the viscosity, surface tension, and contact angle of gallium (Ga) and a eutectic gallium-indium alloy (eGaIn) while controlling such oxidation by surrounding the metal with an acid bath of variable concentration. Rheometry measurements reveal a yield stress directly attributable to an oxide skin that obscures the intrinsic behavior of the liquid metals. We demonstrate how the intrinsic viscosity can be obtained with precision through a scaling technique that collapses low- and high-Reynolds number data. Measuring surface tension with a pendant drop method, we show that the oxide skin generates a surface stress that mimics surface tension and develop a simple model to relate this to the yield stress obtained from rheometry. We find that yield stress, surface tension, and contact angle all transition from solid-like to liquid behavior at the same critical acid concentration, thereby quantitatively confirming that the wettability of these liquid metals is due to the oxide skin.}
+      \field{eprinttype}{arxiv}
+      \field{issn}{1070-6631, 1089-7666}
+      \field{journaltitle}{Physics of Fluids}
+      \field{month}{6}
+      \field{number}{6}
+      \field{shortjournal}{Physics of Fluids}
+      \field{title}{Effect of Oxidation on the {{Mechanical Properties}} of {{Liquid Gallium}} and {{Eutectic Gallium}}-{{Indium}}}
+      \field{urlday}{24}
+      \field{urlmonth}{9}
+      \field{urlyear}{2019}
+      \field{volume}{24}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{063101}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1063/1.4724313
+      \endverb
+      \verb{eprint}
+      \verb 1201.4828
+      \endverb
+      \verb{file}
+      \verb /home/guan/Zotero/storage/XATHV792/Xu et al. - 2012 - Effect of oxidation on the Mechanical Properties o.pdf;/home/guan/Zotero/storage/4JHTWD6A/1201.html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1201.4828
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1201.4828
+      \endverb
+      \keyw{Condensed Matter - Materials Science,Condensed Matter - Soft Condensed Matter,Physics - Fluid Dynamics}
+    \endentry
+    \entry{saysAISI1020Carbon2013}{online}{}
+      \name{author}{1}{}{%
+        {{hash=bb838fd39a7f6fdddecba183da42bb10}{%
+           family={Says},
+           familyi={S\bibinitperiod},
+           given={Sohan\bibnamedelima Lal},
+           giveni={S\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{bb838fd39a7f6fdddecba183da42bb10}
+      \strng{fullhash}{bb838fd39a7f6fdddecba183da42bb10}
+      \strng{bibnamehash}{bb838fd39a7f6fdddecba183da42bb10}
+      \strng{authorbibnamehash}{bb838fd39a7f6fdddecba183da42bb10}
+      \strng{authornamehash}{bb838fd39a7f6fdddecba183da42bb10}
+      \strng{authorfullhash}{bb838fd39a7f6fdddecba183da42bb10}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Carbon steels is a category of steel, which contains 0.12 to 2\% carbon. This steel category gains hardness and strength with heat treatment when the percentage of carbon content increases but the ductility is reduced.}
+      \field{journaltitle}{AZoM.com}
+      \field{langid}{english}
+      \field{title}{{{AISI}} 1020 {{Carbon Steel}} ({{UNS G10200}})}
+      \field{urlday}{24}
+      \field{urlmonth}{9}
+      \field{urlyear}{2019}
+      \field{year}{2013-06-07T07:16:00.0000000-04:00}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/guan/Zotero/storage/3HPJXUAN/article.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.azom.com/article.aspx?ArticleID=9145
+      \endverb
+      \verb{url}
+      \verb https://www.azom.com/article.aspx?ArticleID=9145
+      \endverb
+    \endentry
+    \entry{jinStretchableLoudspeakerUsing2015}{article}{}
+      \name{author}{8}{}{%
+        {{hash=005f4b187e98b274c49705e1c1249fee}{%
+           family={Jin},
+           familyi={J\bibinitperiod},
+           given={Sang\bibnamedelima Woo},
+           giveni={S\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=0b62c0f357d2bc041d82edabfa5118b5}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={Jeongwon},
+           giveni={J\bibinitperiod}}}%
+        {{hash=fcaff03c9dba2a56faf8986fbab205fb}{%
+           family={Hong},
+           familyi={H\bibinitperiod},
+           given={Soo\bibnamedelima Yeong},
+           giveni={S\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=13803aba3effc6c968f44e9527f0e15e}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={Heun},
+           giveni={H\bibinitperiod}}}%
+        {{hash=f0d1026d20dcc2aece1ee29c14d41aae}{%
+           family={Jeong},
+           familyi={J\bibinitperiod},
+           given={Yu\bibnamedelima Ra},
+           giveni={Y\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=ff977c25b04343e14f5ebecc2b7c24d9}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={Junhong},
+           giveni={J\bibinitperiod}}}%
+        {{hash=51652a068245d448502457729e1b3333}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Sang-Soo},
+           giveni={S\bibinithyphendelim S\bibinitperiod}}}%
+        {{hash=debc9b15ea98657cb74ec84d5c4200f6}{%
+           family={Ha},
+           familyi={H\bibinitperiod},
+           given={Jeong\bibnamedelima Sook},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{8adb906235c4f1db127ed50eb8d20a88}
+      \strng{fullhash}{65ef3b331ea73ca37d5b313a8d6fd913}
+      \strng{bibnamehash}{65ef3b331ea73ca37d5b313a8d6fd913}
+      \strng{authorbibnamehash}{65ef3b331ea73ca37d5b313a8d6fd913}
+      \strng{authornamehash}{8adb906235c4f1db127ed50eb8d20a88}
+      \strng{authorfullhash}{65ef3b331ea73ca37d5b313a8d6fd913}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Considering the various applications of wearable and bio-implantable devices, it is desirable to realize stretchable acoustic devices for body-attached applications such as sensing biological signals, hearing aids, and notification of information via sound. In this study, we demonstrate the facile fabrication of a Stretchable Acoustic Device (SAD) using liquid metal coil of Galinstan where the SAD is operated by the electromagnetic interaction between the liquid metal coil and a Neodymium (Nd) magnet. To fabricate a liquid metal coil, Galinstan was injected into a micro-patterned elastomer channel. This fabricated SAD was operated simultaneously as a loudspeaker and a microphone. Measurements of the frequency response confirmed that the SAD was mechanically stable under both 50\% uniaxial and 30\% biaxial strains. Furthermore, 2000 repetitive applications of a 50\% uniaxial strain did not induce any noticeable degradation of the sound pressure. Both voice and the beeping sound of an alarm clock were successfully recorded and played back through our SAD while it was attached to the wrist under repeated deformation. These results demonstrate the high potential of the fabricated SAD using Galinstan voice coil in various research fields including stretchable, wearable, and bio-implantable acoustic devices.}
+      \field{day}{16}
+      \field{issn}{2045-2322}
+      \field{journaltitle}{Scientific Reports}
+      \field{langid}{english}
+      \field{month}{7}
+      \field{title}{Stretchable {{Loudspeaker}} Using {{Liquid Metal Microchannel}}}
+      \field{urlday}{28}
+      \field{urlmonth}{4}
+      \field{urlyear}{2019}
+      \field{volume}{5}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{11695}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/srep11695
+      \endverb
+      \verb{file}
+      \verb /home/guan/Zotero/storage/B6YGAI2U/Jin et al. - 2015 - Stretchable Loudspeaker using Liquid Metal Microch.pdf;/home/guan/Zotero/storage/ZD5MW89H/srep11695.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/srep11695
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/srep11695
+      \endverb
+    \endentry
     \entry{houghtonHazards2007}{incollection}{}
       \name{author}{1}{}{%
         {{hash=822b8f6140b4c8140c53748e7779524b}{%
@@ -251,8 +412,8 @@
       \strng{authorbibnamehash}{822b8f6140b4c8140c53748e7779524b}
       \strng{authornamehash}{822b8f6140b4c8140c53748e7779524b}
       \strng{authorfullhash}{822b8f6140b4c8140c53748e7779524b}
-      \field{sortinit}{7}
-      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Deliberately, accidentally, or consequentially, first responders and waste site workers handle unknown substances of varying degrees of danger every day. Unidentified chemicals involved with clandestine production of WMD agents or drugs, explosive materials, unlabeled waste, and forensic samples all pose a threat to the worker and those they protect. A straightforward, concise handbook of practical strategies is needed to perform effective risk assessment and management in the face of uncertainty. Written for emergency workers responsible for the safe response to and management of unknown hazardous materials, Emergency Characterization of Unknown Materials providesreadily applicable strategies for developing and implementing a fluid concept of risk analysis based on hazard characterization in emergency situations where definitive identification of the material may be impractical or even impossible. Using a hands-on approach involving the manipulation of small amounts of material, the author discusses strategies to identify threats and vulnerabilities, ascertain exposure, and reduce or eliminate impact. The book begins with an overview of chemical and physical terms and definitions. It continues with a look at types of hazards presented by chemical compounds and mixtures, organisms, and radiation sources. It covers approximately 63 portable technologies for field identification or characterization and examines general technological advantages and disadvantages relative to hazard identification. The final chapter presents strategies for use in identifying or characterizing suspected weapons of mass destruction, illegal drugs, explosive substances, biological hazards, and other hazardous materials. Each chapter includes extensive references and a comprehensive index. Providing a sweeping overview of hazards and emphasizing risk analysis and public safety, Emergency Characterization of Unknown Materials gives first responders an advantage they deserve.}
@@ -293,8 +454,8 @@
       \strng{authorbibnamehash}{888cf2c18c4b93882574e7555ed777d5}
       \strng{authornamehash}{888cf2c18c4b93882574e7555ed777d5}
       \strng{authorfullhash}{888cf2c18c4b93882574e7555ed777d5}
-      \field{sortinit}{8}
-      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We have obtained interfacial properties of Galinstan, a nontoxic liquid-metal alloy, to help replace mercury in miniature devices. To prevent formation of an oxide skin that severely hinders the fluidic behavior of small Galinstan droplets and leads to inaccurate property data, we performed our experiments in a nitrogen-filled glove box. It was found that only if never exposed to oxygen levels above 1 part per million (ppm) would Galinstan droplets behave like a liquid. Two key properties were then investigated: contact angles and surface tension. Advancing and receding contact angles of Galinstan were measured from sessile droplets on various materials: for example, 146.8 and 121.5, respectively, on glass. Surface tension was measured by the pendant-drop method to be 534.6 10.7 mN/m. All the measurements were done in nitrogen at 28 with oxygen and moisture levels below 0.5 ppm. To help design droplet-based microfluidic devices, we tested the response of Galinstan to electrowetting-on-dielectric actuation.}
@@ -330,8 +491,8 @@
       \strng{authorbibnamehash}{87004389f6f6f4710311259172de4a31}
       \strng{authornamehash}{87004389f6f6f4710311259172de4a31}
       \strng{authorfullhash}{87004389f6f6f4710311259172de4a31}
-      \field{sortinit}{9}
-      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{22}
@@ -390,6 +551,70 @@
       \verb http://www.phys.nthu.edu.tw/~thschanga/notes/EM07P1.pdf
       \endverb
     \endentry
+    \entry{mclymanMagneticMaterialsTheir2004}{article}{}
+      \name{author}{1}{}{%
+        {{hash=4de946d66d31c5dd5628c43b97dd0fc2}{%
+           family={Mclyman},
+           familyi={M\bibinitperiod},
+           given={Colonel\bibnamedelimb Wm\bibnamedelima T},
+           giveni={C\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \strng{namehash}{4de946d66d31c5dd5628c43b97dd0fc2}
+      \strng{fullhash}{4de946d66d31c5dd5628c43b97dd0fc2}
+      \strng{bibnamehash}{4de946d66d31c5dd5628c43b97dd0fc2}
+      \strng{authorbibnamehash}{4de946d66d31c5dd5628c43b97dd0fc2}
+      \strng{authornamehash}{4de946d66d31c5dd5628c43b97dd0fc2}
+      \strng{authorfullhash}{4de946d66d31c5dd5628c43b97dd0fc2}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Magnetic {{Materials}} and {{Their Characteristics}}}
+      \field{year}{2004}
+      \field{dateera}{ce}
+      \field{pages}{53}
+      \range{pages}{1}
+      \verb{file}
+      \verb /home/guan/Zotero/storage/NZEYBUXQ/Mclyman - 2004 - Magnetic Materials and Their Characteristics.pdf
+      \endverb
+    \endentry
+    \entry{indiumcorporationPRODUCTDATASHEET2019}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=48ab4c155c7040c332fdd971af76f5ff}{%
+           family={{Indium Corporation}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Indium Corporation}%
+      }
+      \strng{namehash}{48ab4c155c7040c332fdd971af76f5ff}
+      \strng{fullhash}{48ab4c155c7040c332fdd971af76f5ff}
+      \strng{bibnamehash}{48ab4c155c7040c332fdd971af76f5ff}
+      \strng{authorbibnamehash}{48ab4c155c7040c332fdd971af76f5ff}
+      \strng{authornamehash}{48ab4c155c7040c332fdd971af76f5ff}
+      \strng{authorfullhash}{48ab4c155c7040c332fdd971af76f5ff}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{{PRODUCT DATA SHEET Liquid Metal Gallium}} and {{Gallium Alloys}}}
+      \field{urlday}{25}
+      \field{urlmonth}{9}
+      \field{urlyear}{2019}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/guan/Zotero/storage/ZREM2WSN/liquid_metal_97826_a4_r7.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://documents.indium.com/qdynamo/download.php?docid=622
+      \endverb
+      \verb{url}
+      \verb https://documents.indium.com/qdynamo/download.php?docid=622
+      \endverb
+    \endentry
     \entry{cuiLiquidMetalCorrosion2018}{article}{}
       \name{author}{7}{}{%
         {{hash=63d68b114efc254c53bf6876c68695ca}{%
@@ -434,8 +659,8 @@
       \strng{authorbibnamehash}{ef0dd1bece591380097c9fc8a7984807}
       \strng{authornamehash}{f8d41fe6e64309184553cabdbd9d4fa4}
       \strng{authorfullhash}{ef0dd1bece591380097c9fc8a7984807}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The effects of liquid metal corrosion on the thermophysical properties of three conventional metallic alloys, including T2 copper, 304 stainless steel and anodized 6061 aluminum alloy, in the range of 100–400 °C were comprehensively clarified in this paper. It was experimentally found that the corrosion products on the copper surface existed as the intermetallic compound of CuGa2, and that FeGa3 and Cr3Ga4 were formed on the surface of stainless steel. The heat conductivity of copper plate decreased with the increasing corrosion temperature. The heat conductivity of the corroded copper sample sharply decreased at the beginning stage. When the copper plate was exposed in liquid eutectic gallium–indium over 12 h, the trend of the tested heat conductivity changing curve showed a smooth tendency and reached a steady state finally. The heat conductivity of the corroded copper plate was decided by the corrosion speed with an exponential function of v=at(0.4{$<$}a{$<$}0.6)v=at(0.4{$<$}a{$<$}0.6) v = a\^\{t\} (0.4 {$<$} a {$<$} 0.6) . Corrosion phenomena were not found on the surface of the anodized 6061 aluminum alloy according to the experimental results from ambient temperature to 400 °C, which disclosed their suitability as the structural material. The present findings would serve as an important reference for the use of liquid metal cooling in high-power electronic devices and high-temperature systems.}
@@ -470,55 +695,128 @@
       \endverb
       \keyw{Cooling devices,Gallium-based liquid metal,Heat conductivity,High-temperature electronics,Liquid metal corrosion}
     \endentry
-    \entry{liuLiquidMetalMachine2016}{article}{}
-      \name{author}{1}{}{%
-        {{hash=83f95dca7c81df3fe67380769eb0321c}{%
-           family={Liu},
-           familyi={L\bibinitperiod},
-           given={Jing},
-           giveni={J\bibinitperiod}}}%
+    \entry{doMiniatureSoftElectromagnetic2018}{article}{}
+      \name{author}{4}{}{%
+        {{hash=ca8ff96cdadbfc2465146947ddf538bf}{%
+           family={Do},
+           familyi={D\bibinitperiod},
+           given={Thanh\bibnamedelima Nho},
+           giveni={T\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=8b7a5e240408b172e83d9181f288f4e6}{%
+           family={Phan},
+           familyi={P\bibinitperiod},
+           given={Hung},
+           giveni={H\bibinitperiod}}}%
+        {{hash=d3db921da16821ec15ada0dedaf07b96}{%
+           family={Nguyen},
+           familyi={N\bibinitperiod},
+           given={Thuc-Quyen},
+           giveni={T\bibinithyphendelim Q\bibinitperiod}}}%
+        {{hash=00d29d40d973144e2e4b6ea2543b7858}{%
+           family={Visell},
+           familyi={V\bibinitperiod},
+           given={Yon},
+           giveni={Y\bibinitperiod}}}%
       }
-      \strng{namehash}{83f95dca7c81df3fe67380769eb0321c}
-      \strng{fullhash}{83f95dca7c81df3fe67380769eb0321c}
-      \strng{bibnamehash}{83f95dca7c81df3fe67380769eb0321c}
-      \strng{authorbibnamehash}{83f95dca7c81df3fe67380769eb0321c}
-      \strng{authornamehash}{83f95dca7c81df3fe67380769eb0321c}
-      \strng{authorfullhash}{83f95dca7c81df3fe67380769eb0321c}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \strng{namehash}{79530cd0124a14612e4236e25f2b9b07}
+      \strng{fullhash}{949693feb1a1ffc2d962c74a4b11c629}
+      \strng{bibnamehash}{949693feb1a1ffc2d962c74a4b11c629}
+      \strng{authorbibnamehash}{949693feb1a1ffc2d962c74a4b11c629}
+      \strng{authornamehash}{79530cd0124a14612e4236e25f2b9b07}
+      \strng{authorfullhash}{949693feb1a1ffc2d962c74a4b11c629}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{day}{1}
-      \field{issn}{1869-1900}
-      \field{journaltitle}{Science China Technological Sciences}
+      \field{abstract}{Electromagnetic actuators (EMAs) serve the majority of motion control needs in fields ranging from industrial robotics to automotive systems and biomedical devices, due to their unmatched combination of speed, precision, force, and scalability. This paper describes the design and fabrication of miniature soft EMAs that operate based on the Lorentz force principle. The actuators are fabricated from silicone polymer, liquid metal (LM) alloy (eutectic gallium indium, EGaIn), and magnetic (NdFeB) powder. They are small, intrinsically deformable, and can be fabricated using simple techniques. The central elements of the actuators are fine, 3D helical coil conductors, which are used as electromagnetic inductors. The coils are formed from stretchable filaments that are filled with a LM alloy. To achieve high power densities, the filaments themselves may be fabricated from colloids of EGaIn microdroplets in a silicone polymer matrix, allowing them to dissipate heat and accommodate high currents, and thus high forces. Millimeter-scale cylindrical actuators are demonstrated for linear high frequency motion and articulated devices for bending motion. These actuators are applied in a vibrotactile feedback display and in a miniature soft robotic gripper.}
+      \field{issn}{1616-3028}
+      \field{journaltitle}{Advanced Functional Materials}
       \field{langid}{english}
-      \field{month}{11}
-      \field{number}{11}
-      \field{shortjournal}{Sci. China Technol. Sci.}
-      \field{title}{Liquid Metal Machine Is Evolving to Soft Robotics}
-      \field{urlday}{2}
-      \field{urlmonth}{5}
+      \field{number}{18}
+      \field{title}{Miniature {{Soft Electromagnetic Actuators}} for {{Robotic Applications}}}
+      \field{urlday}{30}
+      \field{urlmonth}{4}
       \field{urlyear}{2019}
-      \field{volume}{59}
-      \field{year}{2016}
+      \field{volume}{28}
+      \field{year}{2018}
       \field{dateera}{ce}
       \field{urldateera}{ce}
-      \field{pages}{1793\bibrangedash 1794}
-      \range{pages}{2}
+      \field{pages}{1800244}
+      \range{pages}{1}
       \verb{doi}
-      \verb 10.1007/s11431-016-0696-7
+      \verb 10.1002/adfm.201800244
       \endverb
       \verb{file}
-      \verb /home/guan/Zotero/storage/FTUSJRNC/Liu - 2016 - Liquid metal machine is evolving to soft robotics.pdf
+      \verb /home/guan/Zotero/storage/263VFKGM/Do et al. - 2018 - Miniature Soft Electromagnetic Actuators for Robot.pdf;/home/guan/Zotero/storage/GK3RX4AS/adfm.html
       \endverb
       \verb{urlraw}
-      \verb https://doi.org/10.1007/s11431-016-0696-7
+      \verb http://onlinelibrary.wiley.com/doi/abs/10.1002/adfm.201800244
       \endverb
       \verb{url}
-      \verb https://doi.org/10.1007/s11431-016-0696-7
+      \verb http://onlinelibrary.wiley.com/doi/abs/10.1002/adfm.201800244
       \endverb
+      \keyw{gallium indium alloys,high thermal conductivity,miniature grippers,soft electromagnetic actuators,soft polymers,soft tactile actuators}
+    \endentry
+    \entry{lazarusCreating3DPrinted2019}{article}{}
+      \name{author}{3}{}{%
+        {{hash=e0d5a06028dee22bc1d775032b360f21}{%
+           family={Lazarus},
+           familyi={L\bibinitperiod},
+           given={Nathan},
+           giveni={N\bibinitperiod}}}%
+        {{hash=488ac5b2f7873f29a82add942de68440}{%
+           family={Bedair},
+           familyi={B\bibinitperiod},
+           given={Sarah\bibnamedelima S.},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=0cb40cc0e4a43bcd983f1350c19bcb49}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={Gabriel\bibnamedelima L.},
+           giveni={G\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{cef4a94ff5573a1164c06e5a7bf30704}
+      \strng{fullhash}{cef4a94ff5573a1164c06e5a7bf30704}
+      \strng{bibnamehash}{cef4a94ff5573a1164c06e5a7bf30704}
+      \strng{authorbibnamehash}{cef4a94ff5573a1164c06e5a7bf30704}
+      \strng{authornamehash}{cef4a94ff5573a1164c06e5a7bf30704}
+      \strng{authorfullhash}{cef4a94ff5573a1164c06e5a7bf30704}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Combining electrical and magnetic materials in the same part has been a challenge in 3D printing due to difficulties co-printing complex materials in many additive manufacturing processes. Past 3D printed inductors and other similar magnetic devices have therefore either lacked the magnetic materials necessary for improved performance, or required sintering at high temperatures for extended periods, beyond the capability of most 3D printable polymers. In this work, we demonstrate a room temperature process for incorporating conductive and magnetic materials into the same 3D printed device. A multi-stage fabrication process based on 3D printing followed by fill with magnetic and conductive fluids is proposed. Multi-layer microfluidic channels for magnetic passives are first printed in a stereolithography process. The microfluidic systems are then filled with room temperature liquid metal, a gallium alloy liquid at room temperature, and ferrofluid to create inductors, transformers and wireless power coils. Through the addition of ferrofluid as a magnetic material, increases in inductance density by nearly a factor of three were demonstrated, in addition to coupling improvements for transformer and wireless power coils compared to the devices before magnetic fill.}
+      \field{day}{1}
+      \field{issn}{2214-8604}
+      \field{journaltitle}{Additive Manufacturing}
+      \field{month}{3}
+      \field{shortjournal}{Additive Manufacturing}
+      \field{title}{Creating {{3D}} Printed Magnetic Devices with Ferrofluids and Liquid Metals}
+      \field{urlday}{24}
+      \field{urlmonth}{9}
+      \field{urlyear}{2019}
+      \field{volume}{26}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{15\bibrangedash 21}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1016/j.addma.2018.12.012
+      \endverb
+      \verb{file}
+      \verb /home/guan/Zotero/storage/9AGQ9DR5/S2214860418309126.html
+      \endverb
+      \verb{urlraw}
+      \verb http://www.sciencedirect.com/science/article/pii/S2214860418309126
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S2214860418309126
+      \endverb
+      \keyw{Ferrofluid,Inductors,Liquid metal,Stereolithography,Transformers}
     \endentry
   \enddatalist
+  \missing{ferrotecFerrotecFerrofluidInnovating}
 \endrefsection
 \endinput
 
