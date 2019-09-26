@@ -1,18 +1,17 @@
 [0] Config.pm:304> INFO - This is Biber 2.12
 [0] Config.pm:307> INFO - Logfile is 'LiteratureReview.blg'
-[32] biber:315> INFO - === Thu Sep 26, 2019, 17:03:15
-[53] Biber.pm:371> INFO - Reading 'LiteratureReview.bcf'
-[120] Biber.pm:889> INFO - Found 28 citekeys in bib section 0
-[136] Biber.pm:4093> INFO - Processing section 0
-[148] Biber.pm:4254> INFO - Looking for bibtex format file 'LitReview.bib' for section 0
-[153] bibtex.pm:1523> INFO - LaTeX decoding ...
-[256] bibtex.pm:1340> INFO - Found BibTeX data source 'LitReview.bib'
-[508] Utils.pm:193> WARN - ISBN '978-1-118-35978-5 978-1-119-99274-5' in entry 'moritzElectromechanicalMotionSystems2013' is invalid - run biber with '--validate_datamodel' for details.
-[568] Utils.pm:193> WARN - I didn't find a database entry for 'zrnicResistivitySurfaceTension1969' (section 0)
-[608] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[608] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[609] Biber.pm:3921> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[609] Biber.pm:3927> INFO - No sort tailoring available for locale 'en-US'
-[643] bbl.pm:636> INFO - Writing 'LiteratureReview.bbl' with encoding 'UTF-8'
-[668] bbl.pm:739> INFO - Output to LiteratureReview.bbl
-[668] Biber.pm:110> INFO - WARNINGS: 2
+[23] biber:315> INFO - === Fri Sep 27, 2019, 11:11:32
+[40] Biber.pm:371> INFO - Reading 'LiteratureReview.bcf'
+[97] Biber.pm:889> INFO - Found 30 citekeys in bib section 0
+[109] Biber.pm:4093> INFO - Processing section 0
+[119] Biber.pm:4254> INFO - Looking for bibtex format file 'LitReview.bib' for section 0
+[124] bibtex.pm:1523> INFO - LaTeX decoding ...
+[208] bibtex.pm:1340> INFO - Found BibTeX data source 'LitReview.bib'
+[413] Utils.pm:193> WARN - ISBN '978-1-118-35978-5 978-1-119-99274-5' in entry 'moritzElectromechanicalMotionSystems2013' is invalid - run biber with '--validate_datamodel' for details.
+[478] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[478] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[479] Biber.pm:3921> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[479] Biber.pm:3927> INFO - No sort tailoring available for locale 'en-US'
+[503] bbl.pm:636> INFO - Writing 'LiteratureReview.bbl' with encoding 'UTF-8'
+[523] bbl.pm:739> INFO - Output to LiteratureReview.bbl
+[523] Biber.pm:110> INFO - WARNINGS: 1

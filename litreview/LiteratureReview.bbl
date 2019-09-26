@@ -199,8 +199,8 @@
       \strng{editorbibnamehash}{9db04a7162c800e9a1d5edae9d9df4fb}
       \strng{editornamehash}{9db04a7162c800e9a1d5edae9d9df4fb}
       \strng{editorfullhash}{9db04a7162c800e9a1d5edae9d9df4fb}
-      \field{sortinit}{4}
-      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We wish to develop robot systems that are increasingly more elastic, as a step towards bridging the gap between man-made machines and their biological counterparts. To this end, we develop soft actuators fabricated from elastomer films with embedded fluidic channels. These actuators offer safety and adaptability and may potentially be utilized in robotics, wearable tactile interfaces, and active orthoses or prostheses. The expansion of fluidic channels under pressure creates a bending moment on the actuators and their displacement response follows theoretical predictions. Fluidic actuators require a pressure source, which limits their mobility and mainstream usage. This paper considers instances of mechanisms made from distributed elastomer actuators to generate motion using a chemical means of pressure generation. A mechanical feedback loop controls the chemical decomposition of hydrogen peroxide into oxygen gas in a closed container to self-regulate the actuation pressure. This on-demand pressure generator, called the pneumatic battery, bypasses the need for electrical energy by the direct conversion of chemical to mechanical energy. The portable pump can be operated in any orientation and is used to supply pressure to an elastomeric rolling mobile robot as a representative for a family of soft robots.}
@@ -265,8 +265,8 @@
       \strng{authorbibnamehash}{c23e80ee526c6809a4fd72110476689b}
       \strng{authornamehash}{22378f23cc777a8ff965fa9d1a4c6eaa}
       \strng{authorfullhash}{c23e80ee526c6809a4fd72110476689b}
-      \field{sortinit}{5}
-      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This paper shows a new design and prototyping method for a bending pneumatic rubber actuator and its application to a soft-bodied manta swimming robot. The design is based on optimal design using non-linear finite element method, in which geometrical and material non-linearity are considered and fabrication process is based on a rapid and efficient prototyping system using a CAD/CAM based rubber molding process. In this paper, the characteristics of several possible actuators are analyzed and evaluated to lead to an optimal actuator design. The actuator works very well with smooth and soft motion. The manta swimming robot in which the developed actuators are embedded is also designed based on non-linear finite element method. The developed manta swimming robot is made only of rubber and it swims in water smoothly as if it was a living fish. The experimental results of the manta robot motion show that good agreement with those of analytical results.}
@@ -320,8 +320,8 @@
       \strng{authorbibnamehash}{b38b051f1bf310e71356f9504673bb36}
       \strng{authornamehash}{f6d6d37b17714fc4f1c5049bf35adec0}
       \strng{authorfullhash}{b38b051f1bf310e71356f9504673bb36}
-      \field{sortinit}{6}
-      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{15}
@@ -402,8 +402,8 @@
       \strng{authorbibnamehash}{65ef3b331ea73ca37d5b313a8d6fd913}
       \strng{authornamehash}{8adb906235c4f1db127ed50eb8d20a88}
       \strng{authorfullhash}{65ef3b331ea73ca37d5b313a8d6fd913}
-      \field{sortinit}{7}
-      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Considering the various applications of wearable and bio-implantable devices, it is desirable to realize stretchable acoustic devices for body-attached applications such as sensing biological signals, hearing aids, and notification of information via sound. In this study, we demonstrate the facile fabrication of a Stretchable Acoustic Device (SAD) using liquid metal coil of Galinstan where the SAD is operated by the electromagnetic interaction between the liquid metal coil and a Neodymium (Nd) magnet. To fabricate a liquid metal coil, Galinstan was injected into a micro-patterned elastomer channel. This fabricated SAD was operated simultaneously as a loudspeaker and a microphone. Measurements of the frequency response confirmed that the SAD was mechanically stable under both 50\% uniaxial and 30\% biaxial strains. Furthermore, 2000 repetitive applications of a 50\% uniaxial strain did not induce any noticeable degradation of the sound pressure. Both voice and the beeping sound of an alarm clock were successfully recorded and played back through our SAD while it was attached to the wrist under repeated deformation. These results demonstrate the high potential of the fabricated SAD using Galinstan voice coil in various research fields including stretchable, wearable, and bio-implantable acoustic devices.}
@@ -489,8 +489,8 @@
       \strng{authorbibnamehash}{69a0038288d336d3a1f59be99c3d16b6}
       \strng{authornamehash}{5e4a26ba93bfd00a4b1f4b77e0870225}
       \strng{authorfullhash}{69a0038288d336d3a1f59be99c3d16b6}
-      \field{sortinit}{9}
-      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The demand for alternative fueling methods to reduce the need for fossil fuels is not limited to the electrification of ground vehicles. More-electric and all-electric aircraft pose challenges, with extensive requirements in terms of power density, efficiency, safety, and environmental sustainability. This paper focuses on electrical machines and their components, especially for high-power applications like the main propulsion. The electrical machine is evaluated from different aspects, followed by a closer look at the components and materials to determine the suitability of the current standard materials and advanced technologies. Furthermore, the mechanical and thermal aspects are reviewed, including new and innovative concepts for the cooling of windings and for the use of additive manufacturing. Aircraft have special demands regarding weight and installation space. Following recent developments and looking ahead to the future, the need and the possibilities for light and efficient electrical machines are addressed. All of the approaches and developments presented lead to a better understanding of the challenges to be expected and highlight the upcoming opportunities in electrical machine design for the use of electric motors and generators in future aircraft. Several prototypes of electrical machines for smaller aircraft already exist, such as the electric drive of the Siemens powered Extra 330LE. The focus of this paper is to provide an overview of current technical possibilities and technical interrelations of high performance electric drives for aviation. A 1 MW drive is exemplified to present the possibilities for future drives for airplanes carrying a larger number of passengers. All presented techniques can also be applied to other drive power classes.}
@@ -577,8 +577,8 @@
       \strng{authorbibnamehash}{3f93e2c2a12aba0babc58133b3c3ecf0}
       \strng{authornamehash}{ec6372a946f30d7df1cefc438835f87b}
       \strng{authorfullhash}{3f93e2c2a12aba0babc58133b3c3ecf0}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{The emerging field of soft robotics makes use of many classes of materials including metals, low glass transition temperature (Tg) plastics, and high Tg elastomers. Dependent on the specific design, all of these materials may result in extrinsically soft robots. Organic elastomers, however, have elastic moduli ranging from tens of megapascals down to kilopascals; robots composed of such materials are intrinsically soft ? they are always compliant independent of their shape. This class of soft machines has been used to reduce control complexity and manufacturing cost of robots, while enabling sophisticated and novel functionalities often in direct contact with humans. This review focuses on a particular type of intrinsically soft, elastomeric robot ? those powered via fluidic pressurization.}
@@ -646,8 +646,8 @@
       \strng{authorbibnamehash}{b743ff1b7d336008840455a329fab040}
       \strng{authornamehash}{a0052bcdbc6e96d5ed3b4394088698c8}
       \strng{authorfullhash}{b743ff1b7d336008840455a329fab040}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{sortinit}{9}
+      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This article describes a hybrid robotic system combining hard and soft subsystems. This hybrid comprises a wheeled robot (an iRobot Create; hard) and a four-legged quadruped (soft). It is capable (using a simple, wireless control system) of rapid locomotion over flat terrain (using the wheeled hard robot) and of gripping and retrieving an object (using the independent locomotive capabilities of the soft robot). The utility of this system is demonstrated by performing a mission requiring the capabilities of both components: retrieving an object (iPod Nano) from the center of a room. This class of robot—hybrids comprising hard and soft systems functioning synergistically—is capable of performing tasks that neither can do alone. In contrast to specialized hard robotic arms with grippers (capable of performing some of the functions we describe here), which are complex, relatively expensive, and require sophisticated controls, this hybrid system is easy to construct, simple to control, and low in cost. The soft robotic system in the hybrid is lightweight, disposable if contaminated or damaged, and capable of multiple functions.}
@@ -997,8 +997,8 @@
       \strng{authorbibnamehash}{822b8f6140b4c8140c53748e7779524b}
       \strng{authornamehash}{822b8f6140b4c8140c53748e7779524b}
       \strng{authorfullhash}{822b8f6140b4c8140c53748e7779524b}
-      \field{sortinit}{2}
-      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Deliberately, accidentally, or consequentially, first responders and waste site workers handle unknown substances of varying degrees of danger every day. Unidentified chemicals involved with clandestine production of WMD agents or drugs, explosive materials, unlabeled waste, and forensic samples all pose a threat to the worker and those they protect. A straightforward, concise handbook of practical strategies is needed to perform effective risk assessment and management in the face of uncertainty. Written for emergency workers responsible for the safe response to and management of unknown hazardous materials, Emergency Characterization of Unknown Materials providesreadily applicable strategies for developing and implementing a fluid concept of risk analysis based on hazard characterization in emergency situations where definitive identification of the material may be impractical or even impossible. Using a hands-on approach involving the manipulation of small amounts of material, the author discusses strategies to identify threats and vulnerabilities, ascertain exposure, and reduce or eliminate impact. The book begins with an overview of chemical and physical terms and definitions. It continues with a look at types of hazards presented by chemical compounds and mixtures, organisms, and radiation sources. It covers approximately 63 portable technologies for field identification or characterization and examines general technological advantages and disadvantages relative to hazard identification. The final chapter presents strategies for use in identifying or characterizing suspected weapons of mass destruction, illegal drugs, explosive substances, biological hazards, and other hazardous materials. Each chapter includes extensive references and a comprehensive index. Providing a sweeping overview of hazards and emphasizing risk analysis and public safety, Emergency Characterization of Unknown Materials gives first responders an advantage they deserve.}
@@ -1014,6 +1014,58 @@
       \field{pages}{89}
       \range{pages}{1}
       \keyw{House & Home / Security,Law / Forensic Science,Nature / Natural Resources,Political Science / Peace,Science / Environmental Science}
+    \endentry
+    \entry{zrnicResistivitySurfaceTension1969}{article}{}
+      \name{author}{2}{}{%
+        {{hash=41ae9cd6acf7b955953c5c76d8afd290}{%
+           family={Zrnic},
+           familyi={Z\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=383fa4ba9159a3cfa71771bfcafb00bd}{%
+           family={Swatik},
+           familyi={S\bibinitperiod},
+           given={D.\bibnamedelimi S.},
+           giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{7ed6605ed16606346a254096b146dbae}
+      \strng{fullhash}{7ed6605ed16606346a254096b146dbae}
+      \strng{bibnamehash}{7ed6605ed16606346a254096b146dbae}
+      \strng{authorbibnamehash}{7ed6605ed16606346a254096b146dbae}
+      \strng{authornamehash}{7ed6605ed16606346a254096b146dbae}
+      \strng{authorfullhash}{7ed6605ed16606346a254096b146dbae}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{1}
+      \field{issn}{0022-5088}
+      \field{journaltitle}{Journal of the Less Common Metals}
+      \field{month}{5}
+      \field{number}{1}
+      \field{shortjournal}{Journal of the Less Common Metals}
+      \field{title}{On the Resistivity and Surface Tension of the Eutectic Alloy of Gallium and Indium}
+      \field{urlday}{24}
+      \field{urlmonth}{9}
+      \field{urlyear}{2019}
+      \field{volume}{18}
+      \field{year}{1969}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{67\bibrangedash 68}
+      \range{pages}{2}
+      \verb{doi}
+      \verb 10.1016/0022-5088(69)90121-0
+      \endverb
+      \verb{file}
+      \verb /home/guan/Zotero/storage/HIQG54DM/Zrnic and Swatik - 1969 - On the resistivity and surface tension of the eute.pdf;/home/guan/Zotero/storage/FRZ9Y6WM/0022508869901210.html
+      \endverb
+      \verb{urlraw}
+      \verb http://www.sciencedirect.com/science/article/pii/0022508869901210
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/0022508869901210
+      \endverb
     \endentry
     \entry{morinCamouflageDisplaySoft2012}{article}{}
       \name{author}{6}{}{%
@@ -1234,8 +1286,8 @@
       \strng{authorbibnamehash}{246b71ec047bfb24e88f9c6c56673bbe}
       \strng{authornamehash}{246b71ec047bfb24e88f9c6c56673bbe}
       \strng{authorfullhash}{246b71ec047bfb24e88f9c6c56673bbe}
-      \field{sortinit}{3}
-      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{1}
@@ -1432,6 +1484,42 @@
       \verb http://doi.wiley.com/10.1002/9781118359785
       \endverb
     \endentry
+    \entry{h2wtechnologiesWhatVoiceCoil2018}{online}{}
+      \name{author}{1}{}{%
+        {{hash=f601b0178e09c9b444e67337c57244cc}{%
+           family={{H2W Technologies}},
+           familyi={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{f601b0178e09c9b444e67337c57244cc}
+      \strng{fullhash}{f601b0178e09c9b444e67337c57244cc}
+      \strng{bibnamehash}{f601b0178e09c9b444e67337c57244cc}
+      \strng{authorbibnamehash}{f601b0178e09c9b444e67337c57244cc}
+      \strng{authornamehash}{f601b0178e09c9b444e67337c57244cc}
+      \strng{authorfullhash}{f601b0178e09c9b444e67337c57244cc}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{27}
+      \field{journaltitle}{H2W Technologies Blog}
+      \field{month}{3}
+      \field{title}{What Is a {{Voice Coil Actuator}}?}
+      \field{urlday}{3}
+      \field{urlmonth}{5}
+      \field{urlyear}{2019}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/guan/Zotero/storage/XY6GZDGE/what-is-a-voice-coil-actuator.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.h2wtech.com/blog/what-is-a-voice-coil-actuator
+      \endverb
+      \verb{url}
+      \verb https://www.h2wtech.com/blog/what-is-a-voice-coil-actuator
+      \endverb
+    \endentry
     \entry{ruddyDesignOptimizationStrategies2011}{article}{}
       \name{author}{2}{}{%
         {{hash=1f83ada05082231185412d84be0d611d}{%
@@ -1451,8 +1539,8 @@
       \strng{authorbibnamehash}{9c4f3d1151e007de4834d072a2ee2eda}
       \strng{authornamehash}{9c4f3d1151e007de4834d072a2ee2eda}
       \strng{authorfullhash}{9c4f3d1151e007de4834d072a2ee2eda}
-      \field{sortinit}{3}
-      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We report a new approach to the design of direct-drive linear permanent-magnet motors for use in general-purpose robotic actuation, with particular attention to applications in bird-scale flapping-wing robots. We show a simple, quantitative analytical modeling framework for this class of actuators, and demonstrate inherent scaling properties that allow the production of motors with force densities and efficiencies comparable to those of biological muscles. We illustrate the effectiveness of our model with finite-element analysis and a comparison with commercially available motors, and discuss future plans for experimental validation. We show how this model leads to a set of practical design specifications for muscle-like motors, and examine the resulting trade-off between thermal management and motor fabrication complexity.}
@@ -1588,6 +1676,47 @@
       \verb https://www.springerprofessional.de/en/design-and-direct-liquid-cooling-of-tooth-coil-windings/15902044
       \endverb
     \endentry
+    \entry{hoenigDenseSupercriticalheliumCooled1975}{article}{}
+      \name{author}{2}{}{%
+        {{hash=d1d745c5ffe9a9cf8229f7c7e9b76402}{%
+           family={Hoenig},
+           familyi={H\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=fd037936040a971032547c8e34311602}{%
+           family={Montgomery},
+           familyi={M\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{b01eb68042c36e09c04ad5d8ea645f71}
+      \strng{fullhash}{b01eb68042c36e09c04ad5d8ea645f71}
+      \strng{bibnamehash}{b01eb68042c36e09c04ad5d8ea645f71}
+      \strng{authorbibnamehash}{b01eb68042c36e09c04ad5d8ea645f71}
+      \strng{authornamehash}{b01eb68042c36e09c04ad5d8ea645f71}
+      \strng{authorfullhash}{b01eb68042c36e09c04ad5d8ea645f71}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We have developed an analytical model of a dense, supercritical helium-cooled superconductor, stabilized to withstand short-term instabilities. The model allows for the absorption of energy from transient instabilities and Joule heating during current sharing. Coolant heat transfer parameters are optimized with respect to geometry and superconductor critical temperatures. Data is presented to demonstrate the advantages of a novel extended surface conductor bundle. This work has been directed at large, high-field magnets in the 5 to 9 Tesla range. Conceptual designs of a toroidal "Tokamak" coil of 6 meter minor diameter and a 10 m. long × 2.5 m. diameter saddle-wound "MHD" magnet are presented.}
+      \field{journaltitle}{IEEE Transactions on Magnetics}
+      \field{month}{3}
+      \field{number}{2}
+      \field{title}{Dense Supercritical-Helium Cooled Superconductors for Large High Field Stabilized Magnets}
+      \field{volume}{11}
+      \field{year}{1975}
+      \field{dateera}{ce}
+      \field{pages}{569\bibrangedash 572}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1109/TMAG.1975.1058601
+      \endverb
+      \verb{file}
+      \verb /home/guan/Zotero/storage/RI496VC4/Hoenig and Montgomery - 1975 - Dense supercritical-helium cooled superconductors .pdf;/home/guan/Zotero/storage/N6KIHJYA/1058601.html
+      \endverb
+      \keyw{Absorption,Analytical models,Conductors,Coolants,Geometry,Heat transfer,Heating,Magnets,Superconducting magnets,Superconductivity,Temperature}
+    \endentry
     \entry{hodesPotentialGalinstanBasedMinichannel2014}{article}{}
       \name{author}{5}{}{%
         {{hash=33c47e7cc52e933d9cdbb7f0d83cc470}{%
@@ -1681,7 +1810,6 @@
       \endverb
     \endentry
   \enddatalist
-  \missing{zrnicResistivitySurfaceTension1969}
 \endrefsection
 \endinput
 

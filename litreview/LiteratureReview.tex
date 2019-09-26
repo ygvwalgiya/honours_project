@@ -4,8 +4,8 @@
 \usepackage{anysize}
 \marginsize{30mm}{20mm}{20mm}{20mm}
 \usepackage[utf8]{inputenc}
-\usepackage[english]{babel}
-\usepackage[style=ieee,backend=biber,sorting=none]{biblatex}
+%\usepackage[english]{babel}
+\usepackage[style=ieee,backend=biber,url=false,isbn=false]{biblatex}
 \addbibresource{LitReview.bib}
 \usepackage{amsmath}
 \usepackage{graphicx}
@@ -40,7 +40,7 @@
 
 Soft robots are the next frontier in robotics. Traditional robots rely on rigid materials for actuation. Rigid designs can be easily and precisely predictable, making them easier to design and manufacture. However, these benefits come at a cost. Rigid designs have narrow ranges of operating conditions, are suspectable to wear and fatigue, and tend to be less human friendly \cite{rusDesignFabricationControl2015}.
 
-Over the last two decades, research has turned to the possibility of robots and actuators made with mechanically compliant materials. The promise of soft robots is that they would be adaptable in unpredictable conditions and comfortable for wearable use \cite{leeSoftRobotReview2017}. Research in soft robot actuation have mostly focused on chemical, pressure-based (pneumatic or hydraulic) and electroactive elastomer methods \cite{rusDesignFabricationControl2015}, which \cite{onalSoftMobileRobots2017}, \cite{suzumoriBendingPneumaticRubber2007} and \cite{andersonMultifunctionalDielectricElastomer2012} are typical examples of respectively. Electromagnetic actuation that most traditional robots rely on has been relatively overlooked and gained interest only over the past 4 years. Jin et al. published \cite{jinStretchableLoudspeakerUsing2015} in 2015, one of the first studies that explored electromagnetic actuation in soft designs. In \cite{jinStretchableLoudspeakerUsing2015}, Jin introduced a voice coil speaker that is effective under large deformations. Electromagnetic actuation is well-studied in rigid systems, and the knowledge may be transferable to soft robots.
+Over the last two decades, research has turned to the possibility of robots and actuators made with mechanically compliant materials. The promise of soft robots is that they would be adaptable in unpredictable conditions, and comfortable for wearable use \cite{leeSoftRobotReview2017}. Research in soft robot actuation has mostly focused on chemical\cite{onalSoftMobileRobots2017}, pressure-based (pneumatic or hydraulic)\cite{suzumoriBendingPneumaticRubber2007} and electroactive elastomer\cite{andersonMultifunctionalDielectricElastomer2012} methods. Electromagnetic actuation that most traditional robots rely on has been relatively overlooked and gained interest only over the past 4 years. Jin et al. published \cite{jinStretchableLoudspeakerUsing2015} in 2015, one of the first studies that explored electromagnetic actuation in soft designs. Jin et al. introduced a voice coil speaker that is effective under large deformations. Electromagnetic actuation is well-studied in rigid systems, and the knowledge may be transferable to soft robots.
 
 Cooling is another challenge in actuator design regardless of flexibility. This is an especially large problem for electromagnetic actuators, where heating is uniform but cooling is more efficient closer to the surface. This has prompted the development of several innovative solutions such as direct liquid cooling \cite{henkeChallengesOpportunitiesVery2018}. However, all of these methods require advanced manufacturing techniques and tightly controlled conditions, rendering them expensive and inflexible. Furthermore, none of these methods are transferable to soft robots.
 
@@ -52,7 +52,7 @@ Therefore, there is a need for developing electromagnetic actuation methods for 
 Soft robots are made possible by the increasing availability of highly compliant yet tough materials. These materials tend to fit in the categories of rubbers, elastomers, polymers and polymer composites. Silicones, a type of synthetic polymer, are known to be the most suitable materials available for most soft robot construction. This is due to silicones’ low elastic moduli, high resilience and toughness, ability to actuate over millions of cycles and rich body of literature \cite{polygerinosSoftRoboticsReview2017}. A review of literature found no published soft robot research designs that did not involve silicones in some way. Some designs used a combination of soft and hard components \cite{stokesHybridCombiningHard2013} or silicone composites \cite{laschiSoftRobotArm2012}.
 
 \subsection{Gallium-Indium Eutectic Alloy}
-A large challenge that prevented the use of electromagnetic actuation in soft designs was the lack of good conductors that maintain their properties under large deformations. Older approaches such as conductive silicone rubber seen in figure \ref{fg:conductiveRubber}, have non-linearly varying electrical properties under deformation \cite{valentaMechanicalElectricalTesting2008}.
+A large challenge that prevented the use of electromagnetic actuation in soft designs was the lack of good conductors that maintain their properties under large deformations. Older approaches such as conductive silicone rubber seen in figure \ref{fg:conductiveRubber}, have non-linearly varying electrical properties under deformation \cite{valentaMechanicalElectricalTesting2008}. The silicone rubber also has poor conductivity, with resistance several magnitudes higher than conventional conductors.
 
 \begin{figure}[h!]
     \centering
@@ -61,7 +61,7 @@ A large challenge that prevented the use of electromagnetic actuation in soft de
     \label{fg:conductiveRubber}
 \end{figure}
 
-Gallium-Indium Eutectic Alloys (eGaIn) have emerged as a potential deformable conductor. eGaIn is a family of alloys that contain gallium, indium and sometimes tin or other metals. One eGaIn formula is sometimes sold under the trade name Galinstan. A typical tin containing eutectic alloy such as Galinstan can have 68.5\% Ga, 21.5\% In and 10\% Sn \cite{liuCharacterizationNontoxicLiquidMetal2012}, while a typical alloy without tin can have 75\% Ga and 25\% In \cite{dickeyEutecticGalliumIndiumEGaIn2008}. Galinstan is reported to melt at as low as 19 \degree C \cite{surmannVoltammetricAnalysisUsing2005}, while others report that 75\% Ga 25\% In eGaIn melts at 15.5 \degree C \cite{dickeyEutecticGalliumIndiumEGaIn2008}. In either case, under most lab conditions eGaIn should be liquid.
+Gallium-Indium Eutectic Alloys (eGaIn) have emerged as a potential deformable conductor. eGaIn is a family of alloys that contain gallium, indium and sometimes tin or other metals. One eGaIn formula is sometimes sold under the trade name Galinstan. A typical tin containing eutectic alloy such as Galinstan can have 68.5\% Ga, 21.5\% In and 10\% Sn \cite{liuCharacterizationNontoxicLiquidMetal2012}, while a typical alloy without tin can have 75\% Ga and 25\% In \cite{dickeyEutecticGalliumIndiumEGaIn2008}. Galinstan is reported to melt at as low as -19 \degree C \cite{surmannVoltammetricAnalysisUsing2005}, while others report that 75\% Ga 25\% In eGaIn melts at 15.5 \degree C \cite{dickeyEutecticGalliumIndiumEGaIn2008}. In either case, under most lab conditions eGaIn should be liquid.
 Using liquid metal as a conductor means the surrounding body can undergo large deformations without large changes to material properties of the conductor. This is because the liquid will conform to the shape of the deformed cavity. Liquids also do not undergo strain hardening or fatigue. This means liquid metals can be better than solid metals in scenarios where they are expected to undergo large and repeated deformations, such as actuating soft robots.
 
 eGaIn is advantageous among other liquid metals in that it has low toxicity \cite{dickeyEutecticGalliumIndiumEGaIn2008}, in contrast with mercury which is highly toxic. eGaIn is also stable under atmospheric conditions, compared to sodium-potassium alloy which is pyrophoric \cite{houghtonHazards2007}. eGaIn has negligible vapour pressure, meaning it will not vaporise under standard conditions. eGaIn does however form a solid oxide layer on contact with oxygen, which changes its properties on the material surface \cite{liuCharacterizationNontoxicLiquidMetal2012}.
@@ -104,9 +104,23 @@ The third common type of soft robot was actuated using electroactive elastomers 
 \subsection{Electromagnetic Actuation using Liquid Metal}
 There have only been a few examples that incorporated liquid metal into their electromagnetic actuator designs. All of them used some variety of eGaIn as their metal conductor and silicone to build the soft body.
 
-Jin et al. pioneered this field with the 2015 paper \cite{jinStretchableLoudspeakerUsing2015}, which described the design, manufacture and testing of a stretchable loudspeaker. The body of the loudspeaker was silicone while the voice coil was a spiral channel carved in the body and injected with eGaIn. Guo et al. extended \cite{jinStretchableLoudspeakerUsing2015} with \cite{guoLiquidMetalSpiral2018} describing the design and characterisation of mechanical actuators such as pincers and a swimming fish robot. Both studies produced Lorentz force actuators using eGaIn voice coils and permanent neodymium magnets. Guo et al. used an airbrush spray gun to apply their liquid metal instead of the syringe and Scotch tape combination Jin et al. used. It is interesting that Guo et al. did not report any problems with oxidation of eGaIn, or any steps taken to limit oxygen contact, given they used an airbrush to apply the liquid metal which would mix the metal with air as it was being used.
+Jin et al. pioneered this field with their 2015 paper that described the design, manufacture and testing of a stretchable loudspeaker \cite{jinStretchableLoudspeakerUsing2015}. The body of the loudspeaker was silicone while the voice coil was a spiral channel carved in the body and injected with eGaIn. Guo et al. extended on the work by Jin et al. with design and characterisation of mechanical actuators such as pincers and a swimming fish robot \cite{guoLiquidMetalSpiral2018}, both depicted in figure \ref{fg:guoetal}. Both studies produced Lorentz force actuators using eGaIn voice coils and permanent neodymium magnets. Guo et al. used an airbrush spray gun to apply their liquid metal instead of the syringe and Scotch tape combination used by Jin et al. It is interesting that Guo et al. did not report any problems with oxidation of eGaIn, or any steps taken to limit oxygen contact, given they used an airbrush to apply the liquid metal which would mix the metal with air as it was being used.
 
-Do et al. takes a different approach to Jin and Guo in \cite{doMiniatureSoftElectromagnetic2018}. Instead of using microchannels in silicone Do et al. injected eGaIn into silicone tubes which are then coiled. This study also included two example applications of their techniques, Soft Vibrotactile Actuators (SVAs) and a Miniature Soft Electromagnetic Gripper (SEMG).
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{guoetal.png}
+    \caption{Reproduced from \cite{guoLiquidMetalSpiral2018}. Drawings of: (a) a jellyfish robot; (b) a fish robot; (c) a soft pincer.}
+    \label{fg:guoetal}
+\end{figure}
+
+Do et al. took at different approach to Jin and Guo in their 2018 paper \cite{doMiniatureSoftElectromagnetic2018}. Instead of using microchannels in silicone, Do et al. injected eGaIn into silicone tubes which are then coiled. This study also included two example applications of their techniques, soft vibrotactile actuators (SVAs) and a miniature soft electromagnetic gripper (SEMG). A photo of the SVAs can be seen in figure \ref{fg:guoetal}.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{doetal.png}
+    \caption{Reproduced from \cite{doMiniatureSoftElectromagnetic2018}. Electromagnetic vibrotactile actuators using eGaIn.}
+    \label{fg:guoetal}
+\end{figure}
 
 In the same study Do et al. also described the creation of a soft permanent magnet through mixing crushed neodymium magnet powder with liquid silicone and aligning poles while the silicone cures by placing the mould on a permanent magnet.
 
@@ -115,12 +129,12 @@ No study so far has explored creating soft counterparts to traditional electroma
 \subsection{Traditional Electromagnetic Motors}
 Design and characterisation of stiff electromagnetic motors is a field that is comparatively mature, with a wealth of books and studies written on the subject such as \cite{moritzElectromechanicalMotionSystems2013}.
 
-Linear voice coil motors are a type of motor that are relatively easy to construct and control. Linear voice coil motors produce movement via Lorentz force produce by interaction of a current carrying coil on a magnetic field produced by a permanent magnet. As shown in figure \ref{fg:coilmotor}, there are two main configurations of linear voice coil motors: moving coil (left) and moving magnet (right)
+Linear voice coil motors are a type of motor that are relatively easy to construct and control. Linear voice coil motors produce movement via Lorentz force produced by interaction of a current carrying coil on a magnetic field produced by a permanent magnet. As shown in figure \ref{fg:coilmotor}, there are two main configurations of linear voice coil motors: moving coil (left) and moving magnet (right)
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=\textwidth]{motorDiagram.jpg}
-    \caption{Simplified axisymmetric diagram of typical moving-wire voice coil motor}
+    \caption{Reproduced from \cite{h2wtechnologiesWhatVoiceCoil2018}. Simplified axisymmetric diagram of typical moving-wire voice coil motor.}
     \label{fg:coilmotor}
 \end{figure}
 
@@ -143,12 +157,12 @@ Liquid heat exchangers circulate a coolant through the actuator, and then the co
 \begin{figure}[h!]
     \centering
     \includegraphics[width=\textwidth]{liquidcool.png}
-    \caption{Reproduced from \cite{wohlersDesignDirectLiquid2018}. Left: illustration of 3D casted coil. Right: schematic model of 3D casted coil.}
+    \caption{Reproduced from \cite{wohlersDesignDirectLiquid2018}. Left: illustration of 3D cast coil. Right: schematic model of 3D casted coil.}
     \label{fg:coilmotor}
 \end{figure}
 
 \subsection{Superconductors}
-Other methods include using liquid nitrogen or liquid neon to create superconductors,where heating due to wire resistance is not an issue \cite{henkeChallengesOpportunitiesVery2018}. This again creates conditions and constraints, especially the extremely low temperature, that are not acceptable for most design requirements.
+Other methods include using liquid helium\cite{hoenigDenseSupercriticalheliumCooled1975}, liquid nitrogen or liquid neon\cite{henkeChallengesOpportunitiesVery2018} to create superconductors, where heating due to wire resistance is not an issue. This again creates conditions and constraints, especially the extremely low temperature, that are not acceptable for most design requirements.
 
 \subsection{Liquid Metal Circulation}
 There is an evident opportunity for heat exchange via circulating the actual conductors. eGaIn has a specific heat capacity of 296 $J\cdot (kg\cdot K)^{-1}$ \cite{hodesPotentialGalinstanBasedMinichannel2014}, which is lower than water, but higher than other liquid metals such as mercury. eGaIn also has good thermal conductivity at 16.5 $W\cdot(m\cdot K)^{-1}$, which is again higher than mercury but lower than other materials used as conductors such as copper \cite{naveThermalConductivity2019}.
@@ -167,7 +181,7 @@ The aim by the end of this project is to have an operational motor that uses liq
 
 The motor should:
 \begin{itemize}
-    \item Outputs enough force to drive a fluid pump. This force was determined as 9 N after liaising with the Liquid Metal Pump project.
+    \item Output enough force to drive a fluid pump. This force was determined as 9 N after liaising with the Liquid Metal Pump project.
     \item Dissipate heat well enough while driving the fluid pump that it does not fail due to overheating
     \item Be well characterised in terms of current, power and mass efficiency.
 \end{itemize}
@@ -180,20 +194,20 @@ The second milestone is to establish design requirements, and use optimisation t
 
 Parts and tools will then need to be drafted and made. Completed parts and tools ready for assembly will be another milestone.
 
-Assembling all the parts together to form an operational motor will be a milestone.
+The next milestone is to assemble all the parts together to form an operational motor.
 
 Once there is an operational motor, the final milestone is to conclude testing on the motor to characterise its properties.
 
 \subsection{Method}
-A voice coil motor was selected as the base design due to simple coil arrangement that allows for easiest winding of silicone tube. Voice coil motors are also generally simple in design and construction, requiring few parts in total and a singular moving part.
+A voice coil motor will be used as the base design due to simple coil arrangement that allows for easiest winding of silicone tube. Voice coil motors are also generally simple in design and construction, requiring few parts in total and a singular moving part.
 
-A mathematical model of a voice coil motor that uses eGaIn coils will then need to be created. There is a large existing corpus on how linear voice coil motors are designed, but most appear in old and specialised publications.
+A mathematical model of a voice coil motor that uses eGaIn coils will then be created. There is a large existing corpus on how linear voice coil motors are designed, but most appear in old and specialised publications.
 
-Design requirements will then be set based on equipment, resource and safety constraints. The model will then be used to optimise design dimensions to produce the highest efficiency motor within design requirements.
+Design requirements will then be set based on equipment, resource and safety constraints. The mathematical model will then be used to optimise design dimensions to produce the highest efficiency motor within design requirements.
 
-With the design dimensions, the specifics of components and assembly will be designed. All parts will be drafted in CAD software and have engineering drawings made. The assembly plan will need to follow safety precautions against known hazards.
+With the design dimensions, the specifics of components and assembly will be designed. All parts will be drafted in CAD software and have engineering drawings made. The assembly plan will follow safety precautions against known hazards.
 
-Motor components and tools for assembly will be manufactured. These parts will be made using available equipment in the workshop, including a lathe, a mill, a laser cutter, hand tools and a SLA 3D printer.
+Motor components and tools for assembly will then be manufactured. These parts will be made using available equipment in the workshop, including a lathe, a mill, a laser cutter, hand tools and a SLA 3D printer.
 
 The components will then be assembled following the assembly plan, using tools made to assist assembly.
 

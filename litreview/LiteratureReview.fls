@@ -13,13 +13,6 @@ INPUT /usr/share/texmf-dist/tex/latex/anysize/anysize.sty
 INPUT /usr/share/texmf-dist/tex/latex/anysize/anysize.sty
 INPUT /usr/share/texmf-dist/tex/latex/base/inputenc.sty
 INPUT /usr/share/texmf-dist/tex/latex/base/inputenc.sty
-INPUT /usr/share/texmf-dist/tex/generic/babel/babel.sty
-INPUT /usr/share/texmf-dist/tex/generic/babel/babel.sty
-INPUT /usr/share/texmf-dist/tex/generic/babel/switch.def
-INPUT /usr/share/texmf-dist/tex/generic/babel-english/english.ldf
-INPUT /usr/share/texmf-dist/tex/generic/babel-english/english.ldf
-INPUT /usr/share/texmf-dist/tex/generic/babel/babel.def
-INPUT /usr/share/texmf-dist/tex/generic/babel/txtbabel.def
 INPUT /usr/share/texmf-dist/tex/latex/biblatex/biblatex.sty
 INPUT /usr/share/texmf-dist/tex/latex/biblatex/biblatex.sty
 INPUT /usr/share/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
@@ -145,7 +138,6 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /usr/share/texmf-dist/tex/latex/base/omscmr.fd
 INPUT /usr/share/texmf-dist/tex/latex/base/omscmr.fd
 INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
-INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /home/guan/source/honours_project/litreview/./images/externalpressure.png
 INPUT ./images/externalpressure.png
 INPUT ./images/externalpressure.png
@@ -155,6 +147,12 @@ INPUT ./images/explosions.png
 INPUT /home/guan/source/honours_project/litreview/./images/catepillar.png
 INPUT ./images/catepillar.png
 INPUT ./images/catepillar.png
+INPUT /home/guan/source/honours_project/litreview/./images/guoetal.png
+INPUT ./images/guoetal.png
+INPUT ./images/guoetal.png
+INPUT /home/guan/source/honours_project/litreview/./images/doetal.png
+INPUT ./images/doetal.png
+INPUT ./images/doetal.png
 INPUT /home/guan/source/honours_project/litreview/./images/motorDiagram.jpg
 INPUT ./images/motorDiagram.jpg
 INPUT ./images/motorDiagram.jpg
