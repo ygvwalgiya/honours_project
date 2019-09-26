@@ -2016,9 +2016,13 @@
     <bcf:citekey order="18">indiumcorporationPRODUCTDATASHEET2019</bcf:citekey>
     <bcf:citekey order="19">dickeyEutecticGalliumIndiumEGaIn2008</bcf:citekey>
     <bcf:citekey order="20">cuiLiquidMetalCorrosion2018</bcf:citekey>
-    <bcf:citekey order="21">doMiniatureSoftElectromagnetic2018</bcf:citekey>
-    <bcf:citekey order="22">lazarusCreating3DPrinted2019</bcf:citekey>
-    <bcf:citekey order="23">ferrotecFerrotecFerrofluidInnovating</bcf:citekey>
+    <bcf:citekey order="21">laughtonElectricalEngineerReference2002</bcf:citekey>
+    <bcf:citekey order="22">cuiLiquidMetalCorrosion2018</bcf:citekey>
+    <bcf:citekey order="23">doMiniatureSoftElectromagnetic2018</bcf:citekey>
+    <bcf:citekey order="24">valentaMechanicalElectricalTesting2008</bcf:citekey>
+    <bcf:citekey order="25">valentaMechanicalElectricalTesting2008</bcf:citekey>
+    <bcf:citekey order="26">lazarusCreating3DPrinted2019</bcf:citekey>
+    <bcf:citekey order="27">ferrotecFerrotecFerrofluidInnovating2019</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

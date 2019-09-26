@@ -25,7 +25,6 @@
 %opening
 \title{Linear Direct Current Electromagnetic Motor with Liquid Eutectic Gallium-Indium Alloy Coil}
 \author{Jason Guan}
-\date{27 September 2019}
 \begin{document}
 \maketitle
 \begin{center}
@@ -43,11 +42,7 @@ Abstract placeholder
 \newpage
 
 \section*{Acknowledgements}
-Paul Roberts \\
-Steve Oldman \\
-Greg \\
-Nick, Suroosh, Mahsa and Yahya \\
-And of course, Dr. Bryan Ruddy \\
+Acknowledgement placeholder
 
 \newpage
 
@@ -55,8 +50,8 @@ And of course, Dr. Bryan Ruddy \\
 
 \newpage
 
-\section{Table of Notation}
-INCOMPLETE
+\section*{Table of Notation}
+How much do you think I need to include?
 \begin{center}
     \begin{tabular}{c | D | c}
         \hline
@@ -110,6 +105,7 @@ INCOMPLETE
         \hline
         $\rho^{mass}_{Steel}$ & Volume density of steel, $7870\ kg\cdot m^{-3}$ \cite{saysAISI1020Carbon2013} & $kg\cdot m^{-3}$ \\
         \hline
+        $Q$ & Flow rate & $mm^3s^{-1}$
     \end{tabular}
 \end{center}
 
@@ -119,9 +115,9 @@ INCOMPLETE
 
 Soft robotics has in recent years enjoyed a surge in research interest. Traditional robots that use rigid materials for actuation tend to have poor adaptability and low human friendliness. Robots and actuators made with mechanically compliant materials may emerge more adaptable in unpredictable conditions and more comfortable for wearable use.
 
-Current soft robot actuation methods include chemical, pressure-based (pneumatic or hydraulic) and electroactive elastomer. Electromagnetic actuation that most traditional robots rely on has been mostly overlooked. Only four years ago, Jin et al. published \cite{jinStretchableLoudspeakerUsing2015}, the first paper that explored the idea. Jin introduced a voice coil speaker effective under large deformations.
+Current soft robots are commonly actuated using external pressure sources, chemical reactions and electroactive elastomers. Electromagnetic actuation that most traditional robots rely on has been mostly overlooked. Only four years ago, Jin et al. published \cite{jinStretchableLoudspeakerUsing2015}, the first paper that explored the idea. Jin introduced a voice coil speaker effective under large deformations.
 
-As a result, there is an opportunity add to the under-researched area of electromagnetic actuation for soft robots. Rigid electromagnetic actuation is a relatively mature field with a large existing corpus.
+As a result, there is an opportunity add to the under-researched area of electromagnetic actuation for soft robots. Rigid electromagnetic actuation is a relatively mature field with a large existing corpus that can potentially be transferred into the area of soft robotics.
 
 Previously, electromagnetic actuation in soft robots was hindered by a lack of good conductors that maintain electrical properties under large deformations. Eutectic Gallium-Indium alloys (eGaIn) have emerged as a potential solution. eGaIn is a family of alloys that contain gallium, indium and sometimes tin and other metals. A typical eGaIn alloy can have 75\% Ga and 25\% In and melts at 15.5 \degree C \cite{dickeyEutecticGalliumIndiumEGaIn2008}, meaning it is liquid under room temperature. Liquid metal conductors can deform without large changes to material properties and do not undergo strain hardening or fatigue.
 
@@ -227,7 +223,7 @@ Using Lorentz's force law substituted with equation \ref{eq:fluxsubbed}, equatio
     \end{split}
 \end{equation}
 
-The active area in the magnetic field is different for each layer of wire in the motor. Layers of wire further away from the magnet, meaning a larger area and therefore lower magnetic field density. The total active area that magnetic flux is distributed across can be calculated as shown in equation \ref{eq:activearea}, where $n$ is the total number of wire layers.
+The active area in the magnetic field is different for each layer of wire in the motor. Layers of wire further away from the magnet, meaning a larger area and therefore lower magnetic field density. The total active area that magnetic flux is distributed across can be calculated as shown in equation \ref{eq:activearea}, where $n$ is the total number of wire layers. Here the magnet core is assumed to be the same diameter as the magnets.
 
 \begin{equation}\label{eq:activearea}
     A_{active} = \sum_{1}^{n}{A_{active}^{layer}} = 2\pi L_c (r_{core}-r_{wireout} + 2r_{wireout} \frac{(n+1)n}{2})
@@ -309,6 +305,13 @@ Combining equations \ref{eq:pin}, \ref{eq:resistance}, \ref{eq:pbreakdown}, \ref
     \end{split}
 \end{equation}
 
+\subsubsection{Liquid Metal Circulation}
+To circulate eGaIn through the motor wires a pump has to generate a certain pressure. Assuming the velocity of circulation is slow enough to assume laminar flow, the pressure required to develop a certain rate of flow can be calculated using equation \ref{eq:pressure}.
+
+\begin{equation}\label{eq:pressure}
+    P=\frac{8\nu_{eGaIn}L_{Wtotal}Q}{4\pi r_{in}}
+\end{equation}
+
 \subsection{Optimisation Algorithm}
 
 \begin{figure}[h!]
@@ -373,7 +376,7 @@ The variables being optimised for, and the ranges they are optimised for can be 
     \end{tabular}
 \end{table}
 
-The algorithm optimised for a derived variable, the optimisation value  $\mathcal{P}$, or product of total motor mass and electrical input power. Total motor mass can be calculated as shown in equation \ref{eq:motormass}. The mass of each component is the volume density of the component material multiplied by component volume. Volume of each component can be obtained using only constants and variables in table \ref{tb:gridsearch}.
+The algorithm optimised for a derived variable, the optimisation value $\mathcal{P}$, or product of total motor mass and electrical input power. Total motor mass can be calculated as shown in equation \ref{eq:motormass}. The mass of each component is the volume density of the component material multiplied by component volume. Volume of each component can be obtained using only constants and variables in table \ref{tb:gridsearch}.
 
 \begin{equation}\label{eq:motormass}
     \begin{split}
@@ -394,7 +397,49 @@ As seen in figure \ref{fg:optvariable}, the minimum value of $\mathcal{P}$ incre
     \label{fg:optvariable}
 \end{figure}
 
-The 6-layer solution was selected in the end as there were no valid 2-layer and 4-layer solutions. The optimum 2-layer and 4-layer solutions both required over 10 A of current to output 9 N of force, which was not feasible as the strongest power source available provided a maximum of 10 A. A summary of optimisation outputs can be found in appendix table \ref{tb:optout}. The final design was altered slightly from the optimum output due to component sourcing issues. An axisymmetric cross-section diagram of the final design can be seen in figure \ref{fg:finalmotor}.
+The 6-layer solution was selected in the end as there were no valid 2-layer and 4-layer solutions. The optimum 2-layer and 4-layer solutions both required over 10 A of current to output 9 N of force, which was not feasible as the strongest power source available provided a maximum of 10 A. A summary of optimisation outputs can be found in table \ref{tb:optout}. The final design was altered slightly from the optimum output due to component sourcing issues. An axisymmetric cross-section diagram of the final design can be seen in figure \ref{fg:finalmotor}.
+
+\begin{table}[h!]
+    \centering
+    \caption{Summary of output variables from optimisation algorithm.}
+    \label{tb:optout}
+    \begin{tabular}{M | l | l | l | l | l | l}
+        \hline
+        Layer                            & 6  & 8  & 10 & 12 & 14 & Units \\
+        \hline\hline
+        Magnet Length                    & 42.50 & 50.00 & 57.50 & 65.00 & 72.50 & mm    \\
+        \hline
+        Magnet Radius                    & 20.00 & 20.00 & 20.00 & 20.00 & 20.00 & mm    \\
+        \hline
+        Core Length                      & 8.00  & 8.00  & 8.00  & 8.00  & 8.00  & mm    \\
+        \hline
+        Bobbin Length                    & 24 & 24 & 24 & 24 & 24 & mm    \\
+        \hline
+        Internal shell radius            & 39.50 & 45.50 & 51.50 & 57.50 & 63.50 & mm    \\
+        \hline
+        Total wire length                & 9.55  & 13.93 & 18.90 & 24.47 & 30.64 & m     \\
+        \hline
+        Total wire resistance            & 0.22  & 0.32  & 0.43  & 0.56  & 0.70  & Ohm   \\
+        \hline
+        Gap field density                & 0.67  & 0.57  & 0.50  & 0.45  & 0.40  & H     \\
+        \hline
+        Current                          & 8.36  & 6.72  & 5.65  & 4.89  & 4.31  & A     \\
+        \hline
+        Voltage                          & 1.84  & 2.15  & 2.46  & 2.75  & 3.04  & V     \\
+        \hline
+        Input power                      & 15.35 & 14.48 & 13.90 & 13.46 & 13.11 & W     \\
+        \hline
+        Flow to limit temperature change & 0.26  & 0.25  & 0.24  & 0.23  & 0.22  & ml/s  \\
+        \hline
+        Total mass                       & 1.50  & 1.93  & 2.40  & 2.92  & 3.48  & kg    \\
+        \hline
+        Optimisation Variable            & 23.07 & 27.89 & 33.32 & 39.26 & 45.66 & W*kg  \\
+        \hline
+        Pressure Required to drive flow  & 15.39 & 21.15 & 27.53 & 34.49 & 42.03 & kPa  \\
+        \hline
+    \end{tabular}
+\end{table}
+
 
 \begin{figure}[h!]
     \centering
@@ -403,9 +448,7 @@ The 6-layer solution was selected in the end as there were no valid 2-layer and 
     \label{fg:finalmotor}
 \end{figure}
 
-The final motor design features a lightly shorter magnet than the demanded 42.5 mm at 40 mm as no commercially available neodymium magnet supplier sold 42.5 mm long, 40 mm diameter magnets off the shelf. No combination of shorter 40 mm diameter magnets could combine to form a 42.5 mm magnet either.
-
-The final design was verified via finite element analysis using ANSYS Maxwell 2D electromagnetic simulation. The problem was defined as axisymmetric about the z-axis, as seen in figure \ref{fg:maxwellB}. Figure \ref{fg:maxwellB} is a contour plot of magnetic field density B within the motor. This figure validates there is no saturation of magnetic field within the motor, shell or core as maximum field density is under 2 T \cite{mclymanMagneticMaterialsTheir2004}.
+The final motor design features a lightly shorter magnet than the demanded 42.5 mm at 40 mm as no commercially available neodymium magnet supplier sold 42.5 mm long, 40 mm diameter magnets off the shelf. No combination of shorter 40 mm diameter magnets could combine to form a 42.5 mm magnet either. 40 mm length was the closest viable option.
 
 \begin{figure}[h!]
     \centering
@@ -413,6 +456,8 @@ The final design was verified via finite element analysis using ANSYS Maxwell 2D
     \caption{Maxwell 2D simulation of magnetic field density in motor}
     \label{fg:maxwellB}
 \end{figure}
+
+The final design was verified via finite element analysis using ANSYS Maxwell 2D electromagnetic simulation. The problem was defined as axisymmetric about the z-axis, as seen in figure \ref{fg:maxwellB}. Figure \ref{fg:maxwellB} is a contour plot of magnetic field density B within the motor. This figure validates there is no saturation of magnetic field within the motor, shell or core as maximum field density is under 2 T \cite{mclymanMagneticMaterialsTheir2004}.
 
 \begin{figure}[h!]
     \centering
@@ -455,7 +500,7 @@ Both shell base and cylinder were turned on a lathe from 1020 grade 100 mm diame
 
 \subsubsection{Core}
 
-The core of the motor is a 8 mm thick, 40 mm diameter cylinder with countersunk unthreaded M6 hole in the centre. The hole in the centre allows for a bolt to travel through magnets and afix both core and magnets to the shell base.
+The core of the motor is a 8 mm thick, 40 mm diameter cylinder with countersunk unthreaded M6 hole in the centre. The hole in the centre allows for a bolt to travel through magnets and affix both core and magnets to the shell base.
 
 \begin{figure}[h!]
     \centering
@@ -470,7 +515,7 @@ The wire bobbin was the most physically complex part in the final motor. The bob
 
 To achieve these requirements, several design features were incorporated. Feature 1 of figure \ref{fg:bobbin} shows the body of the bobbin contains guide threads for winding the first layer of tube. Feature 2 are slits that follow the shape of the thread and allow wire to enter and exit the bobbin. There is one entry and one exit in each slit. Feature 3 shows the "nozzle" interface of the bobbin, used to connect to the load. The nozzle shape adds additional structural integrity as the interface bolt may move. The interface was defined here as an M3 bolt, and the nozzle features an unthreaded M3 hole. On the other side of the M3 hole is feature 4, a hexagonal M3 nut shaped slot allows a nut to secure the bolt without rotating. Feature 5 shows flanged end-plates on the bobbin to provide strength to the force-bearing parts of the bobbin while maintaining lower weight.
 
-Due to the required complexity of the bobbin, it had to be SLA 3D printed. The printing was done on a Formalabs Form 2 printer and post-processed on Formlabs Form Wash and Form Cure processors. The print was made using Formlabs High Temperature resin, as that was the only resin that would withstand 50 \degree C comfortably. 50 \degree C represented the a 30 K temperature change specified in the design requirements from room temperature of about 20 \degree C. Feature 6 of figure \ref{fg:bobbin} are holes to prevent cupping of the part during printing, and also have the added benefit of equalising pressure during bobbin movement.
+Due to the required complexity of the bobbin, it had to be SLA 3D printed. The printing was done on a Formlabs Form 2 printer and post-processed on Formlabs Form Wash and Form Cure processors. The print was made using Formlabs High Temperature resin, as that was the only resin that would withstand 50 \degree C comfortably. 50 \degree C represented the a 30 K temperature change specified in the design requirements from room temperature of about 20 \degree C. Feature 6 of figure \ref{fg:bobbin} are holes to prevent cupping of the part during printing, and also have the added benefit of equalising pressure during bobbin movement.
 
 \begin{figure}[h!]
     \centering
@@ -519,9 +564,7 @@ The base, magnets, core and spacer were then lowered onto the cylinder using a p
 
 \subsubsection{Wire Assembly}
 
-After the bobbin was printed and post-processed, silicone tubing was wound across the part. Two parallel strands of tubing, representing the two effective wires of the motor, were wound, one entering and exiting at each slit. This process was done by hand, and every care was taken to avoid kinking, stretching and squeezing of tubes. The winding process was restarted every time one of the issues above were encountered. A photo of the complete wound bobbin before eGaIn was injected can be seen in figure \ref{fg:assembledbobbin}. A total 7.25 m of silicone tubing was used in the bobbin, including the loose ends, as evidenced by 12.75 m tubing left from a 20 m package. This is 2.25 m
-
-WILL REVISIT - NOT SURE IS CORRECT.
+After the bobbin was printed and post-processed, silicone tubing was wound across the part. Two parallel strands of tubing, representing the two effective wires of the motor, were wound, one entering and exiting at each slit. This process was done by hand, and every care was taken to avoid kinking, stretching and squeezing of tubes. The winding process was restarted every time one of the issues above were encountered. A photo of the complete wound bobbin before eGaIn was injected can be seen in figure \ref{fg:assembledbobbin}. A total 7.25 m of silicone tubing was used in the bobbin, including the loose ends, as evidenced by 12.75 m tubing left from a 20 m package. This is 2.25 m shorter than designed. The discrepancy was likely to have been caused by the silicone tube stretching during winding, meaning there was less silicone tube wound over the same distance.
 
 \begin{figure}[h!]
     \centering
@@ -581,12 +624,9 @@ Gallium, indium and eGaIn are not toxic to touch, but can potentially cause harm
 
 \newpage
 
-\section{Experiment Designs and Results}
-Two experiments were conducted. The first characterises motor force output and power efficiency using different electrical inputs. The second validates the concept of wire circulation cooling.
+\section{Force Characterisation}
 
-\subsection{Experiment 1: Force Characterisation}
-
-\subsubsection{Method}
+\subsection{Method}
 
 The motor is oriented vertically, and drives a cup that contains a known mass of weights. The motor interfaces with the cup via an M3 screw through the bobbin and bolted to a 3.5 mm hole drilled at the centre of the cup base. Another cup of the same size is used to hold the weights for convenient placement and removal. Each plastic cup has a mass of 8.05 g. Weights used are "3oz" lead fishing reef sinkers, which are dense and non-ferromagnetic. The weights were individually weighed, labelled and recorded. One sinker weight is added at a time. Current supplied to the motor is decreased until there is no longer enough force to balance gravity force of the sinkers. Due to a lack of bearings in the motor design, sometimes the bobbin gets caught on the core or the shell. A gentle wiggle of the bobbin usually fixes the problem. The current is decreased because the bobbin appears more likely to be caught when the cups are closer to the core. This setup can be seen in figure \ref{fg:forceexperiment}.
 
@@ -597,7 +637,7 @@ The motor is oriented vertically, and drives a cup that contains a known mass of
     \label{fg:forceexperiment}
 \end{figure}
 
-\subsubsection{Results}
+\subsection{Results}
 
 Results from the experiment suggests the motor has a linear current-force response between 4 A and 10 A current input, seen on figure \ref{fg:forceplot}. This is the expected response from a voice coil motor. This also means power increases exponentially as force and current increases, and therefore the motor is more power-efficient at lower currents.
 
@@ -631,22 +671,12 @@ Using the line of best fit in figure \ref{fg:forceplot} the effective mass of th
 
 The final motor showed very similar properties to theoretical calculations. Despite seemingly containing a lot more eGaIn, the motor required similar current to output the target force of 9 N, as compared in table \ref{tb:fullresults3}.
 
-\subsection{Experiment 2: Circulation of eGaIn in Motor}
-
-\subsubsection{Method}
-
-\subsubsection{Results}
-
 \newpage
 
 \section{Discussion}
+This project successfully demonstrated proof-of-concept for using liquid metal as the conductor in an electromagnetic motor. The motor was functional, used non-rigid wires that conduct using liquid eGaIn and had very similar efficiency as modelled. The motor also had incorporated in its design, albeit untested, the ability to circulate liquid metal in its coils for cooling. The above design provides a good foundation for future studies that wish to explore electromagnetic motors that use liquid metal in coils, or for cooling those coils by circulating the metal.
 
-Provides a good foundation for exploring a more deformable motor, or for circulation cooling.
-Success as a proof of concept. The wires are non-rigid. Wire conductors do indeed circulate.
-
-Not a particularly efficient motor.
-
-If the eGaIn in the final motor design was substituted for copper threaded through silicone tubing, the motor would require much less power to produce the same force output. A motor of the same size filled with copper coils of the same diameter instead of eGaIn will consume under 12\% of the power for the same force output. If the volume of the wiring was substituted entirely for 0.22 mm diameter copper wire, a common type of wire used for electromagnetic motors of this force scale, the motor would draw under 28\% of the original power to produce the same force, and require 6.2\% of the current.
+The motor also demonstrates a significant limitation of using eGaIn as a conductor - the motor design was not particularly efficient. Had the eGaIn in the final motor design been substituted for a more conductive material such as copper, the motor would have been much more efficient. A motor of the same size filled with copper coils of the same diameter threaded through the same silicone tubing instead of eGaIn will consume under 12\% of the power to produce the same force output. If the volume of the wiring was substituted entirely for 0.22 mm diameter copper wire, a common type of wire used for electromagnetic motors of this force scale, the motor would draw under 28\% of the original power to produce the same force, and require only 6.2\% of the current, both seen in table \ref{tb:coppercompare}. eGaIn coiled motors will inherently have poor energy efficiency as a result, but not necessarily an order of magnitude poorer than other conductors as their resistivity difference would suggest.
 \begin{table}[h!]
     \centering
     \caption{Comparison between final eGaIn motor and two hypothetical solutions using copper wiring.}
@@ -670,91 +700,58 @@ If the eGaIn in the final motor design was substituted for copper threaded throu
     \end{tabular}
 \end{table}
 
-The motor was also quite heavy due to large and strong magnets it required. Having strong magnets also meant needing a thick shell to avoid magnetic field saturation.
+The liquid nature of the coil material also poses a challenge to the motor's efficiency. Tubing is required to encase the liquid metal and resist any pressure by the liquid due to circulation flow or even gravity. The silicone tubing used for this design, $3\ mm$ outer diameter and $2\ mm$ inner diameter, had the higher internal to external volume ratio of commercially available silicone tubing at 0.44. Most other commercially available tubing having ratios 0.2 or lower, such as the $5\ mm$ outer diameter, $2\ mm$ inner diameter that was sent to the lab by mistake. This means with tubing, the highest possible fill factor of the coil is 0.44, assuming the space is perfectly occupied by tubing. This represents a large discount on possible volume efficiency of the motor, and presents challenges for miniaturisation of the motor design.
 
-At one point reaching over 60 \degree C before the power was turned off to avoid damage to the junction.
+\begin{equation}\label{eq:fbil2}
+    F = BIL_{active}
+\end{equation}
+
+The motor was also quite heavy due to large and strong magnets it required. A longer magnet meant more magnetic flux can be expected in the circuit, and a larger diameter magnet meant a better active magnetic circuit gap area $A_{active}$ to active wire length $L_{active}$ ratio. A larger active area means lower magnetic flux density $B$, which decreases Lorentz force, and higher active length means a higher Lorentz force as per the Lorentz force shown in equation \ref{eq:fbil2}. Miniaturisation of any motor design will also need to contend with this challenge that will decrease the efficiency of smaller motors.
+
+The limitations of eGaIn meant stronger magnets were required to generate the target force with reasonable current input. Having strong magnets also meant needing a thicker shell to avoid magnetic field saturation. The current design saw magnetic field density peak at 1.8 T in the shell wall, while even high permeability steel can expect to saturate between 1.6 and 2.2 T \cite{laughtonElectricalEngineerReference2002}. Steel is quite dense and contributed the most to the mass of the motor.
+
+****************** You need to balance flow and resistance. larger tube means better flow and smaller resistance - really low voltage, high current. *************************
+
+There were some interesting heat properties observed in the motor during testing. The barbed T-junction electrode was the fastest part of the motor to heat up, as seen in figure \ref{fg:tjunction}. At one point the electrode reached over 60 \degree C before the power was turned off to avoid damage to the junction. This suggests increased resistance at the junction compared to other parts of the motor, which may be due to poor connection and insufficient wetting between eGaIn and tungsten electrode. This may have also contributed to the higher overall resistance of the motor, above the theoretical resistance in the design.
+
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.5\textwidth]{junctionheat2.jpg}
-    \caption{Infrared camera photo of motor during force experiment. The barbed T-junction electrode, seen on the left, heated up rapidly. The circular green region on the right were the motor coils.}
-    \label{fg:forceplot}
+    \caption{Infrared camera photo of motor during force experiment. The barbed T-junction electrode, seen on the left, heated up rapidly. The circular green region on the right were the motors.}
+    \label{fg:tjunction}
 \end{figure}
 
-At one point reaching over 60 \degree C before the power was turned off to avoid damage to the junction.
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=0.5\textwidth]{junctionheat2.jpg}
-    \caption{Infrared camera photo of motor during force experiment. The barbed T-junction electrode, seen on the left, heated up rapidly. The circular green region on the right were the motor coils.}
-    \label{fg:forceplot}
-\end{figure}
-
+The heat dissipation of the motor without wire circulation was quite poor, but not necessarily worse than other motors with similar designs. As expected, the coil in the motor heated up uniformly, while coils around the edge of the motor, seen in figure \ref{fg:afterexperiment} as yellow, cooled down faster.
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.5\textwidth]{coilheat.jpg}
     \caption{Infrared camera photo of motor after force experiments. Heat dissipated  slowly from wires.}
-    \label{fg:forceplot}
+    \label{fg:afterexperiment}
 \end{figure}
 
-Resistance across the motor from tungsten to tungsten was 0.259 $\Omega$, as measured using a four-wire ohmmeter. 0.187 $\Omega$ was expected of 8 m wire at 2 mm diameter, so the measurement is in line with expectations. The additional resistance may have been a poor contact on the T-junction electrode between tungsten and eGaIn, which is why it heated up rapidly. The tungsten electrodes and any part of the wire that was squeezed to a narrower diameter may have also increased the resistance.
+Resistance across the motor from tungsten to tungsten was 0.259 $\Omega$, as measured using a four-wire ohmmeter. 0.187 $\Omega$ was expected of 8 m wire at 2 mm diameter, so the measurement is in line with expectations. The additional resistance may have been the poor contact on the T-junction electrode between tungsten and eGaIn, which is why it heated up rapidly. The tungsten electrodes and any part of the wire that was squeezed to a narrower diameter may have also increased the resistance. Any air bubbles in the wire tubing may also have decreased the effective cross sectional area of the wire in parts, increasing the resistance at that point.
 
-eGaIn is very corrosive to most conductive metals. Have to build everything out of silicone, conduct using carbon-based conductors such as graphite. Containment hazard.
+Safety, though not as large of a concern as using mercury or Na-K alloys, is a concern. eGaIn is very corrosive to most metals, and is known to rapidly attack aluminium in particular \cite{cuiLiquidMetalCorrosion2018}. This means the construction of any actuator using eGaIn must be contained and kept away from most tools. The design above addressed this issue by containing the eGaIn in silicone and acrylic. eGaIn is not known to erode tungsten, making it a valid electrode. Carbon-based conductors such as graphite are also not known to corrode via eGaIn, and may be suitable for use in the future. Due to its corrosive properties eGaIn presents a contamination hazard for equipment in the lab and other parts being made in the lab. Care was taken to the best of abilities to minimise the risk of actual contamination, but containment and poisoning procedures of eGaIn are not well established, and require future research before it can be used at commercial scale.
 
-Quite difficult to get to circulate and made a small size.
+\section{Future Work}
+The motor is not currently deformable. A solution is required to create magnetically conductive, if not permanently magnetic core and shell. One possible pathway was explored by Do et al. in \cite{doMiniatureSoftElectromagnetic2018}. However, both the physical and magnetic properties of magnetically-infused silicone are less than ideal as evidenced by the properties testing done in \cite{valentaMechanicalElectricalTesting2008}. The properties of solids that are either magnetic, conductive, or magnetically conductive will inevitably change with deformation. In the case of \cite{valentaMechanicalElectricalTesting2008}, the change in electrical properties as the silicone was deformed was not linear, further complicating the issue.
 
-Will need custom wire body to increase fill factor. Commercially available silicone tubing all have terrible internal volume to wall volume ratios.
+Another pathway was explored by Lazarus et al. in their recent paper \cite{lazarusCreating3DPrinted2019}, using ferrofluid in 3D printed magnetic devices. Ferrofluid used in their paper had a relative permeability of 19.6, which is an order of magnitude lower than steel, but enough to construct an effective magnetic circuit \cite{ferrotecFerrotecFerrofluidInnovating2019}. It is unclear how the ferrofluid performs under different temperature and pressure conditions. However, it is theoretically possible to construct a fully deformable motor using eGaIn and ferrofluid.
 
-The motor is not currently deformable. A solution is required to create magnetically conductive, if not permanently magnetic core and shell. Can explore what \cite{doMiniatureSoftElectromagnetic2018} did, but both the physical and magnetic properties of magnetically-infused silicone are less than ideal.
+For its magnet, a fully deformable motor can use either a magnetically-infused silicone rod or eGaIn coiled and ferrofluid cored electromagnet. Using the silicone rod will introduce complicated property changes, while using the electromagnet increases power consumption and adds air space which reduces the efficiency.
 
-Lazarus et al. in their recent paper \cite{lazarusCreating3DPrinted2019} explored the use of ferrofluid in 3D printed magnetic devices. Ferrofluid used in their paper had a relative permeability of 19.6, which is an order of magnitude lower than steel, but enough to construct an effective magnetic circuit \cite{ferrotecFerrotecFerrofluidInnovating}. It is also unclear how the ferrofluid performs under different temperature and pressure conditions. However, it is theoretically possible to construct a fully deformable motor using eGaIn and ferrofluid. For its magnet, the fully deformable motor can use either a magnetically-infused silicone rod or eGaIn-ferrofluid electromagnet.
+Custom body for higher fill factor will also most likely be needed, especially for miniaturisation. Fill factors using commercially available tubing will most likely be too low to produce an effective motor at small size.
+
+Controlled circulation of eGaIn in wires and cooling of eGaIn externally will also need to be tested to validate the concept of coil circulation cooling. External cooling presents the challenge that eGaIn is corrosive against most common heat exchanger materials such as copper and aluminium. A heat exchanger made from exotic materials such as tungsten or carbon may be required to successfully circulate cool a liquid metal motor.
 
 \newpage
 
 \section{Conclusion}
+A functional voice coil motor that uses liquid eutectic gallium-indium alloy was successfully designed, built and characterised. The motor achieved very similar efficiency to the model calculations from the design and was about 5 - 10 times less power efficient than a motor of the same design and dimensions wired using copper. The design incorporated features that allow for circulation of the liquid metal in the wire for cooling externally to the motor.
 
-\newpage
+Several challenges remain. The motor is not fully deformable and there is no available mechanism to cool circulated eGaIn from the motor. The circulation mechanism also remains untested.
 
-\section{Appendix}
-
-\begin{table}[h!]
-    \centering
-    \caption{Summary of output variables from optimisation algorithm.}
-    \label{tb:optout}
-    \begin{tabular}{M | l | l | l | l | l | l}
-        \hline
-        Layer                            & 6  & 8  & 10 & 12 & 14 & Units \\
-        \hline\hline
-        Magnet Length                    & 42.50 & 50.00 & 57.50 & 65.00 & 72.50 & mm    \\
-        \hline
-        Magnet Radius                    & 20.00 & 20.00 & 20.00 & 20.00 & 20.00 & mm    \\
-        \hline
-        Core Length                      & 8.00  & 8.00  & 8.00  & 8.00  & 8.00  & mm    \\
-        \hline
-        Bobbin Length                    & 24 & 24 & 24 & 24 & 24 & mm    \\
-        \hline
-        Internal shell radius            & 39.50 & 45.50 & 51.50 & 57.50 & 63.50 & mm    \\
-        \hline
-        Total wire length                & 9.55  & 13.93 & 18.90 & 24.47 & 30.64 & m     \\
-        \hline
-        Total wire resistance            & 0.22  & 0.32  & 0.43  & 0.56  & 0.70  & Ohm   \\
-        \hline
-        Gap field density                & 0.67  & 0.57  & 0.50  & 0.45  & 0.40  & H     \\
-        \hline
-        Current                          & 8.36  & 6.72  & 5.65  & 4.89  & 4.31  & A     \\
-        \hline
-        Voltage                          & 1.84  & 2.15  & 2.46  & 2.75  & 3.04  & V     \\
-        \hline
-        Input power                      & 15.35 & 14.48 & 13.90 & 13.46 & 13.11 & W     \\
-        \hline
-        Flow to limit temperature change & 0.26  & 0.25  & 0.24  & 0.23  & 0.22  & ml/s  \\
-        \hline
-        Total mass                       & 1.50  & 1.93  & 2.40  & 2.92  & 3.48  & kg    \\
-        \hline
-        Optimisation Variable            & 23.07 & 27.89 & 33.32 & 39.26 & 45.66 & W*kg  \\
-        \hline
-        Pressure Required to drive flow  & 15.39 & 21.15 & 27.53 & 34.49 & 42.03 & kPa  \\
-        \hline
-    \end{tabular}
-\end{table}
+Despite these challenges, this report demonstrates a strong foundation for future investigations into liquid metal wired motors.
 
 \newpage
 

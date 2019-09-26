@@ -1,0 +1,1687 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.0 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{rusDesignFabricationControl2015}{article}{}
+      \name{author}{2}{}{%
+        {{hash=f74192f92945701041a41bfa429ee111}{%
+           family={Rus},
+           familyi={R\bibinitperiod},
+           given={Daniela},
+           giveni={D\bibinitperiod}}}%
+        {{hash=04c07e2365c6cd6f998eb9d52aaa217d}{%
+           family={Tolley},
+           familyi={T\bibinitperiod},
+           given={Michael\bibnamedelima T.},
+           giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \strng{namehash}{0af3c55857668f38a3a306881ec8231c}
+      \strng{fullhash}{0af3c55857668f38a3a306881ec8231c}
+      \strng{bibnamehash}{0af3c55857668f38a3a306881ec8231c}
+      \strng{authorbibnamehash}{0af3c55857668f38a3a306881ec8231c}
+      \strng{authornamehash}{0af3c55857668f38a3a306881ec8231c}
+      \strng{authorfullhash}{0af3c55857668f38a3a306881ec8231c}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Conventionally, engineers have employed rigid materials to fabricate precise, predictable robotic systems, which are easily modelled as rigid members connected at discrete joints. Natural systems, however, often match or exceed the performance of robotic systems with deformable bodies. Cephalopods, for example, achieve amazing feats of manipulation and locomotion without a skeleton; even vertebrates such as humans achieve dynamic gaits by storing elastic energy in their compliant bones and soft tissues. Inspired by nature, engineers have begun to explore the design and control of soft-bodied robots composed of compliant materials. This Review discusses recent developments in the emerging field of soft robotics.}
+      \field{issn}{1476-4687}
+      \field{journaltitle}{Nature}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{number}{7553}
+      \field{title}{Design, Fabrication and Control of Soft Robots}
+      \field{urlday}{30}
+      \field{urlmonth}{4}
+      \field{urlyear}{2019}
+      \field{volume}{521}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{467\bibrangedash 475}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1038/nature14543
+      \endverb
+      \verb{file}
+      \verb /home/guan/Zotero/storage/IQF6VJ5D/Rus and Tolley - 2015 - Design, fabrication and control of soft robots.pdf;/home/guan/Zotero/storage/9Q3KYF8K/nature14543.html
+      \endverb
+      \verb{urlraw}
+      \verb http://www.nature.com/articles/nature14543
+      \endverb
+      \verb{url}
+      \verb http://www.nature.com/articles/nature14543
+      \endverb
+    \endentry
+    \entry{leeSoftRobotReview2017}{article}{}
+      \name{author}{7}{}{%
+        {{hash=bb00a9dc836177fc96e0e16d1f0c3b85}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Chiwon},
+           giveni={C\bibinitperiod}}}%
+        {{hash=5e8d2e51bff5c7ebf3c7777a99716a30}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Myungjoon},
+           giveni={M\bibinitperiod}}}%
+        {{hash=69d0697f83d29e6aa7efbeedb97e9ad9}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Yoon\bibnamedelima Jae},
+           giveni={Y\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=a993c74800675f4a062530b578a70884}{%
+           family={Hong},
+           familyi={H\bibinitperiod},
+           given={Nhayoung},
+           giveni={N\bibinitperiod}}}%
+        {{hash=2697486739df21e15e18db9ed0bde39d}{%
+           family={Ryu},
+           familyi={R\bibinitperiod},
+           given={Seungwan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=120b4c8256eecc682569e8373e6ae324}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={H.\bibnamedelimi Jin},
+           giveni={H\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=051f046b9d2aab7aab9e67a0af100e58}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Sungwan},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{bdb7a360e07521cd633e033993effa8b}
+      \strng{fullhash}{ff180972bb41d9a7ac515370e4c45bdb}
+      \strng{bibnamehash}{ff180972bb41d9a7ac515370e4c45bdb}
+      \strng{authorbibnamehash}{ff180972bb41d9a7ac515370e4c45bdb}
+      \strng{authornamehash}{bdb7a360e07521cd633e033993effa8b}
+      \strng{authorfullhash}{ff180972bb41d9a7ac515370e4c45bdb}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Soft robots are often inspired from biological systems which consist of soft materials or are actuated by electrically activated materials. There are several advantages of soft robots compared to the conventional robots; safe human-machine interaction, adaptability to wearable devices, simple gripping system, and so on. Due to the unique features and advantages, soft robots have a considerable range of applications. This article reviews stateof-the-art researches on soft robots and application areas. Actuation systems for soft robots can be categorized and analyzed into three types: variable length tendon, ﬂuidic actuation, and electro-active polymer (EAP). The deformable property of soft robots restricts the use of many conventional rigid sensors such as encoders, strain gauges, or inertial measurement units. Thus, contactless approaches for sensing and/or sensors with low modulus are preferable for soft robots. Sensors include low modulus ({$<$} 1 MPa) elastomers with liquid-phase material ﬁlled channels and are appropriate for proprioception which is determined by the degree of curvature. In control perspective, novel control idea should be developed because the conventional control techniques may be inadequate to handle soft robots. Several innovative techniques and diverse materials \& fabrication methods are described in this review article. In addition, a wide range of soft robots are characterized and analyzed based on the following sub-categories; actuation, sensing, structure, control and electronics, materials, fabrication and system, and applications.}
+      \field{issn}{1598-6446, 2005-4092}
+      \field{journaltitle}{International Journal of Control, Automation and Systems}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{number}{1}
+      \field{shortjournal}{Int. J. Control Autom. Syst.}
+      \field{title}{Soft Robot Review}
+      \field{urlday}{3}
+      \field{urlmonth}{5}
+      \field{urlyear}{2019}
+      \field{volume}{15}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{3\bibrangedash 15}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1007/s12555-016-0462-3
+      \endverb
+      \verb{file}
+      \verb /home/guan/Zotero/storage/CAZK6WP4/Lee et al. - 2017 - Soft robot review.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/s12555-016-0462-3
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/s12555-016-0462-3
+      \endverb
+    \endentry
+    \entry{onalSoftMobileRobots2017}{incollection}{}
+      \name{author}{4}{}{%
+        {{hash=465fd0804dba0ea4fec081c4b0e930ba}{%
+           family={Onal},
+           familyi={O\bibinitperiod},
+           given={Cagdas\bibnamedelima D.},
+           giveni={C\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=c6b0b16d268b7266380aa15c23031fcf}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Xin},
+           giveni={X\bibinitperiod}}}%
+        {{hash=c5d1d0d8605d7e3ce566d8023eeddf4f}{%
+           family={Whitesides},
+           familyi={W\bibinitperiod},
+           given={George\bibnamedelima M.},
+           giveni={G\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=f74192f92945701041a41bfa429ee111}{%
+           family={Rus},
+           familyi={R\bibinitperiod},
+           given={Daniela},
+           giveni={D\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=6efc371afb708def0cae581ab1e5174f}{%
+           family={Christensen},
+           familyi={C\bibinitperiod},
+           given={Henrik\bibnamedelima I.},
+           giveni={H\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+        {{hash=a1ed48939870abd896792330bc735967}{%
+           family={Khatib},
+           familyi={K\bibinitperiod},
+           given={Oussama},
+           giveni={O\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{6eb97e0df0bf11419bfdc80b81d71eb7}
+      \strng{fullhash}{5c5608fa499c27eae3573dd5e0c3bad8}
+      \strng{bibnamehash}{5c5608fa499c27eae3573dd5e0c3bad8}
+      \strng{authorbibnamehash}{5c5608fa499c27eae3573dd5e0c3bad8}
+      \strng{authornamehash}{6eb97e0df0bf11419bfdc80b81d71eb7}
+      \strng{authorfullhash}{5c5608fa499c27eae3573dd5e0c3bad8}
+      \strng{editorbibnamehash}{9db04a7162c800e9a1d5edae9d9df4fb}
+      \strng{editornamehash}{9db04a7162c800e9a1d5edae9d9df4fb}
+      \strng{editorfullhash}{9db04a7162c800e9a1d5edae9d9df4fb}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We wish to develop robot systems that are increasingly more elastic, as a step towards bridging the gap between man-made machines and their biological counterparts. To this end, we develop soft actuators fabricated from elastomer films with embedded fluidic channels. These actuators offer safety and adaptability and may potentially be utilized in robotics, wearable tactile interfaces, and active orthoses or prostheses. The expansion of fluidic channels under pressure creates a bending moment on the actuators and their displacement response follows theoretical predictions. Fluidic actuators require a pressure source, which limits their mobility and mainstream usage. This paper considers instances of mechanisms made from distributed elastomer actuators to generate motion using a chemical means of pressure generation. A mechanical feedback loop controls the chemical decomposition of hydrogen peroxide into oxygen gas in a closed container to self-regulate the actuation pressure. This on-demand pressure generator, called the pneumatic battery, bypasses the need for electrical energy by the direct conversion of chemical to mechanical energy. The portable pump can be operated in any orientation and is used to supply pressure to an elastomeric rolling mobile robot as a representative for a family of soft robots.}
+      \field{booktitle}{Robotics {{Research}} : {{The}} 15th {{International Symposium ISRR}}}
+      \field{isbn}{978-3-319-29363-9}
+      \field{langid}{english}
+      \field{series}{Springer {{Tracts}} in {{Advanced Robotics}}}
+      \field{title}{Soft {{Mobile Robots}} with {{On}}-{{Board Chemical Pressure Generation}}}
+      \field{urlday}{3}
+      \field{urlmonth}{5}
+      \field{urlyear}{2019}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{525\bibrangedash 540}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1007/978-3-319-29363-9_30
+      \endverb
+      \verb{file}
+      \verb /home/guan/Zotero/storage/59KS87UI/Onal et al. - 2017 - Soft Mobile Robots with On-Board Chemical Pressure.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/978-3-319-29363-9_30
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/978-3-319-29363-9_30
+      \endverb
+      \keyw{Soft robotics,Chemical pressure generation,Distributed actuation,Fluidic elastomer actuators,Smart materials}
+    \endentry
+    \entry{suzumoriBendingPneumaticRubber2007}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=91bc0f8755585b63ae1fc2664bc44143}{%
+           family={Suzumori},
+           familyi={S\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=43301a5e72f7e3c3204f4e8cc40831ea}{%
+           family={Endo},
+           familyi={E\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=235fd4de16586a9d79308d77311d32ae}{%
+           family={Kanda},
+           familyi={K\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=d1804d7a2aa891dedc9a6cdaac218298}{%
+           family={Kato},
+           familyi={K\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod}}}%
+        {{hash=af06e16c94652f1206dff195afaf77d4}{%
+           family={Suzuki},
+           familyi={S\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{22378f23cc777a8ff965fa9d1a4c6eaa}
+      \strng{fullhash}{c23e80ee526c6809a4fd72110476689b}
+      \strng{bibnamehash}{c23e80ee526c6809a4fd72110476689b}
+      \strng{authorbibnamehash}{c23e80ee526c6809a4fd72110476689b}
+      \strng{authornamehash}{22378f23cc777a8ff965fa9d1a4c6eaa}
+      \strng{authorfullhash}{c23e80ee526c6809a4fd72110476689b}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper shows a new design and prototyping method for a bending pneumatic rubber actuator and its application to a soft-bodied manta swimming robot. The design is based on optimal design using non-linear finite element method, in which geometrical and material non-linearity are considered and fabrication process is based on a rapid and efficient prototyping system using a CAD/CAM based rubber molding process. In this paper, the characteristics of several possible actuators are analyzed and evaluated to lead to an optimal actuator design. The actuator works very well with smooth and soft motion. The manta swimming robot in which the developed actuators are embedded is also designed based on non-linear finite element method. The developed manta swimming robot is made only of rubber and it swims in water smoothly as if it was a living fish. The experimental results of the manta robot motion show that good agreement with those of analytical results.}
+      \field{booktitle}{Proceedings 2007 {{IEEE International Conference}} on {{Robotics}} and {{Automation}}}
+      \field{eventtitle}{Proceedings 2007 {{IEEE International Conference}} on {{Robotics}} and {{Automation}}}
+      \field{month}{4}
+      \field{title}{A {{Bending Pneumatic Rubber Actuator Realizing Soft}}-Bodied {{Manta Swimming Robot}}}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \field{pages}{4975\bibrangedash 4980}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/ROBOT.2007.364246
+      \endverb
+      \verb{file}
+      \verb /home/guan/Zotero/storage/NAEULZDZ/Suzumori et al. - 2007 - A Bending Pneumatic Rubber Actuator Realizing Soft.pdf;/home/guan/Zotero/storage/EVNQ4AQU/4209864.html
+      \endverb
+      \keyw{bending pneumatic rubber actuator,biomimetics,CAD-CAM based rubber molding process,CADCAM,Computer aided manufacturing,Design automation,Design methodology,Fabrication,finite element analysis,Finite element methods,geometrical nonlinearity,material nonlinearity,mobile robots,nonlinear finite element method,optimal design,pneumatic actuators,Pneumatic actuators,Prototypes,Robots,Rubber,soft-bodied manta swimming robot,underwater vehicles}
+    \endentry
+    \entry{andersonMultifunctionalDielectricElastomer2012}{article}{}
+      \name{author}{5}{}{%
+        {{hash=08f3c7e8dfd4ecb240b2f84169baf4b9}{%
+           family={Anderson},
+           familyi={A\bibinitperiod},
+           given={Iain\bibnamedelima A.},
+           giveni={I\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=5037599cf96e8329e6c7112c9c855c66}{%
+           family={Gisby},
+           familyi={G\bibinitperiod},
+           given={Todd\bibnamedelima A.},
+           giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=d4deaac3a8316ba0250612ccbaa5a892}{%
+           family={McKay},
+           familyi={M\bibinitperiod},
+           given={Thomas\bibnamedelima G.},
+           giveni={T\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=7ac5252823fe2b30f3a82177d6274dcb}{%
+           family={O’Brien},
+           familyi={O\bibinitperiod},
+           given={Benjamin\bibnamedelima M.},
+           giveni={B\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=2d07e2e72055b2b45d59e40449e124f3}{%
+           family={Calius},
+           familyi={C\bibinitperiod},
+           given={Emilio\bibnamedelima P.},
+           giveni={E\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{f6d6d37b17714fc4f1c5049bf35adec0}
+      \strng{fullhash}{b38b051f1bf310e71356f9504673bb36}
+      \strng{bibnamehash}{b38b051f1bf310e71356f9504673bb36}
+      \strng{authorbibnamehash}{b38b051f1bf310e71356f9504673bb36}
+      \strng{authornamehash}{f6d6d37b17714fc4f1c5049bf35adec0}
+      \strng{authorfullhash}{b38b051f1bf310e71356f9504673bb36}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{15}
+      \field{issn}{0021-8979}
+      \field{journaltitle}{Journal of Applied Physics}
+      \field{month}{8}
+      \field{number}{4}
+      \field{shortjournal}{Journal of Applied Physics}
+      \field{title}{Multi-Functional Dielectric Elastomer Artificial Muscles for Soft and Smart Machines}
+      \field{urlday}{3}
+      \field{urlmonth}{5}
+      \field{urlyear}{2019}
+      \field{volume}{112}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{041101}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1063/1.4740023
+      \endverb
+      \verb{file}
+      \verb /home/guan/Zotero/storage/XTHH7IQ4/Anderson et al. - 2012 - Multi-functional dielectric elastomer artificial m.pdf;/home/guan/Zotero/storage/CN96SDP6/1.html
+      \endverb
+      \verb{urlraw}
+      \verb http://aip.scitation.org/doi/abs/10.1063/1.4740023
+      \endverb
+      \verb{url}
+      \verb http://aip.scitation.org/doi/abs/10.1063/1.4740023
+      \endverb
+    \endentry
+    \entry{jinStretchableLoudspeakerUsing2015}{article}{}
+      \name{author}{8}{}{%
+        {{hash=005f4b187e98b274c49705e1c1249fee}{%
+           family={Jin},
+           familyi={J\bibinitperiod},
+           given={Sang\bibnamedelima Woo},
+           giveni={S\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=0b62c0f357d2bc041d82edabfa5118b5}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={Jeongwon},
+           giveni={J\bibinitperiod}}}%
+        {{hash=fcaff03c9dba2a56faf8986fbab205fb}{%
+           family={Hong},
+           familyi={H\bibinitperiod},
+           given={Soo\bibnamedelima Yeong},
+           giveni={S\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=13803aba3effc6c968f44e9527f0e15e}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={Heun},
+           giveni={H\bibinitperiod}}}%
+        {{hash=f0d1026d20dcc2aece1ee29c14d41aae}{%
+           family={Jeong},
+           familyi={J\bibinitperiod},
+           given={Yu\bibnamedelima Ra},
+           giveni={Y\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=ff977c25b04343e14f5ebecc2b7c24d9}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={Junhong},
+           giveni={J\bibinitperiod}}}%
+        {{hash=51652a068245d448502457729e1b3333}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Sang-Soo},
+           giveni={S\bibinithyphendelim S\bibinitperiod}}}%
+        {{hash=debc9b15ea98657cb74ec84d5c4200f6}{%
+           family={Ha},
+           familyi={H\bibinitperiod},
+           given={Jeong\bibnamedelima Sook},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{8adb906235c4f1db127ed50eb8d20a88}
+      \strng{fullhash}{65ef3b331ea73ca37d5b313a8d6fd913}
+      \strng{bibnamehash}{65ef3b331ea73ca37d5b313a8d6fd913}
+      \strng{authorbibnamehash}{65ef3b331ea73ca37d5b313a8d6fd913}
+      \strng{authornamehash}{8adb906235c4f1db127ed50eb8d20a88}
+      \strng{authorfullhash}{65ef3b331ea73ca37d5b313a8d6fd913}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Considering the various applications of wearable and bio-implantable devices, it is desirable to realize stretchable acoustic devices for body-attached applications such as sensing biological signals, hearing aids, and notification of information via sound. In this study, we demonstrate the facile fabrication of a Stretchable Acoustic Device (SAD) using liquid metal coil of Galinstan where the SAD is operated by the electromagnetic interaction between the liquid metal coil and a Neodymium (Nd) magnet. To fabricate a liquid metal coil, Galinstan was injected into a micro-patterned elastomer channel. This fabricated SAD was operated simultaneously as a loudspeaker and a microphone. Measurements of the frequency response confirmed that the SAD was mechanically stable under both 50\% uniaxial and 30\% biaxial strains. Furthermore, 2000 repetitive applications of a 50\% uniaxial strain did not induce any noticeable degradation of the sound pressure. Both voice and the beeping sound of an alarm clock were successfully recorded and played back through our SAD while it was attached to the wrist under repeated deformation. These results demonstrate the high potential of the fabricated SAD using Galinstan voice coil in various research fields including stretchable, wearable, and bio-implantable acoustic devices.}
+      \field{day}{16}
+      \field{issn}{2045-2322}
+      \field{journaltitle}{Scientific Reports}
+      \field{langid}{english}
+      \field{month}{7}
+      \field{title}{Stretchable {{Loudspeaker}} Using {{Liquid Metal Microchannel}}}
+      \field{urlday}{28}
+      \field{urlmonth}{4}
+      \field{urlyear}{2019}
+      \field{volume}{5}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{11695}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/srep11695
+      \endverb
+      \verb{file}
+      \verb /home/guan/Zotero/storage/B6YGAI2U/Jin et al. - 2015 - Stretchable Loudspeaker using Liquid Metal Microch.pdf;/home/guan/Zotero/storage/ZD5MW89H/srep11695.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/srep11695
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/srep11695
+      \endverb
+    \endentry
+    \entry{henkeChallengesOpportunitiesVery2018}{article}{}
+      \name{author}{9}{}{%
+        {{hash=b0460e897ffe9dd7664a99250d395748}{%
+           family={Henke},
+           familyi={H\bibinitperiod},
+           given={Markus},
+           giveni={M\bibinitperiod}}}%
+        {{hash=96698d592eef8d699e6d3ebae1e126c3}{%
+           family={Narjes},
+           familyi={N\bibinitperiod},
+           given={Gerrit},
+           giveni={G\bibinitperiod}}}%
+        {{hash=9bb7505af6f56de3344e7ca74aa3fb3c}{%
+           family={Hoffmann},
+           familyi={H\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=3256d2e59770fb190239a21c241db4c0}{%
+           family={Wohlers},
+           familyi={W\bibinitperiod},
+           given={Constantin},
+           giveni={C\bibinitperiod}}}%
+        {{hash=00a2876da8e272e9e49142b9da615c80}{%
+           family={Urbanek},
+           familyi={U\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=a2abc669595223c0fd250230d5ad21b8}{%
+           family={Heister},
+           familyi={H\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=194399412833d835f0eaca8ce6df8ff3}{%
+           family={Steinbrink},
+           familyi={S\bibinitperiod},
+           given={Jörn},
+           giveni={J\bibinitperiod}}}%
+        {{hash=eaf39bea5e048d523977943ad1e8e828}{%
+           family={Canders},
+           familyi={C\bibinitperiod},
+           given={Wolf-Rüdiger},
+           giveni={W\bibinithyphendelim R\bibinitperiod}}}%
+        {{hash=c9a80dca8773edd478c1d4fbc2812832}{%
+           family={Ponick},
+           familyi={P\bibinitperiod},
+           given={Bernd},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{5e4a26ba93bfd00a4b1f4b77e0870225}
+      \strng{fullhash}{69a0038288d336d3a1f59be99c3d16b6}
+      \strng{bibnamehash}{69a0038288d336d3a1f59be99c3d16b6}
+      \strng{authorbibnamehash}{69a0038288d336d3a1f59be99c3d16b6}
+      \strng{authornamehash}{5e4a26ba93bfd00a4b1f4b77e0870225}
+      \strng{authorfullhash}{69a0038288d336d3a1f59be99c3d16b6}
+      \field{sortinit}{9}
+      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The demand for alternative fueling methods to reduce the need for fossil fuels is not limited to the electrification of ground vehicles. More-electric and all-electric aircraft pose challenges, with extensive requirements in terms of power density, efficiency, safety, and environmental sustainability. This paper focuses on electrical machines and their components, especially for high-power applications like the main propulsion. The electrical machine is evaluated from different aspects, followed by a closer look at the components and materials to determine the suitability of the current standard materials and advanced technologies. Furthermore, the mechanical and thermal aspects are reviewed, including new and innovative concepts for the cooling of windings and for the use of additive manufacturing. Aircraft have special demands regarding weight and installation space. Following recent developments and looking ahead to the future, the need and the possibilities for light and efficient electrical machines are addressed. All of the approaches and developments presented lead to a better understanding of the challenges to be expected and highlight the upcoming opportunities in electrical machine design for the use of electric motors and generators in future aircraft. Several prototypes of electrical machines for smaller aircraft already exist, such as the electric drive of the Siemens powered Extra 330LE. The focus of this paper is to provide an overview of current technical possibilities and technical interrelations of high performance electric drives for aviation. A 1 MW drive is exemplified to present the possibilities for future drives for airplanes carrying a larger number of passengers. All presented techniques can also be applied to other drive power classes.}
+      \field{issn}{19961073}
+      \field{journaltitle}{Energies (19961073)}
+      \field{month}{2}
+      \field{number}{2}
+      \field{shortjournal}{Energies (19961073)}
+      \field{title}{Challenges and {{Opportunities}} of {{Very Light High}}-{{Performance Electric Drives}} for {{Aviation}}}
+      \field{urlday}{26}
+      \field{urlmonth}{9}
+      \field{urlyear}{2019}
+      \field{volume}{11}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{344}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/en11020344
+      \endverb
+      \verb{file}
+      \verb /home/guan/Zotero/storage/ZX323KUW/Henke et al. - 2018 - Challenges and Opportunities of Very Light High-Pe.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://ezproxy.auckland.ac.nz/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=enr&AN=128258702&site=ehost-live&scope=site
+      \endverb
+      \verb{url}
+      \verb http://ezproxy.auckland.ac.nz/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=enr&AN=128258702&site=ehost-live&scope=site
+      \endverb
+      \keyw{additive manufacturing,AERONAUTICS,all-electric aircraft,direct liquid cooling,ELECTRIC drives,electric propulsion,electrical machines,ELECTRIFICATION,FOSSIL fuels,high-performance electric drive,mechanical modelling,more-electric aircraft,superconductors,SUSTAINABILITY,thermal modelling}
+    \endentry
+    \entry{polygerinosSoftRoboticsReview2017}{article}{}
+      \name{author}{9}{}{%
+        {{hash=aa85f3e7611095193de8bec7fac17e40}{%
+           family={Polygerinos},
+           familyi={P\bibinitperiod},
+           given={Panagiotis},
+           giveni={P\bibinitperiod}}}%
+        {{hash=9ae6ceca64dceedf87ea64f70860cd62}{%
+           family={Correll},
+           familyi={C\bibinitperiod},
+           given={Nikolaus},
+           giveni={N\bibinitperiod}}}%
+        {{hash=337ac170a7f972f3b7918e4eb31b76e6}{%
+           family={Morin},
+           familyi={M\bibinitperiod},
+           given={Stephen\bibnamedelima A.},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=0ef1f8e4d3e3f056666f9a084d80014f}{%
+           family={Mosadegh},
+           familyi={M\bibinitperiod},
+           given={Bobak},
+           giveni={B\bibinitperiod}}}%
+        {{hash=465fd0804dba0ea4fec081c4b0e930ba}{%
+           family={Onal},
+           familyi={O\bibinitperiod},
+           given={Cagdas\bibnamedelima D.},
+           giveni={C\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=1e21ba5386aa5c5e4a1df6d99f8c8212}{%
+           family={Petersen},
+           familyi={P\bibinitperiod},
+           given={Kirstin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=fd7b31f315b60515f844287e859c6453}{%
+           family={Cianchetti},
+           familyi={C\bibinitperiod},
+           given={Matteo},
+           giveni={M\bibinitperiod}}}%
+        {{hash=04c07e2365c6cd6f998eb9d52aaa217d}{%
+           family={Tolley},
+           familyi={T\bibinitperiod},
+           given={Michael\bibnamedelima T.},
+           giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=b08c322cdf52d08d0b80e3265942b683}{%
+           family={Shepherd},
+           familyi={S\bibinitperiod},
+           given={Robert\bibnamedelima F.},
+           giveni={R\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \strng{namehash}{ec6372a946f30d7df1cefc438835f87b}
+      \strng{fullhash}{3f93e2c2a12aba0babc58133b3c3ecf0}
+      \strng{bibnamehash}{3f93e2c2a12aba0babc58133b3c3ecf0}
+      \strng{authorbibnamehash}{3f93e2c2a12aba0babc58133b3c3ecf0}
+      \strng{authornamehash}{ec6372a946f30d7df1cefc438835f87b}
+      \strng{authorfullhash}{3f93e2c2a12aba0babc58133b3c3ecf0}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The emerging field of soft robotics makes use of many classes of materials including metals, low glass transition temperature (Tg) plastics, and high Tg elastomers. Dependent on the specific design, all of these materials may result in extrinsically soft robots. Organic elastomers, however, have elastic moduli ranging from tens of megapascals down to kilopascals; robots composed of such materials are intrinsically soft ? they are always compliant independent of their shape. This class of soft machines has been used to reduce control complexity and manufacturing cost of robots, while enabling sophisticated and novel functionalities often in direct contact with humans. This review focuses on a particular type of intrinsically soft, elastomeric robot ? those powered via fluidic pressurization.}
+      \field{day}{1}
+      \field{issn}{1438-1656}
+      \field{journaltitle}{Advanced Engineering Materials}
+      \field{month}{12}
+      \field{number}{12}
+      \field{shortjournal}{Advanced Engineering Materials}
+      \field{shorttitle}{Soft {{Robotics}}}
+      \field{title}{Soft {{Robotics}}: {{Review}} of {{Fluid}}-{{Driven Intrinsically Soft Devices}}; {{Manufacturing}}, {{Sensing}}, {{Control}}, and {{Applications}} in {{Human}}-{{Robot Interaction}}}
+      \field{urlday}{3}
+      \field{urlmonth}{5}
+      \field{urlyear}{2019}
+      \field{volume}{19}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1700016}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1002/adem.201700016
+      \endverb
+      \verb{file}
+      \verb /home/guan/Zotero/storage/ALKW8JVJ/Polygerinos et al. - 2017 - Soft Robotics Review of Fluid-Driven Intrinsicall.pdf;/home/guan/Zotero/storage/48GVP66U/adem.html
+      \endverb
+      \verb{urlraw}
+      \verb http://onlinelibrary.wiley.com/doi/full/10.1002/adem.201700016
+      \endverb
+      \verb{url}
+      \verb http://onlinelibrary.wiley.com/doi/full/10.1002/adem.201700016
+      \endverb
+    \endentry
+    \entry{stokesHybridCombiningHard2013}{article}{}
+      \name{author}{5}{}{%
+        {{hash=2df375e7ed8e1e68fa41fc2120b92eab}{%
+           family={Stokes},
+           familyi={S\bibinitperiod},
+           given={Adam\bibnamedelima A.},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=b08c322cdf52d08d0b80e3265942b683}{%
+           family={Shepherd},
+           familyi={S\bibinitperiod},
+           given={Robert\bibnamedelima F.},
+           giveni={R\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=337ac170a7f972f3b7918e4eb31b76e6}{%
+           family={Morin},
+           familyi={M\bibinitperiod},
+           given={Stephen\bibnamedelima A.},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=86e550859d09e7969aec378245f33f7d}{%
+           family={Ilievski},
+           familyi={I\bibinitperiod},
+           given={Filip},
+           giveni={F\bibinitperiod}}}%
+        {{hash=c5d1d0d8605d7e3ce566d8023eeddf4f}{%
+           family={Whitesides},
+           familyi={W\bibinitperiod},
+           given={George\bibnamedelima M.},
+           giveni={G\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{a0052bcdbc6e96d5ed3b4394088698c8}
+      \strng{fullhash}{b743ff1b7d336008840455a329fab040}
+      \strng{bibnamehash}{b743ff1b7d336008840455a329fab040}
+      \strng{authorbibnamehash}{b743ff1b7d336008840455a329fab040}
+      \strng{authornamehash}{a0052bcdbc6e96d5ed3b4394088698c8}
+      \strng{authorfullhash}{b743ff1b7d336008840455a329fab040}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This article describes a hybrid robotic system combining hard and soft subsystems. This hybrid comprises a wheeled robot (an iRobot Create; hard) and a four-legged quadruped (soft). It is capable (using a simple, wireless control system) of rapid locomotion over flat terrain (using the wheeled hard robot) and of gripping and retrieving an object (using the independent locomotive capabilities of the soft robot). The utility of this system is demonstrated by performing a mission requiring the capabilities of both components: retrieving an object (iPod Nano) from the center of a room. This class of robot—hybrids comprising hard and soft systems functioning synergistically—is capable of performing tasks that neither can do alone. In contrast to specialized hard robotic arms with grippers (capable of performing some of the functions we describe here), which are complex, relatively expensive, and require sophisticated controls, this hybrid system is easy to construct, simple to control, and low in cost. The soft robotic system in the hybrid is lightweight, disposable if contaminated or damaged, and capable of multiple functions.}
+      \field{day}{17}
+      \field{issn}{2169-5172}
+      \field{journaltitle}{Soft Robotics}
+      \field{month}{7}
+      \field{number}{1}
+      \field{shortjournal}{Soft Robotics}
+      \field{title}{A {{Hybrid Combining Hard}} and {{Soft Robots}}}
+      \field{urlday}{3}
+      \field{urlmonth}{5}
+      \field{urlyear}{2019}
+      \field{volume}{1}
+      \field{year}{2013}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{70\bibrangedash 74}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1089/soro.2013.0002
+      \endverb
+      \verb{file}
+      \verb /home/guan/Zotero/storage/FZNZWNHX/Stokes et al. - 2013 - A Hybrid Combining Hard and Soft Robots.pdf;/home/guan/Zotero/storage/CIIK95A2/soro.2013.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.liebertpub.com/doi/abs/10.1089/soro.2013.0002
+      \endverb
+      \verb{url}
+      \verb https://www.liebertpub.com/doi/abs/10.1089/soro.2013.0002
+      \endverb
+    \endentry
+    \entry{laschiSoftRobotArm2012}{article}{}
+      \name{author}{6}{}{%
+        {{hash=870accaf40229dde2e42ab4f1c13ba43}{%
+           family={Laschi},
+           familyi={L\bibinitperiod},
+           given={Cecilia},
+           giveni={C\bibinitperiod}}}%
+        {{hash=fd7b31f315b60515f844287e859c6453}{%
+           family={Cianchetti},
+           familyi={C\bibinitperiod},
+           given={Matteo},
+           giveni={M\bibinitperiod}}}%
+        {{hash=4157eb539f9689a48f9cb20ad91c8dd0}{%
+           family={Mazzolai},
+           familyi={M\bibinitperiod},
+           given={Barbara},
+           giveni={B\bibinitperiod}}}%
+        {{hash=8cd03fcf943a6ab32a91af710f6f39a2}{%
+           family={Margheri},
+           familyi={M\bibinitperiod},
+           given={Laura},
+           giveni={L\bibinitperiod}}}%
+        {{hash=bad27ec1a91ffa8b0132af7114954684}{%
+           family={Follador},
+           familyi={F\bibinitperiod},
+           given={Maurizio},
+           giveni={M\bibinitperiod}}}%
+        {{hash=6583d85df524b0836c2a68830b29038a}{%
+           family={Dario},
+           familyi={D\bibinitperiod},
+           given={Paolo},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{cd3d5ae48fe0040ba85345b08a13a4f9}
+      \strng{fullhash}{6c7d8bf0109e7f2888c07a5c490872fe}
+      \strng{bibnamehash}{6c7d8bf0109e7f2888c07a5c490872fe}
+      \strng{authorbibnamehash}{6c7d8bf0109e7f2888c07a5c490872fe}
+      \strng{authornamehash}{cd3d5ae48fe0040ba85345b08a13a4f9}
+      \strng{authorfullhash}{6c7d8bf0109e7f2888c07a5c490872fe}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The octopus is a marine animal whose body has no rigid structures. It has eight arms composed of a peculiar muscular structure, named a muscular hydrostat. The octopus arms provide it with both locomotion and grasping capabilities, thanks to the fact that their stiffness can change over a wide range and can be controlled through combined contractions of the muscles. The muscular hydrostat can better be seen as a modiﬁable skeleton. Furthermore, the morphology the arms and the mechanical characteristics of their tissues are such that the interaction with the environment (i.e., water) is exploited to simplify control. Thanks to this effective mechanism of embodied intelligence, the octopus can control a very high number of degrees of freedom, with relatively limited computing resources. From these considerations, the octopus emerges as a good model for embodied intelligence and for soft robotics. The prototype of a robot arm has been built based on an artiﬁcial muscular hydrostat inspired to the muscular hydrostat of the Octopus vulgaris. The prototype presents the morphology of the biological model and the broad arrangement of longitudinal and transverse muscles. Actuation is obtained with cables (longitudinally) and with shape memory alloy springs (transversally). The robot arm combines contractions and it can show the basic movements of the octopus arm, like elongation, shortening and bending, in water.}
+      \field{issn}{0169-1864, 1568-5535}
+      \field{journaltitle}{Advanced Robotics}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{7}
+      \field{shortjournal}{Advanced Robotics}
+      \field{title}{Soft {{Robot Arm Inspired}} by the {{Octopus}}}
+      \field{urlday}{3}
+      \field{urlmonth}{5}
+      \field{urlyear}{2019}
+      \field{volume}{26}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{709\bibrangedash 727}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1163/156855312X626343
+      \endverb
+      \verb{file}
+      \verb /home/guan/Zotero/storage/7AWHSNZN/Laschi et al. - 2012 - Soft Robot Arm Inspired by the Octopus.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.tandfonline.com/doi/full/10.1163/156855312X626343
+      \endverb
+      \verb{url}
+      \verb https://www.tandfonline.com/doi/full/10.1163/156855312X626343
+      \endverb
+    \endentry
+    \entry{valentaMechanicalElectricalTesting2008}{article}{}
+      \name{author}{2}{}{%
+        {{hash=cbdd89f41d9d6b815829a170405bc5b2}{%
+           family={Valenta},
+           familyi={V\bibinitperiod},
+           given={László},
+           giveni={L\bibinitperiod}}}%
+        {{hash=863edd164ea3e507007e8679d91e699f}{%
+           family={Bojtos},
+           familyi={B\bibinitperiod},
+           given={Attila},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{23a9b121c437875762823e680b31c25a}
+      \strng{fullhash}{23a9b121c437875762823e680b31c25a}
+      \strng{bibnamehash}{23a9b121c437875762823e680b31c25a}
+      \strng{authorbibnamehash}{23a9b121c437875762823e680b31c25a}
+      \strng{authornamehash}{23a9b121c437875762823e680b31c25a}
+      \strng{authorfullhash}{23a9b121c437875762823e680b31c25a}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Silicone rubber is an essential construction material in food industry, medicine and in some fields of mechanical engineering, because it has good mechanical, electrical, biological and other special properties. One needs to know these material properties in order to develop silicone sensors. We performed several standard measurements for rubber, like tensile strength, cyclic tensile, bending, fatiguing, stress relaxation tests etc. To investigate the electrical properties, we measured the resistance of silicone during the mechanical tests. The paper summarizes the newest results of our research in connection with mechanical and electrical properties of conductive silicone rubber.}
+      \field{issn}{1662-9752}
+      \field{journaltitle}{Materials Science Forum}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{shortjournal}{MSF}
+      \field{title}{Mechanical and {{Electrical Testing}} of {{Electrically Conductive Silicone Rubber}}}
+      \field{urlday}{3}
+      \field{urlmonth}{5}
+      \field{urlyear}{2019}
+      \field{volume}{589}
+      \field{year}{2008}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{179\bibrangedash 184}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.4028/www.scientific.net/MSF.589.179
+      \endverb
+      \verb{file}
+      \verb /home/guan/Zotero/storage/P32YL6VI/Valenta and Bojtos - 2008 - Mechanical and Electrical Testing of Electrically .pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.scientific.net/MSF.589.179
+      \endverb
+      \verb{url}
+      \verb https://www.scientific.net/MSF.589.179
+      \endverb
+    \endentry
+    \entry{liuCharacterizationNontoxicLiquidMetal2012}{article}{}
+      \name{author}{3}{}{%
+        {{hash=0c12ae96450bf90f74282991aa068345}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=6d72bbeb98914f3c54511e5776dbd05e}{%
+           family={Sen},
+           familyi={S\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=6e6f57a4a2529dec95830ee0d8c3245a}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{888cf2c18c4b93882574e7555ed777d5}
+      \strng{fullhash}{888cf2c18c4b93882574e7555ed777d5}
+      \strng{bibnamehash}{888cf2c18c4b93882574e7555ed777d5}
+      \strng{authorbibnamehash}{888cf2c18c4b93882574e7555ed777d5}
+      \strng{authornamehash}{888cf2c18c4b93882574e7555ed777d5}
+      \strng{authorfullhash}{888cf2c18c4b93882574e7555ed777d5}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We have obtained interfacial properties of Galinstan, a nontoxic liquid-metal alloy, to help replace mercury in miniature devices. To prevent formation of an oxide skin that severely hinders the fluidic behavior of small Galinstan droplets and leads to inaccurate property data, we performed our experiments in a nitrogen-filled glove box. It was found that only if never exposed to oxygen levels above 1 part per million (ppm) would Galinstan droplets behave like a liquid. Two key properties were then investigated: contact angles and surface tension. Advancing and receding contact angles of Galinstan were measured from sessile droplets on various materials: for example, 146.8 and 121.5, respectively, on glass. Surface tension was measured by the pendant-drop method to be 534.6 10.7 mN/m. All the measurements were done in nitrogen at 28 with oxygen and moisture levels below 0.5 ppm. To help design droplet-based microfluidic devices, we tested the response of Galinstan to electrowetting-on-dielectric actuation.}
+      \field{issn}{1057-7157}
+      \field{journaltitle}{Journal of Microelectromechanical Systems}
+      \field{month}{4}
+      \field{number}{2}
+      \field{title}{Characterization of {{Nontoxic Liquid}}-{{Metal Alloy Galinstan}} for {{Applications}} in {{Microdevices}}}
+      \field{volume}{21}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \field{pages}{443\bibrangedash 450}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/JMEMS.2011.2174421
+      \endverb
+      \verb{file}
+      \verb /home/guan/Zotero/storage/CK96Z4D2/Liu et al. - 2012 - Characterization of Nontoxic Liquid-Metal Alloy Ga.pdf;/home/guan/Zotero/storage/5TKHD76W/6097006.html
+      \endverb
+      \keyw{Metals,microfluidics,Galinstan,liquid metals,contact angle,droplet-based microfluidic device,drops,Electrowetting-on-dielectric (EWOD),electrowetting-on-dielectric actuation,fluidic behavior,Galinstan contact angle,galinstan droplet,Galinstan oxidation,Galinstan surface tension,Glass,interfacial properties,liquid alloys,liquid-metal,mercury,microdevice,miniature device,moisture,moisture level,nitrogen-filled glove box,nontoxic liquid-metal alloy,Oxidation,oxide skin,oxygen level,pendant-drop method,Rough surfaces,sessile droplet,Surface roughness,surface tension,Surface tension}
+    \endentry
+    \entry{dickeyEutecticGalliumIndiumEGaIn2008}{article}{}
+      \name{author}{6}{}{%
+        {{hash=d27809b3474bcf7e747bf67f94a5c4da}{%
+           family={Dickey},
+           familyi={D\bibinitperiod},
+           given={Michael\bibnamedelima D.},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=0b5dada3f5d5a3e9f6a4b6adabccbaf6}{%
+           family={Chiechi},
+           familyi={C\bibinitperiod},
+           given={Ryan\bibnamedelima C.},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=1443ad580ced06cf2a351786227b76cc}{%
+           family={Larsen},
+           familyi={L\bibinitperiod},
+           given={Ryan\bibnamedelima J.},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=83da6cddb665b0399407a8079dd44e11}{%
+           family={Weiss},
+           familyi={W\bibinitperiod},
+           given={Emily\bibnamedelima A.},
+           giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=edec6ec41bea0fcb82d39e670efe3c10}{%
+           family={Weitz},
+           familyi={W\bibinitperiod},
+           given={David\bibnamedelima A.},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=c5d1d0d8605d7e3ce566d8023eeddf4f}{%
+           family={Whitesides},
+           familyi={W\bibinitperiod},
+           given={George\bibnamedelima M.},
+           giveni={G\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{e6756db440dfce0728eb624873f914dc}
+      \strng{fullhash}{2eb67a6b22f5249ae9c370635d10ab97}
+      \strng{bibnamehash}{2eb67a6b22f5249ae9c370635d10ab97}
+      \strng{authorbibnamehash}{2eb67a6b22f5249ae9c370635d10ab97}
+      \strng{authornamehash}{e6756db440dfce0728eb624873f914dc}
+      \strng{authorfullhash}{2eb67a6b22f5249ae9c370635d10ab97}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{This paper describes the rheological behavior of the liquid metal eutectic gallium-indium (EGaIn) as it is injected into microfluidic channels to form stable microstructures of liquid metal. EGaIn is well- ;suited for this application because of its rheological properties at room temperature: it behaves like an elastic material until it experiences a critical surface stress, at which point it yields and flows readily. These properties allow EGaIn to fill microchannels rapidly when sufficient pressure is applied to the inlet of the channels, yet maintain structural stability within the channels once ambient pressure is restored. Experiments conducted in microfluidic channels, and in a parallel-plate rheometer, suggest that EGaIn's behavior is dictated by the properties of its surface (predominantly gallium oxide, as determined by Auger measurement s); these two experiments both yield approximately the same number for the critical surface stress required to induce EGaIn to flow (∼0 .5 N/m). This analysis–which shows that the pressure that must be exceeded for EGaIn to flow through a microchannel is inversely proportional to the critical (i.e., smallest) dimension of the channel–is useful to guide future fabrication of microfluidic channels to mold EGaIn into functional microstructures.}
+      \field{issn}{1616-3028}
+      \field{journaltitle}{Advanced Functional Materials}
+      \field{langid}{english}
+      \field{number}{7}
+      \field{shorttitle}{Eutectic {{Gallium}}-{{Indium}} ({{EGaIn}})}
+      \field{title}{Eutectic {{Gallium}}-{{Indium}} ({{EGaIn}}): {{A Liquid Metal Alloy}} for the {{Formation}} of {{Stable Structures}} in {{Microchannels}} at {{Room Temperature}}}
+      \field{urlday}{3}
+      \field{urlmonth}{5}
+      \field{urlyear}{2019}
+      \field{volume}{18}
+      \field{year}{2008}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1097\bibrangedash 1104}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1002/adfm.200701216
+      \endverb
+      \verb{file}
+      \verb /home/guan/Zotero/storage/U4NZCH44/Dickey et al. - 2008 - Eutectic Gallium-Indium (EGaIn) A Liquid Metal Al.pdf;/home/guan/Zotero/storage/QYK7ET7L/adfm.html
+      \endverb
+      \verb{urlraw}
+      \verb http://onlinelibrary.wiley.com/doi/abs/10.1002/adfm.200701216
+      \endverb
+      \verb{url}
+      \verb http://onlinelibrary.wiley.com/doi/abs/10.1002/adfm.200701216
+      \endverb
+      \keyw{alloys,flexible electronics,gallium,indium,microchannels,microfluidics,responsive alloys}
+    \endentry
+    \entry{surmannVoltammetricAnalysisUsing2005}{article}{}
+      \name{author}{2}{}{%
+        {{hash=bcc9fe6139c4e74aa97101c93f99dd21}{%
+           family={Surmann},
+           familyi={S\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=9933440fbe0f80260e11705790bed715}{%
+           family={Zeyat},
+           familyi={Z\bibinitperiod},
+           given={Hanan},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{8cafa2c079b5f7fab2e03a643a975ad8}
+      \strng{fullhash}{8cafa2c079b5f7fab2e03a643a975ad8}
+      \strng{bibnamehash}{8cafa2c079b5f7fab2e03a643a975ad8}
+      \strng{authorbibnamehash}{8cafa2c079b5f7fab2e03a643a975ad8}
+      \strng{authornamehash}{8cafa2c079b5f7fab2e03a643a975ad8}
+      \strng{authorfullhash}{8cafa2c079b5f7fab2e03a643a975ad8}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Galinstan is a new kind of electrode material and the galinstan electrode is a promising alternative to the commonly used mercury electrodes. The eutectic mixture of gallium, indium and tin is liquid at room temperature (m.p. −19°C) and its voltammetric behaviour is similar to that of mercury. The potential windows of use were determined for different pH values and are similar to those obtained with conventional mercury electrodes. Furthermore, the high hydrogen overpotential, which is characteristic for mercury, can be observed when galinstan is used as electrode material. Galinstan can be employed as a liquid electrode in the voltammetric analysis of different metal ions, such as lead and cadmium, in different supporting electrolytes. Our results indicate that the non-toxic liquid alloy galinstan could therefore become immensely important in electrochemical research as a potential surrogate material for mercury.}
+      \field{day}{1}
+      \field{issn}{1618-2650}
+      \field{journaltitle}{Analytical and Bioanalytical Chemistry}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{number}{6}
+      \field{shortjournal}{Anal Bioanal Chem}
+      \field{title}{Voltammetric Analysis Using a Self-Renewable Non-Mercury Electrode}
+      \field{urlday}{28}
+      \field{urlmonth}{4}
+      \field{urlyear}{2019}
+      \field{volume}{383}
+      \field{year}{2005}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1009\bibrangedash 1013}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1007/s00216-005-0069-7
+      \endverb
+      \verb{file}
+      \verb /home/guan/Zotero/storage/E3UVZ8WQ/Surmann and Zeyat - 2005 - Voltammetric analysis using a self-renewable non-m.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s00216-005-0069-7
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s00216-005-0069-7
+      \endverb
+      \keyw{Galinstan,Potential window,Voltammetry}
+    \endentry
+    \entry{houghtonHazards2007}{incollection}{}
+      \name{author}{1}{}{%
+        {{hash=822b8f6140b4c8140c53748e7779524b}{%
+           family={Houghton},
+           familyi={H\bibinitperiod},
+           given={Rick},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {CRC Press}%
+      }
+      \strng{namehash}{822b8f6140b4c8140c53748e7779524b}
+      \strng{fullhash}{822b8f6140b4c8140c53748e7779524b}
+      \strng{bibnamehash}{822b8f6140b4c8140c53748e7779524b}
+      \strng{authorbibnamehash}{822b8f6140b4c8140c53748e7779524b}
+      \strng{authornamehash}{822b8f6140b4c8140c53748e7779524b}
+      \strng{authorfullhash}{822b8f6140b4c8140c53748e7779524b}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Deliberately, accidentally, or consequentially, first responders and waste site workers handle unknown substances of varying degrees of danger every day. Unidentified chemicals involved with clandestine production of WMD agents or drugs, explosive materials, unlabeled waste, and forensic samples all pose a threat to the worker and those they protect. A straightforward, concise handbook of practical strategies is needed to perform effective risk assessment and management in the face of uncertainty. Written for emergency workers responsible for the safe response to and management of unknown hazardous materials, Emergency Characterization of Unknown Materials providesreadily applicable strategies for developing and implementing a fluid concept of risk analysis based on hazard characterization in emergency situations where definitive identification of the material may be impractical or even impossible. Using a hands-on approach involving the manipulation of small amounts of material, the author discusses strategies to identify threats and vulnerabilities, ascertain exposure, and reduce or eliminate impact. The book begins with an overview of chemical and physical terms and definitions. It continues with a look at types of hazards presented by chemical compounds and mixtures, organisms, and radiation sources. It covers approximately 63 portable technologies for field identification or characterization and examines general technological advantages and disadvantages relative to hazard identification. The final chapter presents strategies for use in identifying or characterizing suspected weapons of mass destruction, illegal drugs, explosive substances, biological hazards, and other hazardous materials. Each chapter includes extensive references and a comprehensive index. Providing a sweeping overview of hazards and emphasizing risk analysis and public safety, Emergency Characterization of Unknown Materials gives first responders an advantage they deserve.}
+      \field{booktitle}{Emergency {{Characterization}} of {{Unknown Materials}}}
+      \field{day}{15}
+      \field{eprinttype}{googlebooks}
+      \field{isbn}{978-0-8493-7969-7}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{title}{Hazards}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \field{pages}{89}
+      \range{pages}{1}
+      \keyw{House & Home / Security,Law / Forensic Science,Nature / Natural Resources,Political Science / Peace,Science / Environmental Science}
+    \endentry
+    \entry{morinCamouflageDisplaySoft2012}{article}{}
+      \name{author}{6}{}{%
+        {{hash=337ac170a7f972f3b7918e4eb31b76e6}{%
+           family={Morin},
+           familyi={M\bibinitperiod},
+           given={Stephen\bibnamedelima A.},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=b08c322cdf52d08d0b80e3265942b683}{%
+           family={Shepherd},
+           familyi={S\bibinitperiod},
+           given={Robert\bibnamedelima F.},
+           giveni={R\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=cec8f30696a8c88fa9c99646a6cc744c}{%
+           family={Kwok},
+           familyi={K\bibinitperiod},
+           given={Sen\bibnamedelima Wai},
+           giveni={S\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=2df375e7ed8e1e68fa41fc2120b92eab}{%
+           family={Stokes},
+           familyi={S\bibinitperiod},
+           given={Adam\bibnamedelima A.},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=467a12a7f9fa5593905b2571d0d21a2f}{%
+           family={Nemiroski},
+           familyi={N\bibinitperiod},
+           given={Alex},
+           giveni={A\bibinitperiod}}}%
+        {{hash=c5d1d0d8605d7e3ce566d8023eeddf4f}{%
+           family={Whitesides},
+           familyi={W\bibinitperiod},
+           given={George\bibnamedelima M.},
+           giveni={G\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{f284be4f1729d482ded7a4de900e4325}
+      \strng{fullhash}{62eb6dc5e1e456ff5eca6308cd9b1dc8}
+      \strng{bibnamehash}{62eb6dc5e1e456ff5eca6308cd9b1dc8}
+      \strng{authorbibnamehash}{62eb6dc5e1e456ff5eca6308cd9b1dc8}
+      \strng{authornamehash}{f284be4f1729d482ded7a4de900e4325}
+      \strng{authorfullhash}{62eb6dc5e1e456ff5eca6308cd9b1dc8}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Synthetic systems cannot easily mimic the color-changing abilities of animals such as cephalopods. Soft machines—machines fabricated from soft polymers and flexible reinforcing sheets—are rapidly increasing in functionality. This manuscript describes simple microfluidic networks that can change the color, contrast, pattern, apparent shape, luminescence, and surface temperature of soft machines for camouflage and display. The color of these microfluidic networks can be changed simultaneously in the visible and infrared—a capability that organisms do not have. These strategies begin to imitate the functions, although not the anatomies, of color-changing animals.}
+      \field{issn}{0193-4511}
+      \field{journaltitle}{Science}
+      \field{langid}{american}
+      \field{title}{Camouflage and {{Display}} for {{Soft Machines}}}
+      \field{urlday}{1}
+      \field{urlmonth}{8}
+      \field{urlyear}{2019}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.1126/science.1222149
+      \endverb
+      \verb{file}
+      \verb /home/guan/Zotero/storage/R5IZ62X9/Morin et al. - 2012 - Camouflage and Display for Soft Machines.pdf;/home/guan/Zotero/storage/2K7J7S73/11933749.html
+      \endverb
+      \verb{urlraw}
+      \verb https://dash.harvard.edu/handle/1/11933749
+      \endverb
+      \verb{url}
+      \verb https://dash.harvard.edu/handle/1/11933749
+      \endverb
+    \endentry
+    \entry{kojimotoPneumaticBatteryChemical2012}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=0643f60a5dbb85b52491fbba25faf5bf}{%
+           family={Kojimoto},
+           familyi={K\bibinitperiod},
+           given={Nigel\bibnamedelimb (Nigel\bibnamedelimb C.\bibnamedelimi )},
+           giveni={N\bibinitperiod\bibinitdelim (\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim )\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Massachusetts Institute of Technology}%
+      }
+      \strng{namehash}{0643f60a5dbb85b52491fbba25faf5bf}
+      \strng{fullhash}{0643f60a5dbb85b52491fbba25faf5bf}
+      \strng{bibnamehash}{0643f60a5dbb85b52491fbba25faf5bf}
+      \strng{authorbibnamehash}{0643f60a5dbb85b52491fbba25faf5bf}
+      \strng{authornamehash}{0643f60a5dbb85b52491fbba25faf5bf}
+      \strng{authorfullhash}{0643f60a5dbb85b52491fbba25faf5bf}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Pneumatic power is traditionally provided by compressed air contained in a pressurized vessel. This method of energy storage is analogous to an electrical capacitor. This study sought to create an alternative pneumatic device, the pneumatic battery, that would be analogous to an electrical battery. A pneumatic battery allows energy to be stored chemically in a Hydrogen Peroxide (H2O2) solution and released when the solution decomposes, producing oxygen gas. This decomposition is sped up with the aid of a platinum catalyst. A mechanical negative feedback system regulates the exposure of the catalyst, allowing the battery to generate a user specified pressure at its outlet. The prototype produced was observed to generate an outlet pressure of up to 470 kPa (68 psi) and is theoretically capable of generating up to 689 kPa (100 psi) with a volumetric energy density greater than that of conventional compressed air tanks.}
+      \field{langid}{english}
+      \field{shorttitle}{Pneumatic Battery}
+      \field{title}{Pneumatic Battery : A Chemical Alternative to Pneumatic Energy Storage}
+      \field{type}{Thesis}
+      \field{urlday}{26}
+      \field{urlmonth}{9}
+      \field{urlyear}{2019}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/guan/Zotero/storage/JQ5JS68T/Kojimoto - 2012 - Pneumatic battery a chemical alternative to pneu.pdf;/home/guan/Zotero/storage/HNGCET9P/74269.html
+      \endverb
+      \verb{urlraw}
+      \verb https://dspace.mit.edu/handle/1721.1/74269
+      \endverb
+      \verb{url}
+      \verb https://dspace.mit.edu/handle/1721.1/74269
+      \endverb
+    \endentry
+    \entry{shepherdUsingExplosionsPower2013}{article}{}
+      \name{author}{9}{}{%
+        {{hash=b08c322cdf52d08d0b80e3265942b683}{%
+           family={Shepherd},
+           familyi={S\bibinitperiod},
+           given={Robert\bibnamedelima F.},
+           giveni={R\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=2df375e7ed8e1e68fa41fc2120b92eab}{%
+           family={Stokes},
+           familyi={S\bibinitperiod},
+           given={Adam\bibnamedelima A.},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=42fbe08398f819674cbf52cfba64373b}{%
+           family={Freake},
+           familyi={F\bibinitperiod},
+           given={Jacob},
+           giveni={J\bibinitperiod}}}%
+        {{hash=aa878ab2146e9ae87973e135cf760dad}{%
+           family={Barber},
+           familyi={B\bibinitperiod},
+           given={Jabulani},
+           giveni={J\bibinitperiod}}}%
+        {{hash=950a597caca1d4ac672b9922aff02fb5}{%
+           family={Snyder},
+           familyi={S\bibinitperiod},
+           given={Phillip\bibnamedelima W.},
+           giveni={P\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=aa0d94fae7450a964393b7d044035c70}{%
+           family={Mazzeo},
+           familyi={M\bibinitperiod},
+           given={Aaron\bibnamedelima D.},
+           giveni={A\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=55a74e518d7c71d0ed07c5856e29ff95}{%
+           family={Cademartiri},
+           familyi={C\bibinitperiod},
+           given={Ludovico},
+           giveni={L\bibinitperiod}}}%
+        {{hash=337ac170a7f972f3b7918e4eb31b76e6}{%
+           family={Morin},
+           familyi={M\bibinitperiod},
+           given={Stephen\bibnamedelima A.},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=c5d1d0d8605d7e3ce566d8023eeddf4f}{%
+           family={Whitesides},
+           familyi={W\bibinitperiod},
+           given={George\bibnamedelima M.},
+           giveni={G\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{794a6b2eac66c9e0f9d4042310e3ce88}
+      \strng{fullhash}{110c463676057c5548639815dde851c5}
+      \strng{bibnamehash}{110c463676057c5548639815dde851c5}
+      \strng{authorbibnamehash}{110c463676057c5548639815dde851c5}
+      \strng{authornamehash}{794a6b2eac66c9e0f9d4042310e3ce88}
+      \strng{authorfullhash}{110c463676057c5548639815dde851c5}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Combustion causes a soft robot to jump: Rapid actuation of a soft robot (composed of silicone elastomers) was achieved using high-temperature chemical reactions. Computer-controlled electrical sparks triggered the combustion of premixed CH4 and O2 gases inside the robot, which pressurized the pneumatic channels of the robot and caused it to jump (see figure). The heat from the explosions dissipated quickly and did not damage the robot even over many jumps.}
+      \field{issn}{1521-3773}
+      \field{journaltitle}{Angewandte Chemie International Edition}
+      \field{number}{10}
+      \field{title}{Using {{Explosions}} to {{Power}} a {{Soft Robot}}}
+      \field{urlday}{3}
+      \field{urlmonth}{5}
+      \field{urlyear}{2019}
+      \field{volume}{52}
+      \field{year}{2013}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{2892\bibrangedash 2896}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1002/anie.201209540
+      \endverb
+      \verb{file}
+      \verb /home/guan/Zotero/storage/URMVYKET/Shepherd et al. - 2013 - Using Explosions to Power a Soft Robot.pdf;/home/guan/Zotero/storage/BCG2FUU9/anie.html
+      \endverb
+      \verb{urlraw}
+      \verb http://onlinelibrary.wiley.com/doi/abs/10.1002/anie.201209540
+      \endverb
+      \verb{url}
+      \verb http://onlinelibrary.wiley.com/doi/abs/10.1002/anie.201209540
+      \endverb
+      \keyw{combustion,oxygen,pneumatic processes,soft robots}
+    \endentry
+    \entry{henkeSoftDielectricElastomer2017}{article}{}
+      \name{author}{3}{}{%
+        {{hash=f530b73a94f123a78bcbf266a3291d13}{%
+           family={Henke},
+           familyi={H\bibinitperiod},
+           given={E.-F.\bibnamedelimi Markus},
+           giveni={E\bibinithyphendelim F\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=e7a5e62205376f76c6edb3594b228f37}{%
+           family={Schlatter},
+           familyi={S\bibinitperiod},
+           given={Samuel},
+           giveni={S\bibinitperiod}}}%
+        {{hash=08f3c7e8dfd4ecb240b2f84169baf4b9}{%
+           family={Anderson},
+           familyi={A\bibinitperiod},
+           given={Iain\bibnamedelima A.},
+           giveni={I\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{246b71ec047bfb24e88f9c6c56673bbe}
+      \strng{fullhash}{246b71ec047bfb24e88f9c6c56673bbe}
+      \strng{bibnamehash}{246b71ec047bfb24e88f9c6c56673bbe}
+      \strng{authorbibnamehash}{246b71ec047bfb24e88f9c6c56673bbe}
+      \strng{authornamehash}{246b71ec047bfb24e88f9c6c56673bbe}
+      \strng{authorfullhash}{246b71ec047bfb24e88f9c6c56673bbe}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{1}
+      \field{journaltitle}{Soft Robotics}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{title}{Soft {{Dielectric Elastomer Oscillators Driving Bioinspired Robots}}}
+      \field{urlday}{1}
+      \field{urlmonth}{8}
+      \field{urlyear}{2019}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/guan/Zotero/storage/QJD97R9L/login.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www-liebertpub-com.ezproxy.auckland.ac.nz/doi/abs/10.1089/soro.2017.0022
+      \endverb
+      \verb{url}
+      \verb https://www-liebertpub-com.ezproxy.auckland.ac.nz/doi/abs/10.1089/soro.2017.0022
+      \endverb
+    \endentry
+    \entry{guoLiquidMetalSpiral2018}{article}{}
+      \name{author}{4}{}{%
+        {{hash=f1df50781083dd3fc1f663e4d505b750}{%
+           family={Guo},
+           familyi={G\bibinitperiod},
+           given={Rui},
+           giveni={R\bibinitperiod}}}%
+        {{hash=44a48307fd09e49da543b72faf517d63}{%
+           family={Sheng},
+           familyi={S\bibinitperiod},
+           given={Lei},
+           giveni={L\bibinitperiod}}}%
+        {{hash=28fdc564e88f4bfe5ad5ca3ebe2623a6}{%
+           family={Gong},
+           familyi={G\bibinitperiod},
+           given={HengYi},
+           giveni={H\bibinitperiod}}}%
+        {{hash=83f95dca7c81df3fe67380769eb0321c}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Jing},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{807158cae7697331afbe89788855b801}
+      \strng{fullhash}{45890f3fff778a646963b54c56cc38b9}
+      \strng{bibnamehash}{45890f3fff778a646963b54c56cc38b9}
+      \strng{authorbibnamehash}{45890f3fff778a646963b54c56cc38b9}
+      \strng{authornamehash}{807158cae7697331afbe89788855b801}
+      \strng{authorfullhash}{45890f3fff778a646963b54c56cc38b9}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1674-7321, 1869-1900}
+      \field{journaltitle}{Science China Technological Sciences}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{number}{4}
+      \field{shortjournal}{Sci. China Technol. Sci.}
+      \field{title}{Liquid Metal Spiral Coil Enabled Soft Electromagnetic Actuator}
+      \field{urlday}{30}
+      \field{urlmonth}{4}
+      \field{urlyear}{2019}
+      \field{volume}{61}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{516\bibrangedash 521}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1007/s11431-017-9063-2
+      \endverb
+      \verb{file}
+      \verb /home/guan/Zotero/storage/G9FF6TLQ/Guo et al. - 2018 - Liquid metal spiral coil enabled soft electromagne.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/s11431-017-9063-2
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/s11431-017-9063-2
+      \endverb
+    \endentry
+    \entry{doMiniatureSoftElectromagnetic2018}{article}{}
+      \name{author}{4}{}{%
+        {{hash=ca8ff96cdadbfc2465146947ddf538bf}{%
+           family={Do},
+           familyi={D\bibinitperiod},
+           given={Thanh\bibnamedelima Nho},
+           giveni={T\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=8b7a5e240408b172e83d9181f288f4e6}{%
+           family={Phan},
+           familyi={P\bibinitperiod},
+           given={Hung},
+           giveni={H\bibinitperiod}}}%
+        {{hash=d3db921da16821ec15ada0dedaf07b96}{%
+           family={Nguyen},
+           familyi={N\bibinitperiod},
+           given={Thuc-Quyen},
+           giveni={T\bibinithyphendelim Q\bibinitperiod}}}%
+        {{hash=00d29d40d973144e2e4b6ea2543b7858}{%
+           family={Visell},
+           familyi={V\bibinitperiod},
+           given={Yon},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{79530cd0124a14612e4236e25f2b9b07}
+      \strng{fullhash}{949693feb1a1ffc2d962c74a4b11c629}
+      \strng{bibnamehash}{949693feb1a1ffc2d962c74a4b11c629}
+      \strng{authorbibnamehash}{949693feb1a1ffc2d962c74a4b11c629}
+      \strng{authornamehash}{79530cd0124a14612e4236e25f2b9b07}
+      \strng{authorfullhash}{949693feb1a1ffc2d962c74a4b11c629}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Electromagnetic actuators (EMAs) serve the majority of motion control needs in fields ranging from industrial robotics to automotive systems and biomedical devices, due to their unmatched combination of speed, precision, force, and scalability. This paper describes the design and fabrication of miniature soft EMAs that operate based on the Lorentz force principle. The actuators are fabricated from silicone polymer, liquid metal (LM) alloy (eutectic gallium indium, EGaIn), and magnetic (NdFeB) powder. They are small, intrinsically deformable, and can be fabricated using simple techniques. The central elements of the actuators are fine, 3D helical coil conductors, which are used as electromagnetic inductors. The coils are formed from stretchable filaments that are filled with a LM alloy. To achieve high power densities, the filaments themselves may be fabricated from colloids of EGaIn microdroplets in a silicone polymer matrix, allowing them to dissipate heat and accommodate high currents, and thus high forces. Millimeter-scale cylindrical actuators are demonstrated for linear high frequency motion and articulated devices for bending motion. These actuators are applied in a vibrotactile feedback display and in a miniature soft robotic gripper.}
+      \field{issn}{1616-3028}
+      \field{journaltitle}{Advanced Functional Materials}
+      \field{langid}{english}
+      \field{number}{18}
+      \field{title}{Miniature {{Soft Electromagnetic Actuators}} for {{Robotic Applications}}}
+      \field{urlday}{30}
+      \field{urlmonth}{4}
+      \field{urlyear}{2019}
+      \field{volume}{28}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1800244}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1002/adfm.201800244
+      \endverb
+      \verb{file}
+      \verb /home/guan/Zotero/storage/263VFKGM/Do et al. - 2018 - Miniature Soft Electromagnetic Actuators for Robot.pdf;/home/guan/Zotero/storage/GK3RX4AS/adfm.html
+      \endverb
+      \verb{urlraw}
+      \verb http://onlinelibrary.wiley.com/doi/abs/10.1002/adfm.201800244
+      \endverb
+      \verb{url}
+      \verb http://onlinelibrary.wiley.com/doi/abs/10.1002/adfm.201800244
+      \endverb
+      \keyw{gallium indium alloys,high thermal conductivity,miniature grippers,soft electromagnetic actuators,soft polymers,soft tactile actuators}
+    \endentry
+    \entry{moritzElectromechanicalMotionSystems2013}{book}{}
+      \name{author}{1}{}{%
+        {{hash=456969cc19a72d40ae2f884f36aabfa1}{%
+           family={Moritz},
+           familyi={M\bibinitperiod},
+           given={Frederick\bibnamedelima G.},
+           giveni={F\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Chichester, UK}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons Ltd}%
+      }
+      \strng{namehash}{456969cc19a72d40ae2f884f36aabfa1}
+      \strng{fullhash}{456969cc19a72d40ae2f884f36aabfa1}
+      \strng{bibnamehash}{456969cc19a72d40ae2f884f36aabfa1}
+      \strng{authorbibnamehash}{456969cc19a72d40ae2f884f36aabfa1}
+      \strng{authornamehash}{456969cc19a72d40ae2f884f36aabfa1}
+      \strng{authorfullhash}{456969cc19a72d40ae2f884f36aabfa1}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{day}{13}
+      \field{isbn}{978-1-118-35978-5 978-1-119-99274-5}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{shorttitle}{Electromechanical {{Motion Systems}}}
+      \field{title}{Electromechanical {{Motion Systems}}: {{Design}} and {{Simulation}}}
+      \field{urlday}{30}
+      \field{urlmonth}{4}
+      \field{urlyear}{2019}
+      \field{year}{2013}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.1002/9781118359785
+      \endverb
+      \verb{file}
+      \verb /home/guan/Zotero/storage/Y4SIWWFT/Moritz - 2013 - Electromechanical Motion Systems Design and Simul.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://doi.wiley.com/10.1002/9781118359785
+      \endverb
+      \verb{url}
+      \verb http://doi.wiley.com/10.1002/9781118359785
+      \endverb
+    \endentry
+    \entry{ruddyDesignOptimizationStrategies2011}{article}{}
+      \name{author}{2}{}{%
+        {{hash=1f83ada05082231185412d84be0d611d}{%
+           family={Ruddy},
+           familyi={R\bibinitperiod},
+           given={Bryan\bibnamedelima P},
+           giveni={B\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=4cc9c63ba219dae146a8535ee89b0e15}{%
+           family={Hunter},
+           familyi={H\bibinitperiod},
+           given={Ian\bibnamedelima W},
+           giveni={I\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{9c4f3d1151e007de4834d072a2ee2eda}
+      \strng{fullhash}{9c4f3d1151e007de4834d072a2ee2eda}
+      \strng{bibnamehash}{9c4f3d1151e007de4834d072a2ee2eda}
+      \strng{authorbibnamehash}{9c4f3d1151e007de4834d072a2ee2eda}
+      \strng{authornamehash}{9c4f3d1151e007de4834d072a2ee2eda}
+      \strng{authorfullhash}{9c4f3d1151e007de4834d072a2ee2eda}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We report a new approach to the design of direct-drive linear permanent-magnet motors for use in general-purpose robotic actuation, with particular attention to applications in bird-scale flapping-wing robots. We show a simple, quantitative analytical modeling framework for this class of actuators, and demonstrate inherent scaling properties that allow the production of motors with force densities and efficiencies comparable to those of biological muscles. We illustrate the effectiveness of our model with finite-element analysis and a comparison with commercially available motors, and discuss future plans for experimental validation. We show how this model leads to a set of practical design specifications for muscle-like motors, and examine the resulting trade-off between thermal management and motor fabrication complexity.}
+      \field{day}{1}
+      \field{issn}{0278-3649}
+      \field{journaltitle}{The International Journal of Robotics Research}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{number}{7}
+      \field{shortjournal}{The International Journal of Robotics Research}
+      \field{title}{Design and Optimization Strategies for Muscle-like Direct-Drive Linear Permanent-Magnet Motors}
+      \field{urlday}{30}
+      \field{urlmonth}{4}
+      \field{urlyear}{2019}
+      \field{volume}{30}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{834\bibrangedash 845}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1177/0278364911404260
+      \endverb
+      \verb{file}
+      \verb /home/guan/Zotero/storage/SWFVIK27/Ruddy and Hunter - 2011 - Design and optimization strategies for muscle-like.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1177/0278364911404260
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1177/0278364911404260
+      \endverb
+    \endentry
+    \entry{yoonEfficiencyIncreaseInduction2002}{article}{}
+      \name{author}{3}{}{%
+        {{hash=eb132fa085bdd9c62191a6203c80b89f}{%
+           family={Yoon},
+           familyi={Y\bibinitperiod},
+           given={M.\bibnamedelimi K.},
+           giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=2654990291ae561c01f24b2e08f0b242}{%
+           family={Jeon},
+           familyi={J\bibinitperiod},
+           given={C.\bibnamedelimi S.},
+           giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=ecec08b1b90fd78c6e976cb2e7636859}{%
+           family={Kauh},
+           familyi={K\bibinitperiod},
+           given={S.\bibnamedelimi K.},
+           giveni={S\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \strng{namehash}{bda8ad0ffc7684bb055f272fa1e09fda}
+      \strng{fullhash}{bda8ad0ffc7684bb055f272fa1e09fda}
+      \strng{bibnamehash}{bda8ad0ffc7684bb055f272fa1e09fda}
+      \strng{authorbibnamehash}{bda8ad0ffc7684bb055f272fa1e09fda}
+      \strng{authornamehash}{bda8ad0ffc7684bb055f272fa1e09fda}
+      \strng{authorfullhash}{bda8ad0ffc7684bb055f272fa1e09fda}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Improving the efficiency of induction motors, which are the most energy consuming electric machines in the world, saves much energy. The efficiency can be increased by improving cooling performance as well as by using better materials or by improving electromagnetic performance with better design. This paper presents the relationship between the efficiency or the losses and the temperature of coils with experiments as well as simulations by changing parameters such as the load and the flow rate of cooling air. The losses and the efficiency are calculated from an equivalent circuit method as well as experiments. Coil temperatures variation affects much on the efficiency. The internal cooling method is better than that of external cooling for the coil temperature reduction. Several cooling methods are compared focusing on the fan efficiency and performance, from which the values of the efficiencies of the motors are expected. The fan efficiency as well as the fan performance should be considered for the optimum fan design to increase the total efficiency of a motor. The simulations are validated by the comparison with the experiments.}
+      \field{journaltitle}{IEEE Transactions on Energy Conversion}
+      \field{month}{3}
+      \field{number}{1}
+      \field{title}{Efficiency Increase of an Induction Motor by Improving Cooling Performance}
+      \field{volume}{17}
+      \field{year}{2002}
+      \field{dateera}{ce}
+      \field{pages}{1\bibrangedash 6}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/60.986430
+      \endverb
+      \verb{file}
+      \verb /home/guan/Zotero/storage/LLGTCW6Q/Yoon et al. - 2002 - Efficiency increase of an induction motor by impro.pdf;/home/guan/Zotero/storage/EDCP4JG4/986430.html
+      \endverb
+      \keyw{Circuit simulation,coil temperature,coils,Coils,cooling,Cooling,cooling air flow rate,cooling performance,Copper,efficiency,efficiency increase,Electric machines,electromagnetic performance,energy conservation,energy consuming electric machines,energy saving,equivalent circuit method,equivalent circuits,Equivalent circuits,fan efficiency,fan performance,induction motor,induction motors,Induction motors,internal cooling method,load,losses,Rotors,Stators,Temperature control,temperature measurement}
+    \endentry
+    \entry{wohlersDesignDirectLiquid2018}{article}{}
+      \name{author}{4}{}{%
+        {{hash=a14f7c98648d52b4fa83fb8fd85a32fa}{%
+           family={Wohlers},
+           familyi={W\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=5920056182c47beb166125629ead9ae8}{%
+           family={Juris},
+           familyi={J\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=2adc69bc89583cf1d62432175e5bd423}{%
+           family={Kabelac},
+           familyi={K\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=69704114c9b6038ce29f84e69043ad0f}{%
+           family={Ponick},
+           familyi={P\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{2f4a1824696dc8ac5b47b286bb572544}
+      \strng{fullhash}{74ed41e3a66cc8898d77e494697f2ac4}
+      \strng{bibnamehash}{74ed41e3a66cc8898d77e494697f2ac4}
+      \strng{authorbibnamehash}{74ed41e3a66cc8898d77e494697f2ac4}
+      \strng{authornamehash}{2f4a1824696dc8ac5b47b286bb572544}
+      \strng{authorfullhash}{74ed41e3a66cc8898d77e494697f2ac4}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper presents the design and analysis of fractional-slot concentrated-windings for use with direct liquid cooling. To achieve considerably higher torque density than state of the art of electrical machines, recently patented cast coils that …}
+      \field{day}{2}
+      \field{issue}{Issue 4/2018}
+      \field{journaltitle}{Electrical Engineering}
+      \field{langid}{english}
+      \field{month}{7}
+      \field{title}{Design and Direct Liquid Cooling of Tooth-Coil Windings}
+      \field{urlday}{26}
+      \field{urlmonth}{9}
+      \field{urlyear}{2019}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/guan/Zotero/storage/RVIMC2E7/15902044.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.springerprofessional.de/en/design-and-direct-liquid-cooling-of-tooth-coil-windings/15902044
+      \endverb
+      \verb{url}
+      \verb https://www.springerprofessional.de/en/design-and-direct-liquid-cooling-of-tooth-coil-windings/15902044
+      \endverb
+    \endentry
+    \entry{hodesPotentialGalinstanBasedMinichannel2014}{article}{}
+      \name{author}{5}{}{%
+        {{hash=33c47e7cc52e933d9cdbb7f0d83cc470}{%
+           family={Hodes},
+           familyi={H\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=528b0708ec1bf9b1677b35261fac82bf}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=4cb877bd34108aa792664ed183eb192e}{%
+           family={Lam},
+           familyi={L\bibinitperiod},
+           given={L.\bibnamedelimi S.},
+           giveni={L\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=c098fd8d5a9ac3b635532f1e2d27d11f}{%
+           family={Wilcoxon},
+           familyi={W\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=341ce13112795871f84ad5d054a69c1a}{%
+           family={Lower},
+           familyi={L\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{cd60b8c27382a774a407ec9bbfdab91d}
+      \strng{fullhash}{e52bd0817e0ca96420c4f90c301b6f33}
+      \strng{bibnamehash}{e52bd0817e0ca96420c4f90c301b6f33}
+      \strng{authorbibnamehash}{e52bd0817e0ca96420c4f90c301b6f33}
+      \strng{authornamehash}{cd60b8c27382a774a407ec9bbfdab91d}
+      \strng{authorfullhash}{e52bd0817e0ca96420c4f90c301b6f33}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Galinstan, a gallium, indium, and tin eutectic, may be exploited for enhanced cooling of microelectronics because of its favorable thermophysical properties. A careful evaluation of its cooling potential, however, has not been undertaken. Provided here is a first-order model to compute the total (i.e., caloric plus conjugate conduction and convection) thermal resistance of galinstan-based heat sinks. Geometrically optimized minichannel heat sinks with rectangular channels for surface area enhancement and minigap, i.e., single parallel-plate channel, heat sinks are considered. Direct liquid cooling of a microprocessor die is envisioned. Therefore, the flow channels within the heat sinks are 302- μm tall, the pressure drop prescribed across them is 214 kPa, and their streamwise length is varied from 5 to 20 mm. The calculations suggest that galinstan is a better coolant than water in such configurations, reducing thermal resistance by about 40\%.}
+      \field{journaltitle}{IEEE Transactions on Components, Packaging and Manufacturing Technology}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{On the {{Potential}} of {{Galinstan}}-{{Based Minichannel}} and {{Minigap Cooling}}}
+      \field{volume}{4}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \field{pages}{46\bibrangedash 56}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1109/TCPMT.2013.2274699
+      \endverb
+      \verb{file}
+      \verb /home/guan/Zotero/storage/9ULEZX23/Hodes et al. - 2014 - On the Potential of Galinstan-Based Minichannel an.pdf;/home/guan/Zotero/storage/RFYHQBV9/6612637.html
+      \endverb
+      \keyw{coolant,cooling,cooling potential,direct liquid cooling,first-order model,flow channels,Galinstan,galinstan-based heat sinks,galinstan-based minichannel,gallium alloys,gallium eutectic,heat sinks,Heat sinks,Heat transfer,indium alloys,indium eutectic,Metals,microchannel flow,microchannel heat sink,microelectronics,microprocessor die,minichannel heat sink,minichannel heat sinks,minigap cooling,pressure drop,rectangular channels,Resistance heating,streamwise length,surface area enhancement,thermal management (packaging),thermal management of electronics,thermal resistance,Thermal resistance,thermophysical property,tin alloys,tin eutectic}
+    \endentry
+    \entry{naveThermalConductivity2019}{online}{}
+      \name{author}{1}{}{%
+        {{hash=acff77041c1c2bd439c8767bea5e80b1}{%
+           family={Nave},
+           familyi={N\bibinitperiod},
+           given={Rod},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{acff77041c1c2bd439c8767bea5e80b1}
+      \strng{fullhash}{acff77041c1c2bd439c8767bea5e80b1}
+      \strng{bibnamehash}{acff77041c1c2bd439c8767bea5e80b1}
+      \strng{authorbibnamehash}{acff77041c1c2bd439c8767bea5e80b1}
+      \strng{authornamehash}{acff77041c1c2bd439c8767bea5e80b1}
+      \strng{authorfullhash}{acff77041c1c2bd439c8767bea5e80b1}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Hyperphysics}
+      \field{title}{Thermal {{Conductivity}}}
+      \field{urlday}{26}
+      \field{urlmonth}{9}
+      \field{urlyear}{2019}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/guan/Zotero/storage/PY4WDM9Y/thrcn.html
+      \endverb
+      \verb{urlraw}
+      \verb http://hyperphysics.phy-astr.gsu.edu/hbase/Tables/thrcn.html
+      \endverb
+      \verb{url}
+      \verb http://hyperphysics.phy-astr.gsu.edu/hbase/Tables/thrcn.html
+      \endverb
+    \endentry
+  \enddatalist
+  \missing{zrnicResistivitySurfaceTension1969}
+\endrefsection
+\endinput
+

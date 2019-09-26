@@ -695,6 +695,42 @@
       \endverb
       \keyw{Cooling devices,Gallium-based liquid metal,Heat conductivity,High-temperature electronics,Liquid metal corrosion}
     \endentry
+    \entry{laughtonElectricalEngineerReference2002}{collection}{}
+      \name{editor}{2}{}{%
+        {{hash=01b9b4177c8c68d189da5354f364ff21}{%
+           family={Laughton},
+           familyi={L\bibinitperiod},
+           given={M.\bibnamedelimi A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=7cf9faff5d681e36510cdcf2a0912cd0}{%
+           family={Warne},
+           familyi={W\bibinitperiod},
+           given={D.\bibnamedelimi F.},
+           giveni={D\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Newnes}%
+      }
+      \strng{namehash}{a873b1e1277e37f9dc9072e985868b97}
+      \strng{fullhash}{a873b1e1277e37f9dc9072e985868b97}
+      \strng{bibnamehash}{a873b1e1277e37f9dc9072e985868b97}
+      \strng{editorbibnamehash}{a873b1e1277e37f9dc9072e985868b97}
+      \strng{editornamehash}{a873b1e1277e37f9dc9072e985868b97}
+      \strng{editorfullhash}{a873b1e1277e37f9dc9072e985868b97}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{abstract}{For ease of use, this edition has been divided into the following subject sections: general principles; materials and processes; control, power electronics and drives; environment; power generation; transmission and distribution; power systems; sectors of electricity use.New chapters and major revisions include: industrial instrumentation; digital control systems; programmable controllers; electronic power conversion; environmental control; hazardous area technology; electromagnetic compatibility; alternative energy sources; alternating current generators; electromagnetic transients; power system planning; reactive power plant and FACTS controllers; electricity economics and trading; power quality.*An essential source of techniques, data and principles for all practising electrical engineers*Written by an international team of experts from engineering companies and universities*Includes a major new section on control systems, PLCs and microprocessors}
+      \field{day}{27}
+      \field{edition}{16 edition}
+      \field{langid}{english}
+      \field{month}{9}
+      \field{pagetotal}{1504}
+      \field{title}{Electrical {{Engineer}}'s {{Reference Book}}}
+      \field{year}{2002}
+      \field{dateera}{ce}
+    \endentry
     \entry{doMiniatureSoftElectromagnetic2018}{article}{}
       \name{author}{4}{}{%
         {{hash=ca8ff96cdadbfc2465146947ddf538bf}{%
@@ -757,6 +793,58 @@
       \endverb
       \keyw{gallium indium alloys,high thermal conductivity,miniature grippers,soft electromagnetic actuators,soft polymers,soft tactile actuators}
     \endentry
+    \entry{valentaMechanicalElectricalTesting2008}{article}{}
+      \name{author}{2}{}{%
+        {{hash=cbdd89f41d9d6b815829a170405bc5b2}{%
+           family={Valenta},
+           familyi={V\bibinitperiod},
+           given={László},
+           giveni={L\bibinitperiod}}}%
+        {{hash=863edd164ea3e507007e8679d91e699f}{%
+           family={Bojtos},
+           familyi={B\bibinitperiod},
+           given={Attila},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{23a9b121c437875762823e680b31c25a}
+      \strng{fullhash}{23a9b121c437875762823e680b31c25a}
+      \strng{bibnamehash}{23a9b121c437875762823e680b31c25a}
+      \strng{authorbibnamehash}{23a9b121c437875762823e680b31c25a}
+      \strng{authornamehash}{23a9b121c437875762823e680b31c25a}
+      \strng{authorfullhash}{23a9b121c437875762823e680b31c25a}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Silicone rubber is an essential construction material in food industry, medicine and in some fields of mechanical engineering, because it has good mechanical, electrical, biological and other special properties. One needs to know these material properties in order to develop silicone sensors. We performed several standard measurements for rubber, like tensile strength, cyclic tensile, bending, fatiguing, stress relaxation tests etc. To investigate the electrical properties, we measured the resistance of silicone during the mechanical tests. The paper summarizes the newest results of our research in connection with mechanical and electrical properties of conductive silicone rubber.}
+      \field{issn}{1662-9752}
+      \field{journaltitle}{Materials Science Forum}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{shortjournal}{MSF}
+      \field{title}{Mechanical and {{Electrical Testing}} of {{Electrically Conductive Silicone Rubber}}}
+      \field{urlday}{3}
+      \field{urlmonth}{5}
+      \field{urlyear}{2019}
+      \field{volume}{589}
+      \field{year}{2008}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{179\bibrangedash 184}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.4028/www.scientific.net/MSF.589.179
+      \endverb
+      \verb{file}
+      \verb /home/guan/Zotero/storage/P32YL6VI/Valenta and Bojtos - 2008 - Mechanical and Electrical Testing of Electrically .pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.scientific.net/MSF.589.179
+      \endverb
+      \verb{url}
+      \verb https://www.scientific.net/MSF.589.179
+      \endverb
+    \endentry
     \entry{lazarusCreating3DPrinted2019}{article}{}
       \name{author}{3}{}{%
         {{hash=e0d5a06028dee22bc1d775032b360f21}{%
@@ -815,8 +903,43 @@
       \endverb
       \keyw{Ferrofluid,Inductors,Liquid metal,Stereolithography,Transformers}
     \endentry
+    \entry{ferrotecFerrotecFerrofluidInnovating2019}{online}{}
+      \name{author}{1}{}{%
+        {{hash=dd19b7b7b24e3d12bd205a2ee4d4c623}{%
+           family={{Ferrotec}},
+           familyi={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{dd19b7b7b24e3d12bd205a2ee4d4c623}
+      \strng{fullhash}{dd19b7b7b24e3d12bd205a2ee4d4c623}
+      \strng{bibnamehash}{dd19b7b7b24e3d12bd205a2ee4d4c623}
+      \strng{authorbibnamehash}{dd19b7b7b24e3d12bd205a2ee4d4c623}
+      \strng{authornamehash}{dd19b7b7b24e3d12bd205a2ee4d4c623}
+      \strng{authorfullhash}{dd19b7b7b24e3d12bd205a2ee4d4c623}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The world leader in ferrofluid technology, Ferrotec ferrofluid products are used in many areas of ferrofluid technology, from audio speakers to domain detection, material separation, biomedical research and more.}
+      \field{journaltitle}{Ferrofluid}
+      \field{langid}{american}
+      \field{title}{Ferrotec {{Ferrofluid}} - {{Innovating Ferrofluid}} for {{More}} than 40 {{Years}}}
+      \field{urlday}{24}
+      \field{urlmonth}{9}
+      \field{urlyear}{2019}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/guan/Zotero/storage/32UPEIHW/ferrofluid.ferrotec.com.html
+      \endverb
+      \verb{urlraw}
+      \verb https://ferrofluid.ferrotec.com/
+      \endverb
+      \verb{url}
+      \verb https://ferrofluid.ferrotec.com/
+      \endverb
+    \endentry
   \enddatalist
-  \missing{ferrotecFerrotecFerrofluidInnovating}
 \endrefsection
 \endinput
 

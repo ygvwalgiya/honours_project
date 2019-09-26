@@ -1,52 +1,44 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {english}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}Table of Notation}{5}% 
+\contentsline {section}{\numberline {1}Introduction}{6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Introduction}{6}% 
+\contentsline {section}{\numberline {2}Design, Manufacturing and Assembly}{7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Design, Manufacturing and Assembly}{7}% 
+\contentsline {subsection}{\numberline {2.1}Mathematical Modelling}{7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1}Mathematical Modelling}{7}% 
+\contentsline {subsubsection}{\numberline {2.1.1}Motor Force}{7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.1}Motor Force}{7}% 
+\contentsline {subsubsection}{\numberline {2.1.2}Heat and Temperature}{9}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.2}Heat and Temperature}{9}% 
+\contentsline {subsubsection}{\numberline {2.1.3}Liquid Metal Circulation}{11}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2}Optimisation Algorithm}{11}% 
+\contentsline {subsection}{\numberline {2.2}Optimisation Algorithm}{12}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3}Physical Design and Manufacturing}{15}% 
+\contentsline {subsection}{\numberline {2.3}Physical Design and Manufacturing}{16}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.3.1}Shell}{15}% 
+\contentsline {subsubsection}{\numberline {2.3.1}Shell}{16}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.3.2}Core}{17}% 
+\contentsline {subsubsection}{\numberline {2.3.2}Core}{17}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.3.3}Wire Bobbin}{17}% 
+\contentsline {subsubsection}{\numberline {2.3.3}Wire Bobbin}{18}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4}Assembly}{18}% 
+\contentsline {subsection}{\numberline {2.4}Assembly}{18}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.4.1}Shell and Magnet Assembly}{18}% 
+\contentsline {subsubsection}{\numberline {2.4.1}Shell and Magnet Assembly}{18}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.4.2}Wire Assembly}{19}% 
+\contentsline {subsubsection}{\numberline {2.4.2}Wire Assembly}{20}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.4.3}Health, Safety and Containment}{22}% 
+\contentsline {subsubsection}{\numberline {2.4.3}Health, Safety and Containment}{22}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Experiment Designs and Results}{23}% 
+\contentsline {section}{\numberline {3}Force Characterisation}{23}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}Experiment 1: Force Characterisation}{23}% 
+\contentsline {subsection}{\numberline {3.1}Method}{23}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.1.1}Method}{23}% 
+\contentsline {subsection}{\numberline {3.2}Results}{23}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.1.2}Results}{23}% 
+\contentsline {section}{\numberline {4}Discussion}{25}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2}Experiment 2: Circulation of eGaIn in Motor}{24}% 
+\contentsline {section}{\numberline {5}Future Work}{28}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.2.1}Method}{24}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.2.2}Results}{24}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Discussion}{25}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Conclusion}{28}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Appendix}{29}% 
+\contentsline {section}{\numberline {6}Conclusion}{29}% 
