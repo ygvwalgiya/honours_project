@@ -34,6 +34,7 @@
     Department of Engineering Science\\
     Supervised by Dr. Bryan Ruddy
 \end{center}
+\thispagestyle{empty}
 
 \newpage
 
@@ -53,7 +54,7 @@ Therefore, there is a need for developing electromagnetic actuation methods for 
 Soft robots are made possible by the increasing availability of highly compliant yet tough materials. These materials tend to fit in the categories of rubbers, elastomers, polymers and polymer composites. Silicones, a type of synthetic polymer, are known to be the most suitable materials available for most soft robot construction. This is due to silicones’ low elastic moduli, high resilience and toughness, ability to actuate over millions of cycles and rich body of literature \cite{polygerinosSoftRoboticsReview2017}. A review of literature found no published soft robot research designs that did not involve silicones in some way. Some designs used a combination of soft and hard components \cite{stokesHybridCombiningHard2013} or silicone composites \cite{laschiSoftRobotArm2012}.
 
 \subsection{Gallium-Indium Eutectic Alloy}
-A large challenge that prevented the use of electromagnetic actuation in soft designs was the lack of good conductors that maintain their properties under large deformations. Older approaches such as conductive silicone rubber seen in figure \ref{fg:conductiveRubber}, have non-linearly varying electrical properties under deformation \cite{valentaMechanicalElectricalTesting2008}. The silicone rubber also has poor conductivity, with resistance several magnitudes higher than conventional conductors.
+A large challenge that prevented the use of electromagnetic actuation in soft designs was the lack of good conductors that maintain their properties under large deformations. Older approaches such as conductive silicone rubber seen in Figure \ref{fg:conductiveRubber}, have non-linearly varying electrical properties under deformation \cite{valentaMechanicalElectricalTesting2008}. The silicone rubber also has poor conductivity, with resistance several magnitudes higher than conventional conductors.
 
 \begin{figure}[h!]
     \centering
@@ -71,7 +72,7 @@ eGaIn is advantageous among other liquid metals in that it has low toxicity \cit
 
 \section{Soft Robot Actuation}
 \subsection{Externally Driven}
-Most research soft robots require an external pressure source to drive actuation. For example, one such robot presented in \cite{morinCamouflageDisplaySoft2012} and pictured in figure \ref{fg:conductiveRubber}, require an external pneumatic source through the silicone tubes in the back of the robot to move. The focus of these studies is on the actuators themselves, rather than on how to drive those actuators.
+Most research soft robots require an external pressure source to drive actuation. For example, one such robot presented in \cite{morinCamouflageDisplaySoft2012} and pictured in Figure \ref{fg:conductiveRubber}, require an external pneumatic source through the silicone tubes in the back of the robot to move. The focus of these studies is on the actuators themselves, rather than on how to drive those actuators.
 
 \begin{figure}[h!]
     \centering
@@ -91,7 +92,7 @@ A small proportion of research on soft robots suggested using chemical reactions
 \end{figure}
 
 \subsection{Electroactive Elastomer}
-The third common type of soft robot was actuated using electroactive elastomers such as dielectric elastomers. Dielectric elastomers are constructed of an elastomer between two electrodes. Charging the electrodes can cause them to either attract or repeal each other, deforming the elastomer. A recent dielectric elastomer powered soft robot by Henke et al. \cite{henkeSoftDielectricElastomer2017} serves as a good example. In \cite{henkeSoftDielectricElastomer2017}, Henke et al. built an electronics-free biomimetic caterpillar robot that crawls and can be seen in figure \ref{fg:catepillar}. A major challenge surrounding using electroactive elastomers in soft systems is that they cannot effectively actuate without a rigid "skeleton". Therefore, electroactive elastomers are suitable for wearable technologies and mixed systems, but not for fully deformable ones.
+The third common type of soft robot was actuated using electroactive elastomers such as dielectric elastomers. Dielectric elastomers are constructed of an elastomer between two electrodes. Charging the electrodes can cause them to either attract or repeal each other, deforming the elastomer. A recent dielectric elastomer powered soft robot by Henke et al. \cite{henkeSoftDielectricElastomer2017} serves as a good example. In \cite{henkeSoftDielectricElastomer2017}, Henke et al. built an electronics-free biomimetic caterpillar robot that crawls and can be seen in Figure \ref{fg:catepillar}. A major challenge surrounding using electroactive elastomers in soft systems is that they cannot effectively actuate without a rigid "skeleton". Therefore, electroactive elastomers are suitable for wearable technologies and mixed systems, but not for fully deformable ones.
 
 \begin{figure}[h!]
     \centering
@@ -105,7 +106,7 @@ The third common type of soft robot was actuated using electroactive elastomers 
 \subsection{Electromagnetic Actuation using Liquid Metal}
 There have only been a few examples that incorporated liquid metal into their electromagnetic actuator designs. All of them used some variety of eGaIn as their metal conductor and silicone to build the soft body.
 
-Jin et al. pioneered this field with their 2015 paper that described the design, manufacture and testing of a stretchable loudspeaker \cite{jinStretchableLoudspeakerUsing2015}. The body of the loudspeaker was silicone while the voice coil was a spiral channel carved in the body and injected with eGaIn. Guo et al. extended on the work by Jin et al. with design and characterisation of mechanical actuators such as pincers and a swimming fish robot \cite{guoLiquidMetalSpiral2018}, both depicted in figure \ref{fg:guoetal}. Both studies produced Lorentz force actuators using eGaIn voice coils and permanent neodymium magnets. Guo et al. used an airbrush spray gun to apply their liquid metal instead of the syringe and Scotch tape combination used by Jin et al. It is interesting that Guo et al. did not report any problems with oxidation of eGaIn, or any steps taken to limit oxygen contact, given they used an airbrush to apply the liquid metal which would mix the metal with air as it was being used.
+Jin et al. pioneered this field with their 2015 paper that described the design, manufacture and testing of a stretchable loudspeaker \cite{jinStretchableLoudspeakerUsing2015}. The body of the loudspeaker was silicone while the voice coil was a spiral channel carved in the body and injected with eGaIn. Guo et al. extended on the work by Jin et al. with design and characterisation of mechanical actuators such as pincers and a swimming fish robot \cite{guoLiquidMetalSpiral2018}, both depicted in Figure \ref{fg:guoetal}. Both studies produced Lorentz force actuators using eGaIn voice coils and neodymium permanent magnets. Guo et al. used an airbrush spray gun to apply their liquid metal instead of the syringe and Scotch tape combination used by Jin et al. It is interesting that Guo et al. did not report any problems with oxidation of eGaIn, or any steps taken to limit oxygen contact, given they used an airbrush to apply the liquid metal which would mix the metal with air as it was being used.
 
 \begin{figure}[h!]
     \centering
@@ -114,7 +115,7 @@ Jin et al. pioneered this field with their 2015 paper that described the design,
     \label{fg:guoetal}
 \end{figure}
 
-Do et al. took at different approach to Jin and Guo in their 2018 paper \cite{doMiniatureSoftElectromagnetic2018}. Instead of using microchannels in silicone, Do et al. injected eGaIn into silicone tubes which are then coiled. This study also included two example applications of their techniques, soft vibrotactile actuators (SVAs) and a miniature soft electromagnetic gripper (SEMG). A photo of the SVAs can be seen in figure \ref{fg:guoetal}.
+Do et al. took at different approach to Jin and Guo in their 2018 paper \cite{doMiniatureSoftElectromagnetic2018}. Instead of using microchannels in silicone, Do et al. injected eGaIn into silicone tubes which are then coiled. This study also included two example applications of their techniques, soft vibrotactile actuators (SVAs) and a miniature soft electromagnetic gripper (SEMG). A photo of the SVAs can be seen in Figure \ref{fg:guoetal}.
 
 \begin{figure}[h!]
     \centering
@@ -130,7 +131,7 @@ No study so far has explored creating soft counterparts to traditional electroma
 \subsection{Traditional Electromagnetic Motors}
 Design and characterisation of stiff electromagnetic motors is a field that is comparatively mature, with a wealth of books and studies written on the subject such as \cite{moritzElectromechanicalMotionSystems2013}.
 
-Linear voice coil motors are a type of motor that are relatively easy to construct and control. Linear voice coil motors produce movement via Lorentz force produced by interaction of a current carrying coil on a magnetic field produced by a permanent magnet. As shown in figure \ref{fg:coilmotor}, there are two main configurations of linear voice coil motors: moving coil (left) and moving magnet (right)
+Linear voice coil motors are a type of motor that are relatively easy to construct and control. Linear voice coil motors produce movement via Lorentz force produced by interaction of a current carrying coil on a magnetic field produced by a permanent magnet. As shown in Figure \ref{fg:coilmotor}, there are two main configurations of linear voice coil motors: moving coil (left) and moving magnet (right)
 
 \begin{figure}[h!]
     \centering

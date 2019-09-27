@@ -2012,17 +2012,18 @@
     <bcf:citekey order="14">engineeringtoolboxPermeability2016</bcf:citekey>
     <bcf:citekey order="15">changChapterElectrodynamics2006</bcf:citekey>
     <bcf:citekey order="16">engineeringtoolboxPermeability2016</bcf:citekey>
-    <bcf:citekey order="17">mclymanMagneticMaterialsTheir2004</bcf:citekey>
-    <bcf:citekey order="18">indiumcorporationPRODUCTDATASHEET2019</bcf:citekey>
-    <bcf:citekey order="19">dickeyEutecticGalliumIndiumEGaIn2008</bcf:citekey>
-    <bcf:citekey order="20">cuiLiquidMetalCorrosion2018</bcf:citekey>
-    <bcf:citekey order="21">laughtonElectricalEngineerReference2002</bcf:citekey>
-    <bcf:citekey order="22">cuiLiquidMetalCorrosion2018</bcf:citekey>
-    <bcf:citekey order="23">doMiniatureSoftElectromagnetic2018</bcf:citekey>
-    <bcf:citekey order="24">valentaMechanicalElectricalTesting2008</bcf:citekey>
+    <bcf:citekey order="17">pfitznerPoiseuilleHisLaw1976</bcf:citekey>
+    <bcf:citekey order="18">mclymanMagneticMaterialsTheir2004</bcf:citekey>
+    <bcf:citekey order="19">indiumcorporationPRODUCTDATASHEET2019</bcf:citekey>
+    <bcf:citekey order="20">dickeyEutecticGalliumIndiumEGaIn2008</bcf:citekey>
+    <bcf:citekey order="21">cuiLiquidMetalCorrosion2018</bcf:citekey>
+    <bcf:citekey order="22">laughtonElectricalEngineerReference2002</bcf:citekey>
+    <bcf:citekey order="23">cuiLiquidMetalCorrosion2018</bcf:citekey>
+    <bcf:citekey order="24">doMiniatureSoftElectromagnetic2018</bcf:citekey>
     <bcf:citekey order="25">valentaMechanicalElectricalTesting2008</bcf:citekey>
-    <bcf:citekey order="26">lazarusCreating3DPrinted2019</bcf:citekey>
-    <bcf:citekey order="27">ferrotecFerrotecFerrofluidInnovating2019</bcf:citekey>
+    <bcf:citekey order="26">valentaMechanicalElectricalTesting2008</bcf:citekey>
+    <bcf:citekey order="27">lazarusCreating3DPrinted2019</bcf:citekey>
+    <bcf:citekey order="28">ferrotecFerrotecFerrofluidInnovating2019</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

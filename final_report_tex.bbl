@@ -551,6 +551,38 @@
       \verb http://www.phys.nthu.edu.tw/~thschanga/notes/EM07P1.pdf
       \endverb
     \endentry
+    \entry{pfitznerPoiseuilleHisLaw1976}{article}{}
+      \name{author}{1}{}{%
+        {{hash=1745b15da236810a20911e5c5b99d571}{%
+           family={Pfitzner},
+           familyi={P\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{1745b15da236810a20911e5c5b99d571}
+      \strng{fullhash}{1745b15da236810a20911e5c5b99d571}
+      \strng{bibnamehash}{1745b15da236810a20911e5c5b99d571}
+      \strng{authorbibnamehash}{1745b15da236810a20911e5c5b99d571}
+      \strng{authornamehash}{1745b15da236810a20911e5c5b99d571}
+      \strng{authorfullhash}{1745b15da236810a20911e5c5b99d571}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Comparatively little is known of the life of Jean Leonard Marie Poiseuille (1797-1869) of Paris. He made important contributions to the experimental study of circulatory dynamics but it can hardly be said that Poiseuille knowingly described the law which governs laminar flow. He did however establish, in a series of meticulously executed experiments, that at a given temperature water flow through tubes of very fine bore is inversely proportional to the length of the tube and directly proportional to the pressure gradient and to the fourth power of the tube diameter.}
+      \field{journaltitle}{Anaesthesia}
+      \field{number}{2}
+      \field{title}{Poiseuille and His Law.}
+      \field{volume}{31}
+      \field{year}{1976}
+      \field{dateera}{ce}
+      \field{pages}{273\bibrangedash 275}
+      \range{pages}{3}
+      \verb{doi}
+      \verb 10.1111/j.1365-2044.1976.tb11804.x
+      \endverb
+      \keyw{Cardiovascular system,Specimen Source Codes - Tube,water flow}
+    \endentry
     \entry{mclymanMagneticMaterialsTheir2004}{article}{}
       \name{author}{1}{}{%
         {{hash=4de946d66d31c5dd5628c43b97dd0fc2}{%
