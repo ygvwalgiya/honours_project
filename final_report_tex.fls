@@ -72,6 +72,13 @@ INPUT /usr/share/texmf-dist/tex/latex/biblatex/cbx/numeric-comp.cbx
 INPUT /usr/share/texmf-dist/tex/latex/biblatex/cbx/numeric-comp.cbx
 INPUT /usr/share/texmf-dist/tex/latex/biblatex/biblatex.cfg
 INPUT /usr/share/texmf-dist/tex/latex/biblatex/biblatex.cfg
+INPUT /usr/share/texmf-dist/tex/latex/microtype/microtype.sty
+INPUT /usr/share/texmf-dist/tex/latex/microtype/microtype.sty
+INPUT /usr/share/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+INPUT /usr/share/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+INPUT /usr/share/texmf-dist/tex/latex/microtype/microtype.cfg
+INPUT /usr/share/texmf-dist/tex/latex/microtype/microtype.cfg
+INPUT /usr/share/texmf-dist/tex/latex/microtype/microtype.cfg
 INPUT /usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
 INPUT /usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
 INPUT /usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -127,6 +134,8 @@ OUTPUT /home/guan/source/honours_project/final_report_tex.bcf
 INPUT /home/guan/source/honours_project/final_report_tex.bbl
 INPUT /home/guan/source/honours_project/final_report_tex.bbl
 INPUT /home/guan/source/honours_project/final_report_tex.bbl
+INPUT /usr/share/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+INPUT /usr/share/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 INPUT /usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
