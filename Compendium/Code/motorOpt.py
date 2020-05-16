@@ -1,4 +1,12 @@
-# %%
+'''
+Jason Guan 892594255
+Part IV Project
+This script finds the most optimal (minimum mass*power use) design of motor.
+The script uses gridsearch, and produces a seperate result for all even number of layers of wire in the bobbin up to a limit.
+The script can be used to generate cross-sectional diagrams of motor designs corresponding to all output results.
+'''
+
+# %% Import statements
 import numpy as np
 from scipy.optimize import brute
 import pickle
@@ -9,62 +17,80 @@ import matplotlib.patches as patches
 import sys
 from numba import jit
 
+# verbose command for debugging
 verbose = False
 if "-V" in sys.argv:
     verbose = True
+
+# refresh command for re-running optimisation algorithm
+# used on the Mac as it takes a few minutes to run
+# used for debugging and getting quick results/drawings
 refresh = False
 if "-r" in sys.argv:
     refresh = True
+
+# draw command for producting cross-section diagrams of the motor corresponding to output parameters
+# used for sanity checks
 draw = False
 if "-g" in sys.argv:
     draw = True
-noCheck = False
-if "-nc" in sys.argv:
-    noCheck = True
 
 # Relative constants
 # Things that aren't easily changed
-BR_Mag = 1.35 #1.35-1.4
-RES_WIRE = 29.4e-8
-CP_WIRE = 296
-RHO_WIRE = 6440 # kg/m3
-REL_PERM_STEEL = 2000
-REL_PERM_NEO = 1.05
-REL_PERM_AIR = 1
-VISCO_WIRE = 0.0024 #Pa.s
-RHO_TUBE = 1100 # kg/m3
-RHO_IRON = 7850 # kg/m3
-RHO_MAG = 7010 # kg/m3
+BR_Mag = 1.35 #1.35-1.4 Remanence magnetic field density of magnet
+RES_WIRE = 29.4e-8 # Resistivity of eGaIn
+CP_WIRE = 296 # Specific heat of eGaIn
+RHO_WIRE = 6440 # kg/m3 density of eGaIn
+REL_PERM_STEEL = 2000 # relative magnetic permiability of steel
+REL_PERM_NEO = 1.05 # relative magnetic permiability of Nd magnet
+REL_PERM_AIR = 1 # relative magnetic permiability of air
+VISCO_WIRE = 0.0024 #Pa.s viscosity of eGaIn
+RHO_TUBE = 1100 # kg/m3 density of silicone tubing
+RHO_IRON = 7850 # kg/m3 density of shell
+RHO_MAG = 7010 # kg/m3 density of magnet
 
+# Used for optimisation - things that are invalid yeild a really large output, so they're discarded in the minimisation.
 BIG_NUM = 1e12
 
+# Margin of error
 moe = 1e-8
 
+# Wire parameters - there are only so many combinations for off-the-shelf solutions. 
+# This particular one has the best fill factor.
 thickWireWall = 0.5 # mm
 rWireIn = 1 # mm
 
+# Design requirements re: pump.
 dTravel = 15 # 9mm
 fMotor = 9 # 9N
 freq = 1 # 1Hz
 
+# Maximum temperature change - health and safety constraint
 deltaT = 30
 
+# Maximum number of layers optimised for.
 maxLayers = 14
 
 # %%
 # rWireIn lMag rMag lCore
 # r_rWireIn = (0.05,2.5) # mm - reasonable sizes for silicone tube radius
-r_lMag = (5,95) # mm - try not to exceed 10 cm size
-r_rMag = (1,20) # mm - try not to exceed 40 mm diameter - health and safety hazard
-r_lCore = (1,25) # mm - try to be decently sized
-r_lWireVessel = (5,95)
-grid = (r_lMag,r_rMag,r_lCore,r_lWireVessel)
+r_lMag = (5,95) # mm - try not to exceed 10 cm size - magnet length
+r_rMag = (1,20) # mm - try not to exceed 40 mm diameter - health and safety hazard - magnet radius
+r_lCore = (1,25) # mm - try to be decently sized - core length. Core radius is the same as rMag
+r_lWireVessel = (5,95) # Wire vessel length - the part of the bobbin that the wire goes around.
+grid = (r_lMag,r_rMag,r_lCore,r_lWireVessel) # Gridsearch init
 outSelect = 1 # optimising for min power * mass
 
-# %%
+# %% This is the numba-optimised version of motorOpt
+# motorOpt takes the input variables (x) and the optimisation constants (*args), 
+# and outputs the optimisation variable (mass*power)
+# Numba is a high-performance Python to LLVM bytecode compiler.
+# Numba doesn't allow print statements, hence the need for another version of this function below, 
+# and the extensive commenting-out in this function.
 @jit(nopython=True)
 def motorOpt(x, *args):
 
+    # Unpack input variables
     rho = args[0]
     RES_WIRE = args[1]
     cp = args[2]
@@ -85,6 +111,7 @@ def motorOpt(x, *args):
 
     # print("motorOpt: {}".format(x))
 
+    # Convert from mm to m
     lMag = x[0] / 1000
     rMag = x[1] / 1000
     lCore = x[2] / 1000
@@ -98,7 +125,7 @@ def motorOpt(x, *args):
     # if verbose:
     #     print("rShellIn: {} mm".format(rShellIn*1e3))
 
-    aWire = rWireIn**2*np.pi
+    aWire = rWireIn**2*np.pi # Area of wire in field
     #lWireTotal = lWireVessel*np.pi*(layers+1)*layers + lWireVessel*rMag*np.pi/rWireOut # Total length of wire
     lWireTotal = 0
     wireCycle = lWireVessel/(rWireOut*2)
@@ -155,6 +182,7 @@ def motorOpt(x, *args):
 
     AA = lCore*2*np.pi*(rMag+layers*rWireOut*2-rWireOut) # approx the largest area layer
 
+    # If wire vessel is longer than core, length of wire in field 
     if lWireVessel > lCore:
         lWireInField = lCore*np.pi*(layers+1)*layers + lCore*rMag*np.pi/rWireOut
     else:
@@ -222,7 +250,9 @@ def motorOpt(x, *args):
     # elif outSelect== -1:
     #     return Q,pIn,I,V,pressure
 
-
+# This is the non-numba optimised version of motorOpt.
+# Used for debugging mostly. Does the same thing, just with print statements everywhere.
+# Outputs everything instead of just the optimisation variable, for the graphing function to use.
 def motorMain(x, *args):
     rho = args[0]
     RES_WIRE = args[1]
@@ -340,15 +370,18 @@ def motorMain(x, *args):
 
     return Q,pIn,massTotal,pIn * massTotal,I,V,pressure, massTotal
 
-# %% DON'T RUN ON JUPYTER
+# %% DON'T RUN ON JUPYTER - will crash the notebook
 # def motorOpt(x,rho,sigma,cp,br,dTravel,fMotor,freq,thickWireWall,layers,deltaT,outSelect)
+# This is the block of code that does the actual optimisation
 optOut = []
 if refresh:
+    # For every even number of wire layers, determine optimal design.
     for layers in range(2,maxLayers+1,2):
         print("Layer {}".format(layers))
         arglist = (RHO_WIRE,RES_WIRE,CP_WIRE,BR_Mag,dTravel,fMotor,freq,thickWireWall,layers,deltaT,VISCO_WIRE,outSelect,rWireIn)
         optOut.append(brute(motorOpt,ranges=grid,args=arglist,Ns=25,full_output=True,disp=True,finish=None))
 
+    # Save outputs into pickle file for later
     with open('optOut.pkl','wb') as f:
         pickle.dump(optOut, f)
     print("Done")
@@ -504,6 +537,7 @@ def diagramDraw(x,layers,thickWireWall,rWireIn,name):
     return ax,fig
 
 #%%
+# This is the print section to see the numerical optimisation outputs.
 for layers in range(int(maxLayers/2)):
     print("\n********LAYER: {}********".format((layers+1)*2))
     # Don't optimise for wire size
@@ -532,6 +566,9 @@ for layers in range(int(maxLayers/2)):
             plt.show()
 
 #%%
+# The manual input/output section to verify slight changes to the optimal output for practical reasons 
+# e.g. magnets only come in 10 mm long increments so 37.5 mm length doesn't work
+# This function would be used to test the 40 mm design and see if it still fits the requirements
 layers = 6
 print("\nManual")
 print("\n********LAYER: {}********".format(layers))
